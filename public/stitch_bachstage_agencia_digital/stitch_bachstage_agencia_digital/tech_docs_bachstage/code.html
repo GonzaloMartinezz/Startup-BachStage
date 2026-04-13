@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>BachStage Technical Documentation Index</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-container": "#00ff85",
+                        "surface": "#131315",
+                        "on-tertiary-container": "#626164",
+                        "surface-container-low": "#1c1b1d",
+                        "on-primary": "#003919",
+                        "on-background": "#e5e1e4",
+                        "on-primary-fixed-variant": "#005227",
+                        "tertiary": "#fdfafd",
+                        "surface-container-lowest": "#0e0e10",
+                        "secondary": "#ffb693",
+                        "on-error-container": "#ffdad6",
+                        "error": "#ffb4ab",
+                        "on-secondary": "#561f00",
+                        "on-primary-fixed": "#00210c",
+                        "tertiary-fixed-dim": "#c8c6c8",
+                        "secondary-container": "#fe6b00",
+                        "error-container": "#93000a",
+                        "surface-container-highest": "#353437",
+                        "surface-bright": "#39393b",
+                        "surface-tint": "#00e476",
+                        "on-surface": "#e5e1e4",
+                        "on-secondary-fixed-variant": "#7a3000",
+                        "surface-container-high": "#2a2a2c",
+                        "on-tertiary": "#313032",
+                        "on-surface-variant": "#b9cbb9",
+                        "inverse-surface": "#e5e1e4",
+                        "on-secondary-container": "#572000",
+                        "primary": "#f0ffee",
+                        "primary-fixed": "#61ff97",
+                        "secondary-fixed-dim": "#ffb693",
+                        "on-tertiary-fixed-variant": "#474649",
+                        "on-tertiary-fixed": "#1c1b1d",
+                        "tertiary-container": "#e0dde0",
+                        "surface-dim": "#131315",
+                        "primary-fixed-dim": "#00e476",
+                        "outline-variant": "#3b4b3d",
+                        "tertiary-fixed": "#e5e1e4",
+                        "inverse-on-surface": "#313032",
+                        "on-secondary-fixed": "#351000",
+                        "on-primary-container": "#007137",
+                        "secondary-fixed": "#ffdbcc",
+                        "background": "#131315",
+                        "surface-variant": "#353437",
+                        "surface-container": "#201f22",
+                        "outline": "#849584",
+                        "on-error": "#690005",
+                        "inverse-primary": "#006d35"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Inter"],
+                        "label": ["Space Grotesk"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .mesh-gradient-bg {
+            background-color: #09090B;
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(0, 255, 133, 0.05) 0px, transparent 50%),
+                radial-gradient(at 100% 0%, rgba(254, 107, 0, 0.05) 0px, transparent 50%);
+        }
+        .data-pillar-gradient {
+            background: linear-gradient(180deg, rgba(0, 255, 133, 0.1) 0%, rgba(0, 255, 133, 0) 100%);
+        }
+    </style>
+</head>
+<body class="bg-black text-on-background font-body selection:bg-primary-container selection:text-on-primary min-h-screen">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 rounded-none bg-black/60 backdrop-blur-xl shadow-[0_4px_30px_rgba(254,107,0,0.04)] flex justify-between items-center w-full px-8 py-4">
+<div class="text-2xl font-black text-white tracking-tighter">BachStage</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-['Space_Grotesk'] font-bold uppercase tracking-tighter text-white/70 hover:text-white transition-colors" href="#">Solutions</a>
+<a class="font-['Space_Grotesk'] font-bold uppercase tracking-tighter text-white/70 hover:text-white transition-colors" href="#">Console</a>
+<a class="font-['Space_Grotesk'] font-bold uppercase tracking-tighter text-white/70 hover:text-white transition-colors" href="#">Network</a>
+<a class="font-['Space_Grotesk'] font-bold uppercase tracking-tighter text-[#FE6B00] border-b-2 border-[#FE6B00] pb-1" href="#">Status</a>
+</div>
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined text-white/70 cursor-pointer hover:text-[#00FF85] transition-all duration-300">grid_view</span>
+<button class="bg-primary-container text-on-primary px-6 py-2 font-bold uppercase tracking-tighter hover:bg-[#00FF85]/10 hover:text-[#00FF85] border border-transparent hover:border-[#00FF85] transition-all duration-300">
+                Get Started
+            </button>
+</div>
+</nav>
+<!-- Sidebar (Visible on Desktop) -->
+<aside class="hidden lg:flex flex-col h-screen w-64 fixed left-0 top-0 rounded-none bg-[#09090B] border-r border-[#00FF85]/10 py-24 px-6 z-40">
+<div class="mb-12">
+<div class="text-[#00FF85] font-bold font-headline text-lg tracking-tighter">Console v1.0</div>
+<div class="text-white/40 text-[10px] uppercase tracking-widest font-semibold mt-1">System Operational</div>
+</div>
+<nav class="flex flex-col gap-2">
+<a class="flex items-center gap-3 px-4 py-3 text-white/40 hover:text-white hover:bg-[#131315] transition-all duration-150 translate-x-1 font-['Inter'] font-semibold text-xs uppercase tracking-widest" href="#">
+<span class="material-symbols-outlined text-sm">dashboard</span>
+                Dashboard
+            </a>
+<a class="flex items-center gap-3 px-4 py-3 text-white/40 hover:text-white hover:bg-[#131315] transition-all duration-150 translate-x-1 font-['Inter'] font-semibold text-xs uppercase tracking-widest" href="#">
+<span class="material-symbols-outlined text-sm">monitoring</span>
+                Analytics
+            </a>
+<a class="flex items-center gap-3 px-4 py-3 text-white/40 hover:text-white hover:bg-[#131315] transition-all duration-150 translate-x-1 font-['Inter'] font-semibold text-xs uppercase tracking-widest" href="#">
+<span class="material-symbols-outlined text-sm">hub</span>
+                Nodes
+            </a>
+<a class="flex items-center gap-3 px-4 py-3 text-white/40 hover:text-white hover:bg-[#131315] transition-all duration-150 translate-x-1 font-['Inter'] font-semibold text-xs uppercase tracking-widest" href="#">
+<span class="material-symbols-outlined text-sm">shield</span>
+                Security
+            </a>
+<a class="flex items-center gap-3 px-4 py-3 text-[#00FF85] bg-[#1C1B1D] border-l-2 border-[#00FF85] transition-all duration-150 translate-x-1 font-['Inter'] font-semibold text-xs uppercase tracking-widest" href="#">
+<span class="material-symbols-outlined text-sm">settings</span>
+                Settings
+            </a>
+</nav>
+<div class="mt-auto pt-8 border-t border-[#1C1B1D]">
+<button class="w-full bg-[#1C1B1D] text-[#00FF85] py-3 font-bold text-[10px] uppercase tracking-widest border border-[#00FF85]/20 hover:bg-[#00FF85]/10 transition-all">
+                Deploy New Node
+            </button>
+<div class="mt-6 flex flex-col gap-2">
+<a class="flex items-center gap-2 text-white/30 text-[10px] uppercase tracking-widest hover:text-[#00FF85]" href="#">
+<span class="material-symbols-outlined text-xs">description</span> Docs
+                </a>
+<a class="flex items-center gap-2 text-white/30 text-[10px] uppercase tracking-widest hover:text-[#00FF85]" href="#">
+<span class="material-symbols-outlined text-xs">contact_support</span> Support
+                </a>
+</div>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="lg:ml-64 pt-32 pb-24 px-8 md:px-12 lg:px-20 mesh-gradient-bg">
+<!-- Hero Header -->
+<header class="max-w-6xl mb-20 relative">
+<div class="inline-block px-3 py-1 bg-[#FE6B00]/10 border border-[#FE6B00]/30 text-[#FE6B00] font-headline font-bold text-[10px] uppercase tracking-[0.3em] mb-6">
+                Documentation Hub
+            </div>
+<h1 class="text-6xl md:text-8xl font-headline font-black text-white tracking-tighter leading-none mb-8">
+                TECHNICAL <br/><span class="text-transparent bg-clip-text bg-gradient-to-r from-[#00FF85] to-[#FE6B00]">INDEX.</span>
+</h1>
+<p class="text-on-surface-variant max-w-xl text-lg leading-relaxed font-light">
+                Comprehensive technical specifications, integration guides, and operational manuals for the BachStage monolithic architecture. Built for high-performance scale.
+            </p>
+</header>
+<!-- Documentation Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 border border-[#1C1B1D] bg-[#1C1B1D]">
+<!-- API Reference Card -->
+<div class="bg-[#09090B] p-10 group border border-[#1C1B1D] hover:bg-[#131315] transition-all duration-500 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-[#00FF85]/5 blur-3xl rounded-full translate-x-16 -translate-y-16 group-hover:bg-[#00FF85]/10 transition-colors"></div>
+<div class="mb-12">
+<span class="material-symbols-outlined text-4xl text-[#00FF85] mb-6">api</span>
+<h3 class="text-2xl font-headline font-bold text-white uppercase tracking-tighter mb-4">API Reference</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-8">
+                        Explore our RESTful endpoints, authentication patterns, and rate limiting policies for direct core interaction.
+                    </p>
+</div>
+<a class="inline-flex items-center gap-2 text-[#00FF85] font-headline font-bold uppercase text-xs tracking-widest group-hover:gap-4 transition-all" href="#">
+                    Read Docs <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+<!-- SDKs Card (Double Width/Asymmetric) -->
+<div class="bg-[#131315] p-10 group md:col-span-2 border border-[#1C1B1D] hover:bg-[#1C1B1D] transition-all duration-500 flex flex-col md:flex-row gap-10 items-start md:items-center relative">
+<div class="flex-1">
+<span class="material-symbols-outlined text-4xl text-[#FE6B00] mb-6">terminal</span>
+<h3 class="text-2xl font-headline font-bold text-white uppercase tracking-tighter mb-4">Software Development Kits</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-8 max-w-md">
+                        Official libraries for Node.js, Python, and Go. Accelerate your integration with pre-built modules for telemetry and node management.
+                    </p>
+<a class="inline-flex items-center gap-2 text-[#00FF85] font-headline font-bold uppercase text-xs tracking-widest group-hover:gap-4 transition-all" href="#">
+                        Read Docs <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+<div class="w-full md:w-64 aspect-video bg-black p-4 border border-[#00FF85]/20 font-mono text-[10px] text-primary-container overflow-hidden">
+<div class="opacity-50">npm install @bachstage/core</div>
+<div class="text-white mt-2">const client = new BachStage({</div>
+<div class="ml-4">apiKey: process.env.API_KEY,</div>
+<div class="ml-4">region: 'monolith-alpha'</div>
+<div class="text-white">});</div>
+</div>
+</div>
+<!-- CLI Tooling Card -->
+<div class="bg-[#131315] p-10 group border border-[#1C1B1D] hover:bg-[#1C1B1D] transition-all duration-500 relative">
+<span class="material-symbols-outlined text-4xl text-white mb-6">keyboard_command_key</span>
+<h3 class="text-2xl font-headline font-bold text-white uppercase tracking-tighter mb-4">CLI Tooling</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-8">
+                    Manage your entire stack from the command line. Provision nodes, check health, and deploy updates instantly.
+                </p>
+<a class="inline-flex items-center gap-2 text-[#00FF85] font-headline font-bold uppercase text-xs tracking-widest group-hover:gap-4 transition-all" href="#">
+                    Read Docs <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+<!-- Webhooks Card -->
+<div class="bg-[#09090B] p-10 group border border-[#1C1B1D] hover:bg-[#131315] transition-all duration-500 relative">
+<span class="material-symbols-outlined text-4xl text-[#00FF85] mb-6">webhook</span>
+<h3 class="text-2xl font-headline font-bold text-white uppercase tracking-tighter mb-4">Webhooks</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-8">
+                    Real-time event notifications. Subscribe to system changes, node failures, and threshold alerts for instant automation.
+                </p>
+<a class="inline-flex items-center gap-2 text-[#00FF85] font-headline font-bold uppercase text-xs tracking-widest group-hover:gap-4 transition-all" href="#">
+                    Read Docs <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+<!-- Network Status Pillar (Data Pillar Component) -->
+<div class="bg-[#09090B] group border border-[#1C1B1D] hover:bg-[#131315] transition-all duration-500 overflow-hidden flex flex-col justify-between">
+<div class="p-10">
+<h3 class="text-2xl font-headline font-bold text-white uppercase tracking-tighter mb-2">Network Health</h3>
+<p class="text-on-surface-variant text-xs uppercase tracking-widest mb-8">Current Global Latency</p>
+</div>
+<div class="data-pillar-gradient w-full pt-12 pb-6 px-10 border-t border-[#00FF85]/20">
+<div class="text-6xl md:text-7xl font-headline font-black text-[#00FF85] tracking-tighter">14.2ms</div>
+<div class="flex items-center gap-2 mt-4 text-[10px] font-bold text-[#00FF85] uppercase tracking-widest">
+<span class="w-2 h-2 rounded-full bg-[#00FF85] animate-pulse"></span> Optimal Status
+                    </div>
+</div>
+</div>
+</div>
+<!-- Featured Resource Section -->
+<section class="mt-32 border-l-4 border-[#FE6B00] pl-12 py-12 relative overflow-hidden bg-surface-container-low">
+<div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&amp;w=2072&amp;auto=format&amp;fit=crop')] opacity-10 mix-blend-overlay grayscale" data-alt="Abstract futuristic digital network background with light particles and deep shadows in a high-tech style"></div>
+<div class="relative z-10">
+<h2 class="text-3xl font-headline font-bold text-white uppercase tracking-tighter mb-4">Infrastructure Security Vault</h2>
+<p class="text-on-surface-variant max-w-2xl mb-8">
+                    Deep-dive into our security protocols, end-to-end encryption standards, and hardware-level isolation for mission-critical deployments.
+                </p>
+<button class="bg-[#FE6B00] text-black font-bold uppercase tracking-tighter px-10 py-4 hover:bg-white transition-colors duration-300">
+                    Access Security Vault
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="lg:ml-64 w-full py-12 px-8 border-t border-[#1C1B1D] bg-black flex flex-col md:flex-row justify-between items-center">
+<div class="font-['Inter'] text-[10px] font-medium tracking-[0.2em] uppercase text-white/30 mb-8 md:mb-0">
+            © 2024 BACHSTAGE MONOLITH. ALL SYSTEMS NOMINAL.
+        </div>
+<div class="flex gap-8">
+<a class="font-['Inter'] text-[10px] font-medium tracking-[0.2em] uppercase text-white/30 hover:text-[#00FF85] underline decoration-[#FE6B00] transition-all opacity-80 hover:opacity-100" href="#">Terms</a>
+<a class="font-['Inter'] text-[10px] font-medium tracking-[0.2em] uppercase text-white/30 hover:text-[#00FF85] underline decoration-[#FE6B00] transition-all opacity-80 hover:opacity-100" href="#">Privacy</a>
+<a class="font-['Inter'] text-[10px] font-medium tracking-[0.2em] uppercase text-white/30 hover:text-[#00FF85] underline decoration-[#FE6B00] transition-all opacity-80 hover:opacity-100" href="#">API_Docs</a>
+<a class="font-['Inter'] text-[10px] font-medium tracking-[0.2em] uppercase text-white/30 hover:text-[#00FF85] underline decoration-[#FE6B00] transition-all opacity-80 hover:opacity-100" href="#">Security_Vault</a>
+</div>
+</footer>
+</body></html>

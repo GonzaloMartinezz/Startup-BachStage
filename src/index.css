@@ -1,0 +1,73 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+/* Material Symbols */
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL,GRAD,opsz@100..700,0..1,0,24&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --font-headline: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-label: "Space Grotesk", sans-serif;
+
+  --color-primary-container: #00ff85;
+  --color-secondary-container: #fe6b00;
+  --color-on-primary: #003919;
+  --color-on-surface: #e5e1e4;
+  --color-on-surface-variant: #b9cbb9;
+  --color-surface-container-lowest: #0e0e10;
+  --color-surface-container-low: #1c1b1d;
+  --color-surface-container-high: #2a2a2c;
+  --color-surface-dim: #131315;
+  --color-surface: #131315;
+  --color-outline-variant: #3b4b3d;
+}
+
+:root {
+  background-color: #0e0e10;
+  color: #e5e1e4;
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, sans-serif;
+  overflow-x: hidden;
+  background-color: #0e0e10;
+}
+
+/* Material Icons configuration */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Mesh background for Contact */
+.obsidian-mesh {
+  background-color: #09090B;
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(0, 255, 133, 0.05) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(254, 107, 0, 0.05) 0px, transparent 50%);
+}
+
+.mesh-gradient-bg {
+    background: radial-gradient(at 0% 0%, rgba(0, 82, 39, 0.5) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, #09090B 0px, transparent 50%);
+}
+
+.neon-gradient-text {
+    background: linear-gradient(90deg, #00FF85 0%, #FE6B00 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.obsidian-shadow {
+    box-shadow: 0 20px 50px -20px rgba(254, 107, 0, 0.15);
+}
+
+.glass-nav { 
+  backdrop-filter: blur(20px); 
+  -webkit-backdrop-filter: blur(20px); 
+}
+
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }

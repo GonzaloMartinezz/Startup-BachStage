@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>BachStage | Service Tutorial</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary": "#ffb693",
+                    "error-container": "#93000a",
+                    "on-primary-fixed-variant": "#005227",
+                    "on-primary-fixed": "#00210c",
+                    "tertiary-container": "#e0dde0",
+                    "on-surface": "#e5e1e4",
+                    "on-secondary-fixed": "#351000",
+                    "surface-tint": "#00e476",
+                    "on-tertiary-container": "#626164",
+                    "on-error-container": "#ffdad6",
+                    "on-tertiary-fixed": "#1c1b1d",
+                    "on-secondary-fixed-variant": "#7a3000",
+                    "tertiary-fixed-dim": "#c8c6c8",
+                    "secondary-fixed-dim": "#ffb693",
+                    "primary-fixed": "#61ff97",
+                    "tertiary-fixed": "#e5e1e4",
+                    "surface": "#131315",
+                    "on-surface-variant": "#b9cbb9",
+                    "surface-container-highest": "#353437",
+                    "secondary-fixed": "#ffdbcc",
+                    "primary-fixed-dim": "#00e476",
+                    "inverse-primary": "#006d35",
+                    "on-tertiary": "#313032",
+                    "surface-container-low": "#1c1b1d",
+                    "tertiary": "#fdfafd",
+                    "surface-variant": "#353437",
+                    "primary-container": "#00ff85",
+                    "on-secondary-container": "#572000",
+                    "error": "#ffb4ab",
+                    "outline": "#849584",
+                    "on-primary-container": "#007137",
+                    "surface-dim": "#131315",
+                    "inverse-surface": "#e5e1e4",
+                    "surface-container-lowest": "#0e0e10",
+                    "surface-container-high": "#2a2a2c",
+                    "background": "#131315",
+                    "on-tertiary-fixed-variant": "#474649",
+                    "on-primary": "#003919",
+                    "surface-bright": "#39393b",
+                    "on-secondary": "#561f00",
+                    "on-error": "#690005",
+                    "outline-variant": "#3b4b3d",
+                    "primary": "#f0ffee",
+                    "surface-container": "#201f22",
+                    "secondary-container": "#fe6b00",
+                    "on-background": "#e5e1e4",
+                    "inverse-on-surface": "#313032"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Space Grotesk"],
+                    "body": ["Inter"],
+                    "label": ["Space Grotesk"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #000000;
+            color: #e5e1e4;
+            font-family: 'Inter', sans-serif;
+        }
+        .space-grotesk {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        /* Custom scrollbar for monolithic feel */
+        ::-webkit-scrollbar { width: 4px; }
+        ::-webkit-scrollbar-track { background: #000000; }
+        ::-webkit-scrollbar-thumb { background: #00FF85; }
+    </style>
+</head>
+<body class="antialiased overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 border-0 bg-black/80 backdrop-blur-xl flex justify-between items-center px-8 py-6 w-full shadow-[0_20px_50px_rgba(254,107,0,0.04)]">
+<div class="text-2xl font-black tracking-tighter text-white">BachStage</div>
+<div class="hidden md:flex gap-12 items-center">
+<a class="font-['Space_Grotesk'] font-bold uppercase tracking-tighter text-white/70 hover:text-white transition-colors" href="#">Solutions</a>
+<a class="font-['Space_Grotesk'] font-bold uppercase tracking-tighter text-white/70 hover:text-white transition-colors" href="#">Platform</a>
+<a class="font-['Space_Grotesk'] font-bold uppercase tracking-tighter text-white/70 hover:text-white transition-colors" href="#">Case Studies</a>
+<a class="font-['Space_Grotesk'] font-bold uppercase tracking-tighter text-white/70 hover:text-white transition-colors" href="#">Network</a>
+</div>
+<button class="bg-[#00FF85] text-black font-['Space_Grotesk'] font-bold uppercase tracking-tighter px-6 py-2 transition-all duration-300 hover:bg-[#00FF85] hover:text-black scale-95 duration-200 ease-in-out">
+            Get Started
+        </button>
+</nav>
+<main class="pt-32 pb-24">
+<!-- Hero Section -->
+<section class="px-8 md:px-24 mb-32">
+<div class="max-w-4xl">
+<span class="text-[#00FF85] font-['Space_Grotesk'] font-bold uppercase tracking-[0.3em] text-xs block mb-4">Master the Monolith</span>
+<h1 class="text-6xl md:text-8xl font-black font-['Space_Grotesk'] tracking-tighter leading-none text-white mb-8">
+                    PLATFORM <br/><span class="text-[#00FF85]">ONBOARDING</span>
+</h1>
+<p class="text-xl text-white/50 max-w-2xl font-light leading-relaxed">
+                    Welcome to the core. This guide will walk you through the architectural foundations of the BachStage ecosystem. Follow the steps precisely to unlock enterprise-grade performance.
+                </p>
+</div>
+</section>
+<!-- Step 1: Configuration -->
+<section class="grid grid-cols-1 md:grid-cols-2 min-h-screen items-center border-t border-white/5">
+<div class="p-8 md:p-24 flex flex-col justify-center">
+<div class="mb-12">
+<span class="text-[#FE6B00] font-['Space_Grotesk'] font-bold text-4xl block mb-2 tracking-tighter">Paso #1</span>
+<h2 class="text-5xl font-bold font-['Space_Grotesk'] text-white uppercase tracking-tighter mb-6">Initialize Core</h2>
+<div class="w-16 h-1 bg-[#00FF85] mb-8"></div>
+<p class="text-white/60 text-lg leading-relaxed mb-8">
+                        Begin by authenticating your environment. Access the BachStage Console and configure your primary workspace parameters. This defines the operational scope of your entire monolith.
+                    </p>
+<ul class="space-y-4">
+<li class="flex items-center gap-4 text-sm font-['Space_Grotesk'] font-bold uppercase tracking-widest text-[#00FF85]">
+<span class="material-symbols-outlined text-xs">check_circle</span> Create Organization Profile
+                        </li>
+<li class="flex items-center gap-4 text-sm font-['Space_Grotesk'] font-bold uppercase tracking-widest text-[#00FF85]">
+<span class="material-symbols-outlined text-xs">check_circle</span> Define Access Tiers
+                        </li>
+</ul>
+</div>
+</div>
+<div class="bg-[#131315] h-full flex items-center justify-center p-12 relative overflow-hidden">
+<div class="absolute inset-0 opacity-20 pointer-events-none" style="background-image: radial-gradient(circle at 70% 30%, #00FF85 0%, transparent 50%)"></div>
+<!-- Phone Mockup 1 -->
+<div class="relative w-[320px] aspect-[9/19] bg-black border-[8px] border-white/10 shadow-2xl z-10">
+<div class="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-6 bg-white/10 rounded-b-xl"></div>
+<img class="w-full h-full object-cover grayscale brightness-75 hover:grayscale-0 transition-all duration-700" data-alt="close-up of a high-tech dark mode smartphone interface showing user profile setup screens with neon green accents and geometric shapes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBg9IceU6nBYKPDEv2_dN7vOmrm796tbG1PstS3PZB3GN4mgYiKu_PWE2QgiHYqt1zTSB79DRDONxn4xdAsu51pWzoRM8_B-XO1MCOGda_lCivj-40ufIb4Cw8dUTRUBgSHPrDFnYR5eX-LJLHyJIQcwba14iTUBwHnmViViymymDKFvQ9GaQRxwYRVmr6sYZA1vPA9UZJmXQUpUiTOCI_acgscdQCKefNXZ9iirCZ7dfqbGvcU6XWq-A1eAfKqTvYgyqppmFn_kcY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+</div>
+</div>
+</section>
+<!-- Step 2: Data Integration -->
+<section class="grid grid-cols-1 md:grid-cols-2 min-h-screen items-center border-t border-white/5">
+<div class="order-2 md:order-1 bg-[#09090B] h-full flex items-center justify-center p-12 relative overflow-hidden">
+<div class="absolute inset-0 opacity-20 pointer-events-none" style="background-image: radial-gradient(circle at 30% 70%, #FE6B00 0%, transparent 50%)"></div>
+<!-- Phone Mockup 2 -->
+<div class="relative w-[320px] aspect-[9/19] bg-black border-[8px] border-white/10 shadow-2xl z-10">
+<div class="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-6 bg-white/10 rounded-b-xl"></div>
+<img class="w-full h-full object-cover grayscale brightness-75 hover:grayscale-0 transition-all duration-700" data-alt="minimalist phone screen displaying complex data analytics charts and financial trends in neon emerald and orange on black background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQ9an4UBW2-wYz1vCuuMiNWu3iMflQqOfgKY8jRHBX0fbGqTKYoTj56mIoLsvMH2hKpuSoN_2X3jWSL1G3QfZlui36NQmgAsS497HH36oWeOJAJVv2SiXTtfJiW21fX4fLhWmZjYfzT7lobEsYGiVNPcLFtFyU64szKloZyh95HgYHEo5azDccvttXwRt20WaFbxYVqkkR8T7vRBGFVOGewRx5sQGJ5blnF5tOsFPfn7lq3GT2BSc0UQcoXL_c9XIjkG84R8M-XDw"/>
+</div>
+</div>
+<div class="order-1 md:order-2 p-8 md:p-24 flex flex-col justify-center">
+<div class="mb-12">
+<span class="text-[#FE6B00] font-['Space_Grotesk'] font-bold text-4xl block mb-2 tracking-tighter">Paso #2</span>
+<h2 class="text-5xl font-bold font-['Space_Grotesk'] text-white uppercase tracking-tighter mb-6">Inject Streams</h2>
+<div class="w-16 h-1 bg-[#00FF85] mb-8"></div>
+<p class="text-white/60 text-lg leading-relaxed mb-8">
+                        Connect your data pipelines. BachStage supports asynchronous ingestion from multiple cloud providers. Secure your keys and establish the handshake between your existing infrastructure and the Console.
+                    </p>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-[#1C1B1D] p-6">
+<span class="block text-3xl font-bold text-[#00FF85] mb-2">99.9%</span>
+<span class="block text-[10px] uppercase tracking-widest text-white/40">Uptime Sla</span>
+</div>
+<div class="bg-[#1C1B1D] p-6">
+<span class="block text-3xl font-bold text-[#00FF85] mb-2">&lt;2ms</span>
+<span class="block text-[10px] uppercase tracking-widest text-white/40">Latency Peak</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Step 3: Network Activation -->
+<section class="grid grid-cols-1 md:grid-cols-2 min-h-screen items-center border-t border-white/5">
+<div class="p-8 md:p-24 flex flex-col justify-center">
+<div class="mb-12">
+<span class="text-[#FE6B00] font-['Space_Grotesk'] font-bold text-4xl block mb-2 tracking-tighter">Paso #3</span>
+<h2 class="text-5xl font-bold font-['Space_Grotesk'] text-white uppercase tracking-tighter mb-6">Deploy Network</h2>
+<div class="w-16 h-1 bg-[#00FF85] mb-8"></div>
+<p class="text-white/60 text-lg leading-relaxed mb-8">
+                        Finalize the deployment by activating your network nodes. Monitor real-time performance through the BachStage Insights dashboard and scale your capacity with a single command.
+                    </p>
+<button class="bg-[#00FF85] text-black font-['Space_Grotesk'] font-bold uppercase tracking-widest px-8 py-4 w-full md:w-max transition-all hover:shadow-[0_0_20px_rgba(0,255,133,0.3)]">
+                        Launch Dashboard
+                    </button>
+</div>
+</div>
+<div class="bg-[#131315] h-full flex items-center justify-center p-12 relative overflow-hidden">
+<div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: linear-gradient(to bottom, #00FF85, transparent)"></div>
+<!-- Phone Mockup 3 -->
+<div class="relative w-[320px] aspect-[9/19] bg-black border-[8px] border-white/10 shadow-2xl z-10">
+<div class="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-6 bg-white/10 rounded-b-xl"></div>
+<img class="w-full h-full object-cover grayscale brightness-75 hover:grayscale-0 transition-all duration-700" data-alt="smartphone interface showing a successful system deployment confirmation screen with 3D pulse waves and emerald glowing success icons" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxdlKYeSL_b_U-2GKdryjgWC8MIFqiNVkgJFPqeAl9Si1l895TSNAOx11NkmOo1Zl_XI6LDWQZ4kj5BfIaHR3VuBUKXvVNweLEnGykrnrVDZ_aN9d7lB_vwwV0X1T6k6Il38eJlMbBAHhaeEC7dOsnFer4LC-Md50gcc5ONAFJzH-NtkBIQDVgeCzDt3SmwnMKyaWxQx9-I0Jl6oYZi8C7eraMEChg6qz9KPQUuyA2slOegQEGP9rflYeeFeK9jTqYcd3qPecXVAM"/>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-black flex flex-col md:flex-row justify-between items-center px-12 py-12 w-full mt-24 border-t border-white/5">
+<div class="mb-8 md:mb-0">
+<div class="font-['Space_Grotesk'] font-black text-white text-xl mb-2 uppercase tracking-tighter">BachStage</div>
+<p class="font-['Inter'] text-[10px] font-medium uppercase tracking-[0.2em] text-white/40">© 2024 BachStage Monolith. Built for High Performance.</p>
+</div>
+<div class="flex gap-8">
+<a class="font-['Inter'] text-[10px] font-medium uppercase tracking-[0.2em] text-white/40 hover:text-[#FE6B00] transition-colors" href="#">Privacy Policy</a>
+<a class="font-['Inter'] text-[10px] font-medium uppercase tracking-[0.2em] text-white/40 hover:text-[#FE6B00] transition-colors" href="#">Terms of Service</a>
+<a class="font-['Inter'] text-[10px] font-medium uppercase tracking-[0.2em] text-white/40 hover:text-[#FE6B00] transition-colors" href="#">Security</a>
+<a class="font-['Inter'] text-[10px] font-medium uppercase tracking-[0.2em] text-white/40 hover:text-[#FE6B00] transition-colors" href="#">Contact</a>
+</div>
+</footer>
+<!-- SideNav (Mobile Trigger / Status Console) -->
+<div class="fixed left-0 top-1/2 -translate-y-1/2 hidden lg:flex flex-col gap-px bg-white/5 border-r border-white/10">
+<div class="bg-[#1C1B1D] text-[#00FF85] border-l-4 border-[#00FF85] py-4 px-4 flex items-center justify-center cursor-pointer">
+<span class="material-symbols-outlined text-sm">grid_view</span>
+</div>
+<div class="text-white/30 py-4 px-4 hover:bg-[#131315] flex items-center justify-center cursor-pointer transition-all">
+<span class="material-symbols-outlined text-sm">insights</span>
+</div>
+<div class="text-white/30 py-4 px-4 hover:bg-[#131315] flex items-center justify-center cursor-pointer transition-all">
+<span class="material-symbols-outlined text-sm">campaign</span>
+</div>
+<div class="text-white/30 py-4 px-4 hover:bg-[#131315] flex items-center justify-center cursor-pointer transition-all">
+<span class="material-symbols-outlined text-sm">inventory_2</span>
+</div>
+<div class="text-white/30 py-4 px-4 hover:bg-[#131315] flex items-center justify-center cursor-pointer transition-all">
+<span class="material-symbols-outlined text-sm">settings</span>
+</div>
+</div>
+</body></html>

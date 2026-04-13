@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-error-container": "#ffdad6",
+                    "on-tertiary-container": "#626164",
+                    "secondary-fixed-dim": "#ffb693",
+                    "tertiary-fixed-dim": "#c8c6c8",
+                    "on-secondary-fixed-variant": "#7a3000",
+                    "on-tertiary-fixed": "#1c1b1d",
+                    "tertiary-container": "#e0dde0",
+                    "on-primary-fixed": "#00210c",
+                    "on-primary-fixed-variant": "#005227",
+                    "secondary": "#ffb693",
+                    "error-container": "#93000a",
+                    "surface-tint": "#00e476",
+                    "on-secondary-fixed": "#351000",
+                    "on-surface": "#e5e1e4",
+                    "tertiary": "#fdfafd",
+                    "surface-container-low": "#1c1b1d",
+                    "error": "#ffb4ab",
+                    "primary-container": "#00ff85",
+                    "on-secondary-container": "#572000",
+                    "surface-variant": "#353437",
+                    "tertiary-fixed": "#e5e1e4",
+                    "on-surface-variant": "#b9cbb9",
+                    "surface": "#131315",
+                    "primary-fixed": "#61ff97",
+                    "on-tertiary": "#313032",
+                    "inverse-primary": "#006d35",
+                    "surface-container-highest": "#353437",
+                    "primary-fixed-dim": "#00e476",
+                    "secondary-fixed": "#ffdbcc",
+                    "on-secondary": "#561f00",
+                    "surface-bright": "#39393b",
+                    "on-primary": "#003919",
+                    "on-tertiary-fixed-variant": "#474649",
+                    "outline-variant": "#3b4b3d",
+                    "on-error": "#690005",
+                    "surface-dim": "#131315",
+                    "inverse-surface": "#e5e1e4",
+                    "on-primary-container": "#007137",
+                    "outline": "#849584",
+                    "background": "#131315",
+                    "surface-container-high": "#2a2a2c",
+                    "surface-container-lowest": "#0e0e10",
+                    "secondary-container": "#fe6b00",
+                    "inverse-on-surface": "#313032",
+                    "on-background": "#e5e1e4",
+                    "primary": "#f0ffee",
+                    "surface-container": "#201f22"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Space Grotesk"],
+                    "body": ["Inter"],
+                    "label": ["Space Grotesk"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .mesh-gradient-bg {
+            background: radial-gradient(at 0% 0%, #005227 0px, transparent 50%),
+                        radial-gradient(at 100% 100%, #09090B 0px, transparent 50%);
+        }
+        .obsidian-shadow {
+            box-shadow: 0 20px 50px -20px rgba(254, 107, 0, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-surface-container-lowest text-on-surface font-body selection:bg-primary-container selection:text-on-primary">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 rounded-none bg-black/40 backdrop-blur-xl dark:bg-black/60 flex justify-between items-center px-8 h-20 shadow-[0_10px_40px_-15px_rgba(254,107,0,0.3)]">
+<div class="text-2xl font-black tracking-tighter text-white">BachStage</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-['Space_Grotesk'] font-bold text-sm tracking-[0.1em] uppercase text-white/70 hover:text-[#00FF85] transition-all duration-300 active:scale-95" href="#">Services</a>
+<a class="font-['Space_Grotesk'] font-bold text-sm tracking-[0.1em] uppercase text-white/70 hover:text-[#00FF85] transition-all duration-300 active:scale-95" href="#">Portfolio</a>
+<a class="font-['Space_Grotesk'] font-bold text-sm tracking-[0.1em] uppercase text-white/70 hover:text-[#00FF85] transition-all duration-300 active:scale-95" href="#">SaaS</a>
+<a class="font-['Space_Grotesk'] font-bold text-sm tracking-[0.1em] uppercase text-white/70 hover:text-[#00FF85] transition-all duration-300 active:scale-95" href="#">Pricing</a>
+<a class="font-['Space_Grotesk'] font-bold text-sm tracking-[0.1em] uppercase text-[#00FF85] border-b-2 border-[#FE6B00] pb-1 hover:text-[#00FF85] transition-all duration-300 active:scale-95" href="#">About</a>
+</div>
+<button class="bg-primary-container text-on-primary px-6 py-2 font-['Space_Grotesk'] font-bold text-sm tracking-[0.1em] uppercase hover:shadow-[0_0_20px_rgba(0,255,133,0.4)] transition-all active:scale-95">Get Started</button>
+</nav>
+<main>
+<!-- Section 1: Professional Profile (Hero) -->
+<section class="relative min-h-screen flex flex-col justify-end overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Professional Profile" class="w-full h-full object-cover grayscale brightness-50" data-alt="Close-up portrait of a professional developer in a dark minimalist studio, dramatic lighting, sharp shadows, obsidian aesthetic, high contrast black and white" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrykHKlRkyPVEtH9eVdqKkSm5ZEdFUwZjZnRTmgKS8nYuWrHz2Azlb8ylMWBL5tokSFGOqW95CB-WT4JhsbZK8O8mpbTRI5N7TymGhIe_nDwZ00vLbmCFJQ-KWPy9LaalydQlcQm4oq0KfhknZjZOSNXioIf3w-gBFe7GBJsetELIwSYr57fb9uToKXtkugZ7_74TTaoMEdnPTwU_MffqFuQzrW6MRtuaGuWqYJXaTYT8w5_rQLXYAAwYcjl5kbWRwAOKeBQuZRhY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+</div>
+<div class="relative z-10 p-8 md:p-20 w-full max-w-7xl mx-auto">
+<p class="font-label text-primary-container text-xs tracking-[0.4em] uppercase mb-4">Lead Systems Architect</p>
+<h1 class="font-headline text-5xl md:text-9xl font-bold leading-[0.9] tracking-tighter text-white mb-8">
+                    Architecting <br/> <span class="text-secondary-container">Digital</span> <br/> Obsidian
+                </h1>
+<div class="h-1 w-32 bg-primary-container"></div>
+</div>
+</section>
+<!-- Section 2: Philosophy (Asymmetric Layout) -->
+<section class="bg-surface py-24 md:py-48 px-8 overflow-hidden">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
+<div class="md:col-span-7">
+<span class="font-label text-secondary-container text-xs tracking-[0.2em] uppercase block mb-6">Execution Philosophy</span>
+<h2 class="font-headline text-4xl md:text-6xl font-bold text-white mb-12 leading-tight">
+                        Calidad <br/> sobre <br/> Cantidad
+                    </h2>
+<div class="space-y-8 text-on-surface-variant max-w-lg">
+<p class="text-lg leading-relaxed">
+                            En un mundo saturado de software descartable, BachStage construye legados. No programamos para cumplir plazos; arquitecturamos para perdurar.
+                        </p>
+<p class="text-lg leading-relaxed border-l-2 border-primary-container pl-8 italic">
+                            "La precisión no es un acto, es un hábito de diseño."
+                        </p>
+</div>
+</div>
+<div class="md:col-span-5 relative mt-12 md:mt-0">
+<div class="aspect-square bg-surface-container-high p-1 obsidian-shadow">
+<img alt="Hardware detail" class="w-full h-full object-cover grayscale" data-alt="Macro detail of a high-end black computer motherboard, green glowing LEDs, clean industrial design, shallow depth of field" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7-9mzIQTrfih-XJtkckmMjuXC-kR7Om1nbmHLk6FQO7cS3zTi4ulwZrTZ48EpLwBsxw3eUpLIRTkx7a2UhzMUhZLTWacOmV4couu8six2O3BHd2lAABt9SQJrPb0hhcxNxhLo6NVpRN9RzaJmRIMIIfkAXa7k6eAMSVmXDGrkA6R0IuOvXowicjDZqvP1qbtBhaoAB8nsAZZfBGhNuBKqTh5g_gD10OOGyzpfQXD9rCy5V5WPGnFSBNEEiJUFQidC0pN-43bmOCQ"/>
+</div>
+<div class="absolute -bottom-10 -left-10 bg-primary-container text-on-primary p-8 hidden md:block">
+<p class="font-headline font-bold text-3xl">0.00ms</p>
+<p class="font-label text-[10px] uppercase tracking-widest">Optimized Latency</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Tech Stack (Brutalist Bento) -->
+<section class="bg-surface-container-lowest py-24 px-8">
+<div class="max-w-7xl mx-auto">
+<div class="mb-20">
+<h3 class="font-headline text-3xl font-bold text-white mb-2 uppercase tracking-tighter">Technological Nucleus</h3>
+<div class="w-full h-px bg-outline-variant/30"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-px bg-outline-variant/20 border border-outline-variant/20">
+<!-- MongoDB -->
+<div class="bg-surface p-10 hover:bg-surface-container-high transition-colors group">
+<span class="material-symbols-outlined text-primary-container text-4xl mb-8 group-hover:scale-110 transition-transform">database</span>
+<h4 class="font-headline text-xl font-bold text-white mb-4">MongoDB</h4>
+<p class="text-on-surface-variant text-sm font-light leading-relaxed">Document-oriented precision for fluid data scaling without structural compromise.</p>
+</div>
+<!-- Express -->
+<div class="bg-surface p-10 hover:bg-surface-container-high transition-colors group">
+<span class="material-symbols-outlined text-secondary-container text-4xl mb-8 group-hover:scale-110 transition-transform">bolt</span>
+<h4 class="font-headline text-xl font-bold text-white mb-4">Express</h4>
+<p class="text-on-surface-variant text-sm font-light leading-relaxed">Minimalist backbone for high-performance server-side logic and routing.</p>
+</div>
+<!-- React -->
+<div class="bg-surface p-10 hover:bg-surface-container-high transition-colors group">
+<span class="material-symbols-outlined text-primary-container text-4xl mb-8 group-hover:scale-110 transition-transform">deployed_code</span>
+<h4 class="font-headline text-xl font-bold text-white mb-4">React</h4>
+<p class="text-on-surface-variant text-sm font-light leading-relaxed">Component-based architectural integrity for obsidian-grade interfaces.</p>
+</div>
+<!-- Node -->
+<div class="bg-surface p-10 hover:bg-surface-container-high transition-colors group">
+<span class="material-symbols-outlined text-secondary-container text-4xl mb-8 group-hover:scale-110 transition-transform">terminal</span>
+<h4 class="font-headline text-xl font-bold text-white mb-4">Node.js</h4>
+<p class="text-on-surface-variant text-sm font-light leading-relaxed">Asynchronous runtime environment built for vertical and horizontal expansion.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: CTA -->
+<section class="relative py-48 px-8 overflow-hidden flex items-center justify-center">
+<div class="absolute inset-0 z-0 mesh-gradient-bg opacity-40"></div>
+<div class="relative z-10 text-center max-w-3xl">
+<h2 class="font-headline text-5xl md:text-7xl font-bold text-white mb-12 tracking-tighter leading-none">READY TO BUILD THE FUTURE?</h2>
+<button class="bg-primary-container text-on-primary px-12 py-6 font-headline font-bold text-xl uppercase hover:shadow-[0_0_40px_rgba(0,255,133,0.3)] transition-all active:scale-95">
+                    Start a Project
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-white/5 rounded-none bg-[#09090B] flex flex-col md:flex-row justify-between items-center px-8 py-12">
+<div class="mb-8 md:mb-0">
+<div class="text-lg font-black text-white mb-2">BachStage</div>
+<p class="font-['Inter'] text-[10px] tracking-[0.2em] font-medium uppercase text-zinc-600">© 2024 BachStage. All rights reserved.</p>
+</div>
+<div class="flex gap-8">
+<a class="font-['Inter'] text-[10px] tracking-[0.2em] font-medium uppercase text-zinc-600 hover:text-[#00FF85] transition-colors duration-200 opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
+<a class="font-['Inter'] text-[10px] tracking-[0.2em] font-medium uppercase text-zinc-600 hover:text-[#00FF85] transition-colors duration-200 opacity-80 hover:opacity-100" href="#">Terms</a>
+<a class="font-['Inter'] text-[10px] tracking-[0.2em] font-medium uppercase text-zinc-600 hover:text-[#00FF85] transition-colors duration-200 opacity-80 hover:opacity-100" href="#">Contact</a>
+<a class="font-['Inter'] text-[10px] tracking-[0.2em] font-medium uppercase text-zinc-600 hover:text-[#00FF85] transition-colors duration-200 opacity-80 hover:opacity-100" href="#">Socials</a>
+</div>
+</footer>
+</body></html>

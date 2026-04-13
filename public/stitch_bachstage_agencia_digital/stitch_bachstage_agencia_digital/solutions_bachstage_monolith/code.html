@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-container": "#007137",
+                        "surface-container-highest": "#353437",
+                        "on-background": "#e5e1e4",
+                        "primary-container": "#00ff85",
+                        "inverse-on-surface": "#313032",
+                        "tertiary-fixed-dim": "#c8c6c8",
+                        "surface-container": "#201f22",
+                        "surface-container-lowest": "#0e0e10",
+                        "surface": "#131315",
+                        "on-surface": "#e5e1e4",
+                        "on-tertiary-fixed": "#1c1b1d",
+                        "on-surface-variant": "#b9cbb9",
+                        "tertiary-fixed": "#e5e1e4",
+                        "primary-fixed-dim": "#00e476",
+                        "surface-container-low": "#1c1b1d",
+                        "on-secondary-fixed": "#351000",
+                        "on-primary-fixed": "#00210c",
+                        "secondary-container": "#fe6b00",
+                        "primary": "#f0ffee",
+                        "error": "#ffb4ab",
+                        "inverse-surface": "#e5e1e4",
+                        "secondary-fixed-dim": "#ffb693",
+                        "tertiary-container": "#e0dde0",
+                        "secondary": "#ffb693",
+                        "on-tertiary-container": "#626164",
+                        "surface-container-high": "#2a2a2c",
+                        "on-secondary": "#561f00",
+                        "on-error": "#690005",
+                        "background": "#131315",
+                        "surface-tint": "#00e476",
+                        "inverse-primary": "#006d35",
+                        "on-secondary-fixed-variant": "#7a3000",
+                        "surface-dim": "#131315",
+                        "on-primary-fixed-variant": "#005227",
+                        "error-container": "#93000a",
+                        "tertiary": "#fdfafd",
+                        "on-tertiary": "#313032",
+                        "on-primary": "#003919",
+                        "outline-variant": "#3b4b3d",
+                        "on-secondary-container": "#572000",
+                        "secondary-fixed": "#ffdbcc",
+                        "on-tertiary-fixed-variant": "#474649",
+                        "on-error-container": "#ffdad6",
+                        "surface-bright": "#39393b",
+                        "surface-variant": "#353437",
+                        "primary-fixed": "#61ff97",
+                        "outline": "#849584"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Inter"],
+                        "label": ["Space Grotesk"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        body {
+            background-color: #000000;
+            color: #e5e1e4;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+        .monolith-gradient {
+            background: radial-gradient(circle at 50% -20%, #005227 0%, #000000 70%);
+        }
+        .glass-header {
+            backdrop-filter: blur(20px);
+        }
+        .obsidian-card {
+            background: linear-gradient(145deg, #131315 0%, #0e0e10 100%);
+        }
+    </style>
+</head>
+<body class="dark">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 rounded-none bg-black/40 backdrop-blur-xl flex justify-between items-center px-8 py-6 max-w-full shadow-[0_20px_50px_rgba(254,107,0,0.15)]">
+<div class="text-2xl font-black tracking-tighter text-white">BachStage</div>
+<div class="hidden md:flex gap-10 items-center">
+<a class="text-white/70 hover:text-white transition-colors text-[0.75rem] uppercase tracking-[0.05em] font-bold" href="#">Portfolio</a>
+<a class="text-[#FE6B00] border-b-2 border-[#FE6B00] transition-all duration-300 text-[0.75rem] uppercase tracking-[0.05em] font-bold" href="#">Solutions</a>
+<a class="text-white/70 hover:text-white transition-colors text-[0.75rem] uppercase tracking-[0.05em] font-bold" href="#">Pricing</a>
+<a class="text-white/70 hover:text-white transition-colors text-[0.75rem] uppercase tracking-[0.05em] font-bold" href="#">Insights</a>
+<a class="text-white/70 hover:text-white transition-colors text-[0.75rem] uppercase tracking-[0.05em] font-bold" href="#">Company</a>
+</div>
+<button class="bg-primary-container text-on-primary px-6 py-2 font-bold uppercase text-[0.75rem] tracking-widest active:scale-95 duration-150 ease-in-out">
+            Get Started
+        </button>
+</nav>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center monolith-gradient pt-20">
+<div class="w-full px-8 md:px-20 grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-8">
+<p class="text-primary-container font-label uppercase tracking-[0.3em] text-xs mb-6">Vertical Integration Mastery</p>
+<h1 class="font-headline text-6xl md:text-8xl font-bold tracking-tighter text-white mb-8 leading-[0.9]">
+                    ARCHITECTING <br/> <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-container to-white">OBSIDIAN</span> CORE.
+                </h1>
+<p class="max-w-xl text-lg text-on-surface-variant leading-relaxed mb-10">
+                    We don't build generic software. We engineer domain-specific monoliths for industries that demand zero-latency, absolute security, and architectural precision.
+                </p>
+<div class="flex flex-col md:flex-row gap-4">
+<button class="bg-primary-container text-on-primary px-10 py-5 font-bold uppercase tracking-widest text-sm shadow-[0_0_40px_rgba(0,255,133,0.2)]">Explore Verticals</button>
+<button class="border border-outline-variant text-white px-10 py-5 font-bold uppercase tracking-widest text-sm hover:bg-white/5 transition-all">Documentation</button>
+</div>
+</div>
+<div class="md:col-span-4 hidden md:block">
+<div class="border-l-2 border-primary-container pl-8 py-12">
+<div class="mb-12">
+<span class="block text-4xl font-headline font-bold text-white mb-1">99.99%</span>
+<span class="text-xs font-label uppercase tracking-widest text-on-surface-variant">System Uptime Guarantee</span>
+</div>
+<div class="mb-12">
+<span class="block text-4xl font-headline font-bold text-white mb-1">&lt;12ms</span>
+<span class="text-xs font-label uppercase tracking-widest text-on-surface-variant">Core Execution Latency</span>
+</div>
+<div>
+<span class="block text-4xl font-headline font-bold text-white mb-1">Tier-4</span>
+<span class="text-xs font-label uppercase tracking-widest text-on-surface-variant">Security Infrastructure</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Medical Architecture Section (MolarFlow OS) -->
+<section class="w-full py-32 bg-surface">
+<div class="px-8 md:px-20 grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+<div class="relative">
+<img class="w-full aspect-[4/5] object-cover filter grayscale hover:grayscale-0 transition-all duration-700" data-alt="Modern high-tech dental surgery room with glowing medical screens, sterile equipment, and neon emerald accent lighting in a dark clinical setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJNLSdyZx4Y07EkySYbP_Q-e1riouyVWB5XxuNNaxzTnc867b-za-deJZsZHCvCDI9wfjoiBedbFItrDgOr4hVKIN7eiTO18a3HNJLTPssiG-qKC4XDjEBB2H3E9a1FslKYBmsmNcDABDiqDEdEDZlGvbVGznKi9JGFkVJyIn73StWK37IkcdCWkUkJQtwyS9dnaynIZ8_6G8boT_9PUstDB7vUrSN4avXMeYWDc3D1iM2U6yuP9Xc4fPXg9sL_Grs5J_NpxWsGTs"/>
+<div class="absolute -bottom-10 -right-10 w-64 h-64 bg-surface-container-high p-8 shadow-2xl border-l-4 border-primary-container">
+<span class="material-symbols-outlined text-primary-container text-5xl mb-4" data-weight="fill">dentistry</span>
+<h4 class="font-headline font-bold text-xl mb-2">MolarFlow OS</h4>
+<p class="text-xs text-on-surface-variant leading-relaxed">Integrated medical operating system for high-volume surgical centers.</p>
+</div>
+</div>
+<div>
+<span class="text-primary-container font-label uppercase tracking-widest text-[10px] bg-primary-container/10 px-3 py-1 mb-6 inline-block">Medical Architecture</span>
+<h2 class="font-headline text-5xl font-bold text-white mb-8 tracking-tight">PRECISION DIAGNOSTICS AT SCALE.</h2>
+<div class="space-y-8">
+<div class="flex gap-6 items-start">
+<div class="w-12 h-12 flex-shrink-0 bg-surface-container-high flex items-center justify-center">
+<span class="material-symbols-outlined text-primary-container" data-icon="biotech">biotech</span>
+</div>
+<div>
+<h3 class="font-headline font-bold text-lg text-white mb-2">Neural Scan Integration</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Direct hardware-to-OS mapping for DICOM imaging, reducing diagnostic latency by 40% through edge-processing.</p>
+</div>
+</div>
+<div class="flex gap-6 items-start">
+<div class="w-12 h-12 flex-shrink-0 bg-surface-container-high flex items-center justify-center">
+<span class="material-symbols-outlined text-primary-container" data-icon="verified_user">verified_user</span>
+</div>
+<div>
+<h3 class="font-headline font-bold text-lg text-white mb-2">HIPAA Monolith Security</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Hardened kernel architecture ensuring patient data never leaves the encrypted local perimeter without multi-factor verification.</p>
+</div>
+</div>
+</div>
+<button class="mt-12 text-white font-bold text-xs uppercase tracking-widest border-b border-primary-container pb-2 hover:text-primary-container transition-colors">Request Case Study</button>
+</div>
+</div>
+</section>
+<!-- Real Estate Infrastructure (PrimeVault) -->
+<section class="w-full bg-surface-container-lowest py-32 border-y border-white/5">
+<div class="px-8 md:px-20">
+<div class="max-w-4xl mb-24">
+<span class="text-secondary-container font-label uppercase tracking-widest text-[10px] bg-secondary-container/10 px-3 py-1 mb-6 inline-block">Real Estate Infrastructure</span>
+<h2 class="font-headline text-5xl md:text-7xl font-bold text-white mb-8 tracking-tighter leading-none">PRIMEVAULT: THE ASSET BACKBONE.</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-white/5">
+<div class="bg-surface p-12 hover:bg-surface-container-high transition-all group">
+<span class="material-symbols-outlined text-secondary-container text-4xl mb-8 group-hover:scale-110 transition-transform" data-icon="account_balance">account_balance</span>
+<h3 class="font-headline font-bold text-2xl text-white mb-4">Liquidity Engine</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-8">Instantaneous settlement layers for commercial portfolio transactions exceeding $500M.</p>
+<ul class="text-[10px] font-label uppercase tracking-widest space-y-3 text-secondary-container/60">
+<li>• Real-time Ledger</li>
+<li>• Smart Escrow</li>
+<li>• Automated Compliance</li>
+</ul>
+</div>
+<div class="bg-surface p-12 hover:bg-surface-container-high transition-all group">
+<span class="material-symbols-outlined text-secondary-container text-4xl mb-8 group-hover:scale-110 transition-transform" data-icon="apartment">apartment</span>
+<h3 class="font-headline font-bold text-2xl text-white mb-4">Asset Digital Twin</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-8">Full-spectrum digital modeling for physical assets, tracking maintenance and valuation in real-time.</p>
+<ul class="text-[10px] font-label uppercase tracking-widest space-y-3 text-secondary-container/60">
+<li>• IoT Integration</li>
+<li>• Predictive Valuation</li>
+<li>• Yield Analysis</li>
+</ul>
+</div>
+<div class="bg-surface p-12 hover:bg-surface-container-high transition-all group">
+<span class="material-symbols-outlined text-secondary-container text-4xl mb-8 group-hover:scale-110 transition-transform" data-icon="shield_lock">shield_lock</span>
+<h3 class="font-headline font-bold text-2xl text-white mb-4">Title Sovereignty</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-8">Immutable chain-of-custody protocols for deed management and lien-free verification systems.</p>
+<ul class="text-[10px] font-label uppercase tracking-widest space-y-3 text-secondary-container/60">
+<li>• Zero-Knowledge Proofs</li>
+<li>• Instant Verification</li>
+<li>• Conflict Resolution</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Fintech Infrastructure (Full Width Immersive) -->
+<section class="w-full min-h-screen bg-black relative flex items-center overflow-hidden">
+<div class="absolute inset-0 opacity-20">
+<img class="w-full h-full object-cover" data-alt="Abstract data visualization of financial networks with glowing green nodes and intricate connecting lines against a deep black void" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSThb8q_E1zTBCaI-KTJ2AYC0E8wNBiLPjJ4qHCJ_cbBcebCXmIT-XJUAFEPzOjR2FviRifP24ClDlWs-hPVsKBvKsjFmWXb-s1dRERc6FC0zKoPsRiZXPtKw_UjMIZq87WlUdv53Cc-q4bfBJcZkSEC_byhcwMOTkx0myWVKd0CNJ8SaIpwZi1Ul6qcdZYqJOLGvLXxyLfHqqRfCnvFGn11bySm0lrVWKBKy3pVmjqDZHtjP3LZ2RArLdcjs3s3Ap1CElP3G7MNM"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent"></div>
+<div class="relative z-10 px-8 md:px-20 w-full">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-20">
+<div>
+<span class="text-primary-container font-label uppercase tracking-widest text-xs mb-6 block">Fintech Core Infrastructure</span>
+<h2 class="font-headline text-6xl md:text-8xl font-bold text-white mb-10 tracking-tighter leading-[0.85]">TOTAL<br/>CAPITAL<br/>CONTROL.</h2>
+<p class="text-xl text-on-surface-variant max-w-md leading-relaxed mb-12">
+                        We deploy bespoke ledger systems that process millions of transactions per second with sub-millisecond finality.
+                    </p>
+<div class="grid grid-cols-2 gap-8">
+<div class="border-t border-primary-container/30 pt-4">
+<span class="block text-white font-bold mb-2">High Frequency</span>
+<p class="text-xs text-on-surface-variant">Optimized for arbitrage and rapid-fire algorithmic trading flows.</p>
+</div>
+<div class="border-t border-primary-container/30 pt-4">
+<span class="block text-white font-bold mb-2">Global Routing</span>
+<p class="text-xs text-on-surface-variant">Intelligent cross-border liquidity pathfinding across 40+ fiat pairs.</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col justify-center">
+<div class="bg-surface-container-high/60 backdrop-blur-md p-1 px-1 border border-white/10">
+<div class="bg-[#09090B] p-12">
+<h3 class="font-headline font-bold text-3xl text-white mb-6">BachStage Quantum Ledger</h3>
+<div class="space-y-6">
+<div class="flex justify-between items-center text-sm border-b border-white/5 pb-4">
+<span class="text-on-surface-variant">Processing Speed</span>
+<span class="text-primary-container font-mono">1.2M TPS</span>
+</div>
+<div class="flex justify-between items-center text-sm border-b border-white/5 pb-4">
+<span class="text-on-surface-variant">Standard Latency</span>
+<span class="text-primary-container font-mono">0.04ms</span>
+</div>
+<div class="flex justify-between items-center text-sm border-b border-white/5 pb-4">
+<span class="text-on-surface-variant">Audit Logs</span>
+<span class="text-primary-container font-mono">Immutable</span>
+</div>
+<div class="flex justify-between items-center text-sm">
+<span class="text-on-surface-variant">Network Status</span>
+<span class="flex items-center gap-2 text-primary-container">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+                                        NOMINAL
+                                    </span>
+</div>
+</div>
+<button class="w-full mt-10 bg-white text-black py-4 font-bold uppercase tracking-widest text-xs hover:bg-primary-container transition-colors">Initialize Integration</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Data Pillar Metric -->
+<section class="w-full bg-[#131315]">
+<div class="bg-gradient-to-r from-black via-[#005227]/20 to-black w-full py-24 px-8 md:px-20 text-center">
+<span class="font-label text-[10px] tracking-[0.4em] uppercase text-on-surface-variant mb-6 block">Total Value Architected</span>
+<div class="font-headline text-[10vw] font-black text-primary-container leading-none tracking-tighter mb-4">$42.8B+</div>
+<p class="font-label text-sm tracking-widest uppercase text-white/40">Across medical, real estate, and financial sectors globally</p>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="w-full py-32 px-8 md:px-20 bg-surface">
+<div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
+<h2 class="font-headline text-5xl md:text-6xl font-bold text-white tracking-tighter">READY TO BUILD THE <span class="text-primary-container">FUTURE?</span></h2>
+<button class="bg-primary-container text-on-primary px-12 py-6 font-bold uppercase tracking-widest text-lg shadow-[0_20px_50px_rgba(0,255,133,0.15)] hover:shadow-primary-container/30 transition-all">Start Project</button>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full py-20 px-12 grid grid-cols-1 md:grid-cols-4 gap-12 bg-[#09090B] border-t border-white/5">
+<div class="md:col-span-1">
+<div class="text-3xl font-black text-white mb-8">BachStage</div>
+<p class="text-[10px] font-label tracking-widest uppercase text-white/40 leading-relaxed">
+                © 2024 BACHSTAGE. ALL SYSTEMS OPERATIONAL.
+            </p>
+</div>
+<div>
+<h4 class="font-label text-[10px] tracking-widest uppercase text-white mb-6">Verticals</h4>
+<ul class="space-y-4">
+<li><a class="text-white/40 hover:text-[#00FF85] transition-colors font-body text-sm" href="#">Medical OS</a></li>
+<li><a class="text-white/40 hover:text-[#00FF85] transition-colors font-body text-sm" href="#">Real Estate Vault</a></li>
+<li><a class="text-white/40 hover:text-[#00FF85] transition-colors font-body text-sm" href="#">Fintech Core</a></li>
+<li><a class="text-[#00FF85] font-bold font-body text-sm" href="#">Custom Solutions</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label text-[10px] tracking-widest uppercase text-white mb-6">Company</h4>
+<ul class="space-y-4">
+<li><a class="text-white/40 hover:text-[#00FF85] transition-colors font-body text-sm" href="#">Portfolio</a></li>
+<li><a class="text-white/40 hover:text-[#00FF85] transition-colors font-body text-sm" href="#">Pricing</a></li>
+<li><a class="text-white/40 hover:text-[#00FF85] transition-colors font-body text-sm" href="#">Insights</a></li>
+<li><a class="text-white/40 hover:text-[#00FF85] transition-colors font-body text-sm" href="#">Status: 99.9% Uptime</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label text-[10px] tracking-widest uppercase text-white mb-6">Legal</h4>
+<ul class="space-y-4">
+<li><a class="text-white/40 hover:text-[#00FF85] transition-colors font-body text-sm" href="#">Privacy Policy</a></li>
+<li><a class="text-white/40 hover:text-[#00FF85] transition-colors font-body text-sm" href="#">Terms of Service</a></li>
+<li><a class="text-white/40 hover:text-[#00FF85] transition-colors font-body text-sm" href="#">Security Policy</a></li>
+</ul>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-container": "#626164",
+                    "surface-dim": "#131315",
+                    "primary": "#f0ffee",
+                    "on-tertiary": "#313032",
+                    "surface-container-high": "#2a2a2c",
+                    "on-primary-fixed": "#00210c",
+                    "surface-variant": "#353437",
+                    "outline": "#849584",
+                    "secondary": "#ffb693",
+                    "tertiary": "#fdfafd",
+                    "primary-fixed-dim": "#00e476",
+                    "outline-variant": "#3b4b3d",
+                    "secondary-container": "#fe6b00",
+                    "tertiary-container": "#e0dde0",
+                    "on-tertiary-fixed": "#1c1b1d",
+                    "primary-container": "#00ff85",
+                    "inverse-surface": "#e5e1e4",
+                    "on-surface": "#e5e1e4",
+                    "surface-container-low": "#1c1b1d",
+                    "on-secondary-fixed": "#351000",
+                    "primary-fixed": "#61ff97",
+                    "on-tertiary-fixed-variant": "#474649",
+                    "surface-container": "#201f22",
+                    "on-primary-fixed-variant": "#005227",
+                    "surface-bright": "#39393b",
+                    "secondary-fixed": "#ffdbcc",
+                    "surface-tint": "#00e476",
+                    "on-secondary-container": "#572000",
+                    "tertiary-fixed-dim": "#c8c6c8",
+                    "surface-container-lowest": "#0e0e10",
+                    "on-secondary-fixed-variant": "#7a3000",
+                    "on-primary-container": "#007137",
+                    "on-error-container": "#ffdad6",
+                    "on-surface-variant": "#b9cbb9",
+                    "inverse-on-surface": "#313032",
+                    "inverse-primary": "#006d35",
+                    "error": "#ffb4ab",
+                    "tertiary-fixed": "#e5e1e4",
+                    "surface-container-highest": "#353437",
+                    "background": "#131315",
+                    "surface": "#131315",
+                    "secondary-fixed-dim": "#ffb693",
+                    "on-primary": "#003919",
+                    "on-error": "#690005",
+                    "on-background": "#e5e1e4",
+                    "error-container": "#93000a",
+                    "on-secondary": "#561f00"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Space Grotesk"],
+                    "body": ["Inter"],
+                    "label": ["Space Grotesk"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .mesh-gradient-bg {
+            background: radial-gradient(at 0% 0%, #005227 0%, transparent 50%),
+                        radial-gradient(at 100% 100%, #09090B 0%, transparent 50%);
+        }
+        .glass-panel {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="bg-black text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-zinc-950/80 backdrop-blur-xl border-b border-white/5 shadow-[0_4px_30px_rgba(0,255,133,0.05)] flex justify-between items-center px-8 h-20 w-full">
+<div class="text-2xl font-bold tracking-tighter text-white font-['Space_Grotesk']">BACHSTAGE</div>
+<div class="hidden md:flex items-center gap-8 font-['Space_Grotesk'] font-bold tracking-tight">
+<a class="text-white/70 hover:text-white transition-colors hover:bg-white/5 px-3 py-1" href="#">Artists</a>
+<a class="text-white/70 hover:text-white transition-colors hover:bg-white/5 px-3 py-1" href="#">Events</a>
+<a class="text-white/70 hover:text-white transition-colors hover:bg-white/5 px-3 py-1" href="#">Analytics</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="material-symbols-outlined text-white/70 hover:text-[#00FF85] transition-all duration-200 active:scale-95" data-icon="notifications">notifications</button>
+<button class="material-symbols-outlined text-white/70 hover:text-[#00FF85] transition-all duration-200 active:scale-95" data-icon="settings">settings</button>
+<div class="w-8 h-8 bg-zinc-800 flex items-center justify-center overflow-hidden">
+<img alt="User profile" class="w-full h-full object-cover" data-alt="close-up portrait of a professional man in a dark environment with moody emerald side lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMPqK8W9xP2qG1LV1AFgz7SXgRJVrRzTZwczaFvNy_2IUSQmTUIsgJlPdUcBZ2kxQSTj-sbA79gXwcidOgoRUf3kp6W6FGBxoi4QUSdCxIu8VhxqGYrv_6Fd7iBBWHfdOxedThLHzVCxF5GXEXOtR89Qhx1vf-3zVG9IgfZtkjl3AW6tZTZcB9ui3rEYLfYfINqNfJyOZfVYwndL07qWiBziqPDymWMRb-EFtxAE7yqbLUD0UNbNY1q44BlHazyXkdLxJrPs5nYjY"/>
+</div>
+</div>
+</nav>
+<!-- Hero Section: SYSTEM IMPACT -->
+<header class="relative pt-32 pb-20 px-8 mesh-gradient-bg overflow-hidden">
+<div class="max-w-screen-2xl mx-auto relative z-10">
+<p class="font-label text-primary-container tracking-[0.2em] mb-4 text-xs font-bold uppercase">Benchmark Authority</p>
+<h1 class="font-headline text-[clamp(4rem,10vw,8rem)] leading-[0.85] font-extrabold tracking-tighter text-white mb-8">
+                SYSTEM<br/>IMPACT
+            </h1>
+<div class="max-w-2xl">
+<p class="text-xl text-on-surface-variant font-light leading-relaxed">
+                    Quantifiable dominance across high-frequency industries. Our architecture is the bedrock for the world's most demanding digital infrastructures.
+                </p>
+</div>
+</div>
+<!-- Decorative grid overlay -->
+<div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: linear-gradient(#3b4b3d 1px, transparent 1px), linear-gradient(90deg, #3b4b3d 1px, transparent 1px); background-size: 40px 40px;"></div>
+</header>
+<main class="w-full">
+<!-- Industry Section: Fintech Prime -->
+<section class="min-h-screen flex flex-col md:flex-row items-stretch border-t border-white/5 bg-black">
+<div class="w-full md:w-1/2 p-8 md:p-20 flex flex-col justify-center">
+<div class="mb-12">
+<span class="inline-block px-3 py-1 bg-primary-container text-on-primary text-[10px] font-bold tracking-widest mb-6 uppercase">Sector: Global Finance</span>
+<h2 class="font-headline text-5xl md:text-7xl font-bold text-white mb-4 tracking-tighter italic">Fintech Prime</h2>
+<p class="text-on-surface-variant text-lg max-w-md">Engineering zero-latency execution for high-frequency trading platforms. Performance without compromise.</p>
+</div>
+<!-- Data Pillar -->
+<div class="w-full bg-surface-container-low p-12 border-l-4 border-primary-container relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-10">
+<span class="material-symbols-outlined text-9xl" data-icon="show_chart">show_chart</span>
+</div>
+<p class="font-label text-[10px] tracking-widest text-primary-container font-bold mb-2 uppercase">Core Metric</p>
+<div class="font-headline text-7xl md:text-8xl font-black text-primary-container tracking-tighter">99.9%</div>
+<p class="text-white font-bold text-xl uppercase tracking-tight">UPTIME RELIABILITY</p>
+</div>
+<div class="mt-12">
+<button class="bg-primary-container text-on-primary px-8 py-4 font-bold text-sm tracking-widest uppercase hover:shadow-[0_0_20px_rgba(0,255,133,0.3)] transition-all active:scale-95">
+                        VIEW CASE STUDY
+                    </button>
+</div>
+</div>
+<div class="w-full md:w-1/2 bg-surface-container">
+<img alt="Fintech Technical View" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="Macro photography of high-end server hardware with glowing emerald indicator lights and fiber optic cables in a dark data center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzkOlgc185iKp2e2y6Yk4EUJ7s6WPA3lh4gJ-lF4SLMzwQjBlVsfTVb6aija_glT5EvuktIMIN2taXHMPWohDmOr73FLfsjs0uJpewW9zhEArCLs06KhXyD7Tvc8Z3ixxbOrZK2hnN-h1-ts44zT2VtU6HTI8opERmxawfCFNNt33zt1OeVXiUar4sM8gXCKceVD7bG7vEABqQOXb6GUtiYbAeKyZIiR1ZCWgo2FE9AFznzm3A-iuWNxsaf-zjIByuM8k7Wcm_3Ms"/>
+</div>
+</section>
+<!-- Industry Section: HealthFlow -->
+<section class="min-h-screen flex flex-col md:flex-row-reverse items-stretch bg-surface-dim">
+<div class="w-full md:w-1/2 p-8 md:p-20 flex flex-col justify-center">
+<div class="mb-12">
+<span class="inline-block px-3 py-1 bg-secondary-container text-white text-[10px] font-bold tracking-widest mb-6 uppercase">Sector: Bio-Informatics</span>
+<h2 class="font-headline text-5xl md:text-7xl font-bold text-white mb-4 tracking-tighter italic">HealthFlow</h2>
+<p class="text-on-surface-variant text-lg max-w-md">Processing petabytes of genomic data with sub-second retrieval times. Accelerating the future of medicine.</p>
+</div>
+<!-- Data Pillar -->
+<div class="w-full bg-surface-container-highest p-12 border-l-4 border-secondary-container relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-10">
+<span class="material-symbols-outlined text-9xl" data-icon="database">database</span>
+</div>
+<p class="font-label text-[10px] tracking-widest text-secondary-container font-bold mb-2 uppercase">Throughput Capacity</p>
+<div class="font-headline text-7xl md:text-8xl font-black text-secondary-container tracking-tighter">1.2B</div>
+<p class="text-white font-bold text-xl uppercase tracking-tight">REAL-TIME QUERIES</p>
+</div>
+<div class="mt-12">
+<button class="border border-white/20 text-white px-8 py-4 font-bold text-sm tracking-widest uppercase hover:bg-white/10 transition-all active:scale-95">
+                        EXPLORE ARCHITECTURE
+                    </button>
+</div>
+</div>
+<div class="w-full md:w-1/2 bg-surface-container-low">
+<img alt="HealthFlow Visual" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="Abstract 3D render of DNA structures and data points flowing in a dark digital void with orange and white highlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsr4T5dCYhlpaOFkwHTS1s8ugg1NgGvf5JuXVwr_iJkkPRgO4XbpNiBjuXQC7_MAs0s-1uHbgcFPzHvQi12vcpEYzdfcUNxuPGIhg9QlgGpWDCyJWVup464TnLo9a7gxv6P1xEH1ryDsh0JsE73ISsnB6QGJ0X3Occg06HPIGitSDYqT7NEMoADm3NKC-5aw9htjyD2cfAhGcwFframygBGnOBiMLz2uLYNpWNlXu7CQPhm9PHVWbEKCNfJSV1xyG1rFdP7HG6BF4"/>
+</div>
+</section>
+<!-- Industry Section: RealEstate Vault -->
+<section class="min-h-screen flex flex-col md:flex-row items-stretch border-t border-white/5 bg-black">
+<div class="w-full md:w-1/2 p-8 md:p-20 flex flex-col justify-center">
+<div class="mb-12">
+<span class="inline-block px-3 py-1 bg-white text-black text-[10px] font-bold tracking-widest mb-6 uppercase">Sector: Luxury PropTech</span>
+<h2 class="font-headline text-5xl md:text-7xl font-bold text-white mb-4 tracking-tighter italic">RealEstate Vault</h2>
+<p class="text-on-surface-variant text-lg max-w-md">Secure, immutable transaction ledgers for multi-billion dollar asset transfers globally.</p>
+</div>
+<!-- Data Pillar -->
+<div class="w-full bg-surface-container-low p-12 border-l-4 border-white relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-10">
+<span class="material-symbols-outlined text-9xl" data-icon="security">security</span>
+</div>
+<p class="font-label text-[10px] tracking-widest text-white font-bold mb-2 uppercase">Asset Protection</p>
+<div class="font-headline text-7xl md:text-8xl font-black text-white tracking-tighter">$42B</div>
+<p class="text-white/60 font-bold text-xl uppercase tracking-tight">MANAGED ASSETS</p>
+</div>
+<div class="mt-12">
+<button class="bg-white text-black px-8 py-4 font-bold text-sm tracking-widest uppercase hover:bg-white/90 transition-all active:scale-95">
+                        SECURITY AUDIT
+                    </button>
+</div>
+</div>
+<div class="w-full md:w-1/2 bg-surface-container">
+<img alt="RealEstate Architecture" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="Extreme low angle shot of a modern glass skyscraper reflecting a dark dramatic sky with sharp angular architectural details" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_z0JmFzx8DOsAEYve3mLukywrwZ-Ycpu46oTd9kIwQWglK0A6i8ng9QoPe6x9vmtBpXyECaL9tqQWDavRJzVb_1xNm1swrNyK0y75l8xXl_5YKi0ww5MDEIuVOF7aDvIHjBYJ25PzIdDjlfmJilnaySwTxaUXBhAl79PlCpIMaPoAZdU8mk1RH-UgPmR5bP97ZnZRzLIuhbn3sBUV2yanKQENnatEZRFwhnnhdaiozI9RCKvqVvbwiNjwKW6l30B63vLeFMESF8k"/>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-24 px-8 bg-black border-t border-white/5 flex flex-col md:flex-row justify-between items-start md:items-center font-['Inter'] text-[10px] tracking-widest uppercase opacity-60 hover:opacity-100 transition-opacity duration-300">
+<div class="mb-8 md:mb-0">
+<p class="text-zinc-600">© 2024 BACHSTAGE MONOLITH. ALL RIGHTS RESERVED.</p>
+</div>
+<div class="flex gap-12 text-zinc-600">
+<a class="hover:text-[#00FF85] transition-colors duration-300" href="#">Privacy</a>
+<a class="hover:text-[#00FF85] transition-colors duration-300" href="#">Terms</a>
+<a class="hover:text-[#00FF85] transition-colors duration-300" href="#">API</a>
+</div>
+</footer>
+<!-- SideNav (Minimized / Hidden for this Focus Journey as per suppression logic) -->
+<!-- The logic suppresses nav for task-focused pages, but here we include a minimal trigger for system status -->
+<div class="fixed left-8 bottom-8 z-40 hidden md:flex flex-col gap-4">
+<div class="w-12 h-12 bg-primary-container flex items-center justify-center cursor-pointer active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-on-primary" data-icon="dashboard">dashboard</span>
+</div>
+</div>
+</body></html>

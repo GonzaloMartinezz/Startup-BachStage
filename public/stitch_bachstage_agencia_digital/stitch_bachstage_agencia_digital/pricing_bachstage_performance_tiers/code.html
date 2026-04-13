@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "outline-variant": "#3b4b3d",
+                    "surface-container-highest": "#353437",
+                    "on-primary-fixed": "#00210c",
+                    "primary-container": "#00ff85",
+                    "inverse-primary": "#006d35",
+                    "on-secondary": "#561f00",
+                    "surface-container": "#201f22",
+                    "on-secondary-container": "#572000",
+                    "on-primary-container": "#007137",
+                    "on-secondary-fixed": "#351000",
+                    "on-tertiary": "#313032",
+                    "inverse-on-surface": "#313032",
+                    "tertiary-fixed": "#e5e1e4",
+                    "surface-container-lowest": "#0e0e10",
+                    "primary-fixed-dim": "#00e476",
+                    "on-primary": "#003919",
+                    "on-tertiary-fixed": "#1c1b1d",
+                    "on-error-container": "#ffdad6",
+                    "error": "#ffb4ab",
+                    "on-background": "#e5e1e4",
+                    "outline": "#849584",
+                    "tertiary-container": "#e0dde0",
+                    "surface-tint": "#00e476",
+                    "surface-container-high": "#2a2a2c",
+                    "surface-bright": "#39393b",
+                    "on-primary-fixed-variant": "#005227",
+                    "surface-variant": "#353437",
+                    "on-secondary-fixed-variant": "#7a3000",
+                    "secondary-fixed": "#ffdbcc",
+                    "background": "#131315",
+                    "secondary": "#ffb693",
+                    "primary-fixed": "#61ff97",
+                    "tertiary-fixed-dim": "#c8c6c8",
+                    "surface": "#131315",
+                    "secondary-fixed-dim": "#ffb693",
+                    "error-container": "#93000a",
+                    "on-tertiary-container": "#626164",
+                    "on-error": "#690005",
+                    "tertiary": "#fdfafd",
+                    "surface-dim": "#131315",
+                    "on-surface-variant": "#b9cbb9",
+                    "secondary-container": "#fe6b00",
+                    "primary": "#f0ffee",
+                    "on-tertiary-fixed-variant": "#474649",
+                    "on-surface": "#e5e1e4",
+                    "surface-container-low": "#1c1b1d",
+                    "inverse-surface": "#e5e1e4"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Space Grotesk"],
+                    "body": ["Inter"],
+                    "label": ["Space Grotesk"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .neo-glow {
+            box-shadow: 0 0 80px -10px rgba(0, 255, 133, 0.4);
+        }
+        .obsidian-gradient {
+            background: radial-gradient(circle at center, #131315 0%, #000000 100%);
+        }
+        .glass-panel {
+            backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="bg-black text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-black/60 backdrop-blur-[20px] shadow-[0_20px_50px_-10px_rgba(254,107,0,0.15)]">
+<div class="flex justify-between items-center px-8 py-5 w-full mx-auto">
+<div class="text-2xl font-black text-white tracking-[-0.05em]">BachStage</div>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-zinc-400 font-bold hover:text-white transition-all duration-300 font-['Space_Grotesk'] tracking-tighter uppercase" href="#">Portfolio</a>
+<a class="text-zinc-400 font-bold hover:text-white transition-all duration-300 font-['Space_Grotesk'] tracking-tighter uppercase" href="#">Solutions</a>
+<a class="text-[#FE6B00] relative after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[2px] after:bg-[#FE6B00] font-['Space_Grotesk'] font-bold tracking-tighter uppercase" href="#">Pricing</a>
+<a class="text-zinc-400 font-bold hover:text-white transition-all duration-300 font-['Space_Grotesk'] tracking-tighter uppercase" href="#">Insights</a>
+<a class="text-zinc-400 font-bold hover:text-white transition-all duration-300 font-['Space_Grotesk'] tracking-tighter uppercase" href="#">Company</a>
+</div>
+<button class="bg-primary-container text-on-primary font-['Space_Grotesk'] font-bold tracking-tighter uppercase px-6 py-2.5 hover:bg-white/5 transition-all duration-300 scale-95 active:scale-100">Get Started</button>
+</div>
+</nav>
+<main class="pt-32 pb-24 obsidian-gradient overflow-hidden">
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-8 mb-24">
+<div class="flex flex-col items-center text-center space-y-6">
+<span class="text-primary-container font-label text-xs tracking-[0.4em] uppercase font-bold">Performance Tiers</span>
+<h1 class="text-7xl md:text-9xl font-headline font-bold text-white tracking-tighter leading-[0.85]">
+                    PRECISION<br/>
+<span class="text-zinc-800">PRICING.</span>
+</h1>
+<p class="max-w-xl text-zinc-500 font-medium text-lg pt-4">
+                    Architected for scale. No compromise infrastructure for high-performance digital entities.
+                </p>
+</div>
+</section>
+<!-- Pricing Cards -->
+<section class="max-w-[1400px] mx-auto px-8 grid grid-cols-1 md:grid-cols-3 gap-0 relative">
+<!-- Plan A: Core -->
+<div class="bg-surface-container-low p-12 border-l border-zinc-900 group">
+<div class="space-y-8">
+<div class="space-y-2">
+<p class="text-zinc-500 font-label text-[10px] tracking-[0.2em] font-bold uppercase">Plan A</p>
+<h3 class="text-4xl font-headline font-bold text-white">CORE</h3>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="text-5xl font-headline font-bold text-white tracking-tighter">$49</span>
+<span class="text-zinc-600 font-bold uppercase text-xs">/mo</span>
+</div>
+<p class="text-zinc-400 text-sm leading-relaxed min-h-[3rem]">
+                        Essential infrastructure for emerging portfolios and tactical deployments.
+                    </p>
+<ul class="space-y-4 pt-4 border-t border-zinc-800">
+<li class="flex items-center gap-3 text-zinc-300 text-sm">
+<span class="material-symbols-outlined text-primary-container text-lg">check_circle</span>
+                            5 Project Instances
+                        </li>
+<li class="flex items-center gap-3 text-zinc-300 text-sm">
+<span class="material-symbols-outlined text-primary-container text-lg">check_circle</span>
+                            100GB Global Edge
+                        </li>
+<li class="flex items-center gap-3 text-zinc-300 text-sm">
+<span class="material-symbols-outlined text-primary-container text-lg">check_circle</span>
+                            Standard L3 Security
+                        </li>
+</ul>
+<button class="w-full py-5 border border-zinc-700 text-white font-headline font-bold tracking-widest uppercase text-xs hover:bg-white hover:text-black transition-colors">Initialize</button>
+</div>
+</div>
+<!-- Plan B: Web Pro (Recommended) -->
+<div class="bg-surface-container-high p-12 relative z-10 neo-glow scale-105 border-x border-primary-container/20 overflow-hidden">
+<!-- Background Mesh for Recommended -->
+<div class="absolute inset-0 opacity-20 pointer-events-none" style="background: radial-gradient(800px circle at 50% -100px, #00FF85, transparent);"></div>
+<div class="space-y-8 relative">
+<div class="flex justify-between items-start">
+<div class="space-y-2">
+<p class="text-primary-container font-label text-[10px] tracking-[0.2em] font-bold uppercase">Plan B</p>
+<h3 class="text-4xl font-headline font-bold text-white">WEB PRO</h3>
+</div>
+<span class="bg-primary-container text-on-primary px-3 py-1 text-[10px] font-bold uppercase tracking-tighter">Recommended</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="text-6xl font-headline font-bold text-white tracking-tighter">$199</span>
+<span class="text-zinc-400 font-bold uppercase text-sm">/mo</span>
+</div>
+<p class="text-white text-sm leading-relaxed min-h-[3rem]">
+                        Advanced orchestration for professional ecosystems requiring maximum throughput.
+                    </p>
+<ul class="space-y-4 pt-4 border-t border-white/10">
+<li class="flex items-center gap-3 text-white text-sm">
+<span class="material-symbols-outlined text-primary-container text-lg" data-weight="fill" style="font-variation-settings: 'FILL' 1;">verified</span>
+                            Unlimited Project Nodes
+                        </li>
+<li class="flex items-center gap-3 text-white text-sm">
+<span class="material-symbols-outlined text-primary-container text-lg" data-weight="fill" style="font-variation-settings: 'FILL' 1;">verified</span>
+                            2TB Ultra-Low Latency
+                        </li>
+<li class="flex items-center gap-3 text-white text-sm">
+<span class="material-symbols-outlined text-primary-container text-lg" data-weight="fill" style="font-variation-settings: 'FILL' 1;">verified</span>
+                            Full L7 WAF Protection
+                        </li>
+<li class="flex items-center gap-3 text-white text-sm">
+<span class="material-symbols-outlined text-primary-container text-lg" data-weight="fill" style="font-variation-settings: 'FILL' 1;">verified</span>
+                            24/7 Priority Ops Access
+                        </li>
+</ul>
+<button class="w-full py-5 bg-primary-container text-on-primary font-headline font-bold tracking-widest uppercase text-xs hover:brightness-110 transition-all shadow-[0_0_20px_rgba(0,255,133,0.3)]">Deploy Now</button>
+</div>
+</div>
+<!-- Plan C: Enterprise -->
+<div class="bg-surface-container-low p-12 border-r border-zinc-900">
+<div class="space-y-8">
+<div class="space-y-2">
+<p class="text-zinc-500 font-label text-[10px] tracking-[0.2em] font-bold uppercase">Plan C</p>
+<h3 class="text-4xl font-headline font-bold text-white">ELITE</h3>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="text-5xl font-headline font-bold text-white tracking-tighter">$899</span>
+<span class="text-zinc-600 font-bold uppercase text-xs">/mo</span>
+</div>
+<p class="text-zinc-400 text-sm leading-relaxed min-h-[3rem]">
+                        Custom architectural solutions for global monoliths and high-frequency traffic.
+                    </p>
+<ul class="space-y-4 pt-4 border-t border-zinc-800">
+<li class="flex items-center gap-3 text-zinc-300 text-sm">
+<span class="material-symbols-outlined text-secondary-container text-lg">star</span>
+                            Custom Node Distribution
+                        </li>
+<li class="flex items-center gap-3 text-zinc-300 text-sm">
+<span class="material-symbols-outlined text-secondary-container text-lg">star</span>
+                            Isolated Network Fabrics
+                        </li>
+<li class="flex items-center gap-3 text-zinc-300 text-sm">
+<span class="material-symbols-outlined text-secondary-container text-lg">star</span>
+                            Dedicated Concierge Pod
+                        </li>
+</ul>
+<button class="w-full py-5 border border-zinc-700 text-white font-headline font-bold tracking-widest uppercase text-xs hover:bg-white hover:text-black transition-colors">Contact Ops</button>
+</div>
+</div>
+</section>
+<!-- Technical Specification Table -->
+<section class="max-w-7xl mx-auto px-8 mt-48">
+<h2 class="text-4xl font-headline font-bold text-white mb-12 tracking-tight">Technical Specifications</h2>
+<div class="overflow-x-auto border-t border-zinc-900">
+<table class="w-full text-left font-body">
+<thead>
+<tr class="text-[10px] font-label font-bold text-zinc-500 tracking-[0.2em] uppercase">
+<th class="py-10 px-6 border-b border-zinc-900">Module</th>
+<th class="py-10 px-6 border-b border-zinc-900">Core Architecture</th>
+<th class="py-10 px-6 border-b border-zinc-900">Web Pro</th>
+<th class="py-10 px-6 border-b border-zinc-900">Elite Monolith</th>
+</tr>
+</thead>
+<tbody class="text-sm">
+<tr class="group hover:bg-zinc-900/30 transition-colors">
+<td class="py-8 px-6 border-b border-zinc-900 font-bold text-zinc-400 uppercase tracking-tighter">Computation</td>
+<td class="py-8 px-6 border-b border-zinc-900 text-white">4 vCPUs / Instance</td>
+<td class="py-8 px-6 border-b border-zinc-900 text-primary-container font-bold">16 vCPUs / Instance</td>
+<td class="py-8 px-6 border-b border-zinc-900 text-white">Bare Metal / Dedicated</td>
+</tr>
+<tr class="group hover:bg-zinc-900/30 transition-colors">
+<td class="py-8 px-6 border-b border-zinc-900 font-bold text-zinc-400 uppercase tracking-tighter">RAM Buffer</td>
+<td class="py-8 px-6 border-b border-zinc-900 text-white">8GB ECC</td>
+<td class="py-8 px-6 border-b border-zinc-900 text-primary-container font-bold">64GB ECC High-Freq</td>
+<td class="py-8 px-6 border-b border-zinc-900 text-white">Unlimited Scalable</td>
+</tr>
+<tr class="group hover:bg-zinc-900/30 transition-colors">
+<td class="py-8 px-6 border-b border-zinc-900 font-bold text-zinc-400 uppercase tracking-tighter">Backplane</td>
+<td class="py-8 px-6 border-b border-zinc-900 text-white">1 Gbps Shared</td>
+<td class="py-8 px-6 border-b border-zinc-900 text-primary-container font-bold">10 Gbps Dedicated</td>
+<td class="py-8 px-6 border-b border-zinc-900 text-white">100 Gbps Isolated</td>
+</tr>
+<tr class="group hover:bg-zinc-900/30 transition-colors">
+<td class="py-8 px-6 border-b border-zinc-900 font-bold text-zinc-400 uppercase tracking-tighter">Compliance</td>
+<td class="py-8 px-6 border-b border-zinc-900 text-white">SOC2 Type I</td>
+<td class="py-8 px-6 border-b border-zinc-900 text-primary-container font-bold">SOC2 Type II + HIPAA</td>
+<td class="py-8 px-6 border-b border-zinc-900 text-white">Custom GRC Policy</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- Final CTA Section -->
+<section class="max-w-7xl mx-auto px-8 mt-48 mb-12">
+<div class="bg-primary-container/5 p-20 flex flex-col md:flex-row justify-between items-center gap-12 border-l-[8px] border-primary-container">
+<div class="space-y-4">
+<h2 class="text-5xl font-headline font-bold text-white tracking-tighter">Ready for Production?</h2>
+<p class="text-zinc-500 text-xl font-medium max-w-lg">Scale your operation with the precision it deserves. Deployment starts in under 60 seconds.</p>
+</div>
+<div class="flex gap-4">
+<button class="px-12 py-6 bg-primary-container text-on-primary font-headline font-bold uppercase tracking-widest text-sm hover:brightness-110">Get Started</button>
+<button class="px-12 py-6 border border-zinc-800 text-white font-headline font-bold uppercase tracking-widest text-sm hover:bg-white hover:text-black">Request Demo</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#09090B] w-full rounded-none border-t border-zinc-900">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-10 w-full">
+<div class="text-xl font-black text-white">BachStage</div>
+<div class="flex gap-8 my-6 md:my-0">
+<a class="font-['Space_Grotesk'] text-[10px] tracking-[0.2em] font-bold uppercase text-zinc-600 hover:text-[#00FF85] transition-colors opacity-80 hover:opacity-100" href="#">Privacy</a>
+<a class="font-['Space_Grotesk'] text-[10px] tracking-[0.2em] font-bold uppercase text-zinc-600 hover:text-[#00FF85] transition-colors opacity-80 hover:opacity-100" href="#">Terms</a>
+<a class="font-['Space_Grotesk'] text-[10px] tracking-[0.2em] font-bold uppercase text-zinc-600 hover:text-[#00FF85] transition-colors opacity-80 hover:opacity-100" href="#">Security</a>
+<a class="font-['Space_Grotesk'] text-[10px] tracking-[0.2em] font-bold uppercase text-zinc-600 hover:text-[#00FF85] transition-colors opacity-80 hover:opacity-100" href="#">Contact</a>
+</div>
+<p class="font-['Space_Grotesk'] text-[10px] tracking-[0.2em] font-bold uppercase text-zinc-600">© 2024 BachStage. Engineered for Performance.</p>
+</div>
+</footer>
+</body></html>

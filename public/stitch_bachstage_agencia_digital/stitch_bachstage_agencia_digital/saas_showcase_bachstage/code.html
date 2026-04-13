@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>BACHSTAGE | Showcase</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "background": "#131315",
+                    "surface-container-lowest": "#0e0e10",
+                    "surface-container-high": "#2a2a2c",
+                    "surface-dim": "#131315",
+                    "inverse-surface": "#e5e1e4",
+                    "outline": "#849584",
+                    "on-primary-container": "#007137",
+                    "outline-variant": "#3b4b3d",
+                    "on-error": "#690005",
+                    "on-secondary": "#561f00",
+                    "on-tertiary-fixed-variant": "#474649",
+                    "on-primary": "#003919",
+                    "surface-bright": "#39393b",
+                    "surface-container": "#201f22",
+                    "primary": "#f0ffee",
+                    "on-background": "#e5e1e4",
+                    "inverse-on-surface": "#313032",
+                    "secondary-container": "#fe6b00",
+                    "on-surface": "#e5e1e4",
+                    "on-secondary-fixed": "#351000",
+                    "surface-tint": "#00e476",
+                    "tertiary-container": "#e0dde0",
+                    "secondary": "#ffb693",
+                    "error-container": "#93000a",
+                    "on-primary-fixed-variant": "#005227",
+                    "on-primary-fixed": "#00210c",
+                    "on-secondary-fixed-variant": "#7a3000",
+                    "tertiary-fixed-dim": "#c8c6c8",
+                    "secondary-fixed-dim": "#ffb693",
+                    "on-tertiary-fixed": "#1c1b1d",
+                    "on-tertiary-container": "#626164",
+                    "on-error-container": "#ffdad6",
+                    "surface-container-highest": "#353437",
+                    "secondary-fixed": "#ffdbcc",
+                    "primary-fixed-dim": "#00e476",
+                    "inverse-primary": "#006d35",
+                    "on-tertiary": "#313032",
+                    "primary-fixed": "#61ff97",
+                    "tertiary-fixed": "#e5e1e4",
+                    "surface": "#131315",
+                    "on-surface-variant": "#b9cbb9",
+                    "surface-variant": "#353437",
+                    "primary-container": "#00ff85",
+                    "on-secondary-container": "#572000",
+                    "error": "#ffb4ab",
+                    "surface-container-low": "#1c1b1d",
+                    "tertiary": "#fdfafd"
+            },
+            "borderRadius": {
+                    "none": "0px",
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Space Grotesk"],
+                    "body": ["Inter"],
+                    "label": ["Space Grotesk"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .obsidian-glow {
+            box-shadow: 0 0 60px -15px rgba(254, 107, 0, 0.15);
+        }
+        .emerald-glow:hover {
+            box-shadow: 0 0 20px rgba(0, 255, 133, 0.4);
+        }
+        .mesh-gradient {
+            background: radial-gradient(circle at 50% 50%, #005227 0%, #09090b 100%);
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-[#000000] text-on-surface font-body selection:bg-primary-container selection:text-on-primary overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 border-b border-[#00FF85]/10 bg-[#000000]/80 backdrop-blur-xl flex justify-between items-center px-8 h-20 w-full shadow-[0_4px_30px_rgba(0,255,133,0.05)] duration-300 ease-in-out font-['Space_Grotesk'] font-bold tracking-tight">
+<div class="text-2xl font-bold tracking-tighter text-white">BACHSTAGE</div>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-white hover:text-[#00FF85] transition-colors" href="#">Portfolio</a>
+<a class="text-[#FE6B00] border-b-2 border-[#FE6B00] pb-1" href="#">Showcase</a>
+<a class="text-white hover:text-[#00FF85] transition-colors" href="#">Pricing</a>
+<a class="text-white hover:text-[#00FF85] transition-colors" href="#">Blog</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="material-symbols-outlined text-white hover:bg-[#1C1B1D]/50 p-2 transition-all">terminal</button>
+<button class="bg-[#00FF85] text-[#003919] px-6 py-2 font-bold tracking-tighter uppercase text-sm hover:shadow-[0_0_20px_rgba(0,255,133,0.4)] transition-all">Get Started</button>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section: The Monolith Dashboard -->
+<section class="relative min-h-screen flex flex-col items-center justify-center pt-24 px-8 overflow-hidden">
+<div class="absolute inset-0 mesh-gradient opacity-30 pointer-events-none"></div>
+<div class="relative z-10 text-center max-w-5xl mb-20">
+<span class="font-label text-primary-container text-xs tracking-[0.3em] uppercase mb-6 block">Internal Engine Alpha</span>
+<h1 class="font-headline text-5xl md:text-8xl font-bold text-white tracking-tighter leading-[0.9] mb-8">
+                    PRECISION<br/>BRUTALISM.
+                </h1>
+<p class="max-w-2xl mx-auto text-on-surface-variant text-lg font-light leading-relaxed">
+                    A high-performance command center for modern monoliths. Built with the full MERN stack to deliver sub-millisecond response times and structural integrity.
+                </p>
+</div>
+<!-- Dashboard Mockup Display -->
+<div class="relative w-full max-w-7xl mx-auto mb-[-100px]">
+<div class="bg-surface-container-low border border-white/5 obsidian-glow p-4">
+<div class="flex items-center gap-2 mb-4 border-b border-white/5 pb-4">
+<div class="flex gap-1.5">
+<div class="w-3 h-3 bg-error/20"></div>
+<div class="w-3 h-3 bg-secondary-container/20"></div>
+<div class="w-3 h-3 bg-primary-container/20"></div>
+</div>
+<div class="mx-auto bg-surface-container-highest px-4 py-1 text-[10px] font-label tracking-widest text-on-surface-variant">HTTPS://DASHBOARD.BACHSTAGE.IO</div>
+</div>
+<img class="w-full grayscale brightness-75 hover:grayscale-0 transition-all duration-700" data-alt="Modern high-tech software dashboard interface showing complex data visualizations, code snippets, and dark emerald neon accent colors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJyFgcSCMSdvDmJfDhhJpawxJpI9-L67SxhXaSOF7rErNxYGskfqrwuQk-mHeGAcGAitL7FVFxEZwNaERHhY6v_aIjZv0QkZqFavamODHcHqVWJJFNmjdhpMaZkElnHWI7gioB9_mb8Zm20--UMxnItxYXMZ1uTu-njn4EDZPo_3gy-PFc9vgBditjuDGPZ9tdIPmhECDICi9_6gF3PLIJpa9bDF9S1xad8qAGnENxsHMDNw9B_9wpxgxzb8o8TPl2yeXGLu8QtuQ"/>
+</div>
+<!-- Mobile Mockup Overlap -->
+<div class="absolute -bottom-20 -right-8 w-64 hidden lg:block bg-surface-container-high border border-white/10 p-2 shadow-2xl">
+<img class="w-full" data-alt="Smartphone display showing a sleek dark mode analytics application with neon green line charts and bold typography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzhudRmcrVRJAdtaWAbI4F3mPPx-ZdB2iG4ODohXPGSdTmXCNP8N3J33escwSab0E849B8jd4-t35yy_88A6k_CshNt9Mfll3NW4dcb5QwanhHY_61y5vV4XZpbzHnd18rv7t1_U7ZjHXlGcgUZ9xMQiNWr9Ik2We0Q2YrZKU-HMfBkMh5CxYa4JDXLPRQ8ArtJYsHKql8zb9o6mARGTlhuOjPwQ94mgZxLmx8ek4IE2NG8V5eQb3OXmDtgLALY8IJlSGo87bWntA"/>
+</div>
+</div>
+</section>
+<!-- MERN Stack Power Section -->
+<section class="bg-surface-container-lowest py-32 px-8 border-y border-white/5">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+<div>
+<h2 class="font-headline text-4xl font-bold text-white tracking-tight mb-8">ARCHITECTURAL<br/>SUPERIORITY</h2>
+<div class="space-y-12">
+<div class="border-l-2 border-primary-container pl-8 py-2">
+<h3 class="font-headline text-xl text-primary-container uppercase tracking-widest mb-2">MongoDB &amp; Express</h3>
+<p class="text-on-surface-variant">Schema-less flexibility paired with high-performance routing for massive data ingestion pipelines.</p>
+</div>
+<div class="border-l-2 border-primary-container pl-8 py-2">
+<h3 class="font-headline text-xl text-primary-container uppercase tracking-widest mb-2">React &amp; Node.js</h3>
+<p class="text-on-surface-variant">Component-based architecture driven by an event-loop backend for seamless state synchronization.</p>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-surface-dim aspect-square flex flex-col items-center justify-center border border-white/5 hover:border-primary-container/30 transition-all group">
+<span class="material-symbols-outlined text-4xl text-primary-container mb-4 group-hover:scale-110 transition-transform">database</span>
+<span class="font-label text-xs tracking-tighter text-white">MONGODB</span>
+</div>
+<div class="bg-surface-container-low aspect-square flex flex-col items-center justify-center border border-white/5 hover:border-primary-container/30 transition-all group">
+<span class="material-symbols-outlined text-4xl text-primary-container mb-4 group-hover:scale-110 transition-transform">terminal</span>
+<span class="font-label text-xs tracking-tighter text-white">EXPRESS</span>
+</div>
+<div class="bg-surface-container-low aspect-square flex flex-col items-center justify-center border border-white/5 hover:border-primary-container/30 transition-all group">
+<span class="material-symbols-outlined text-4xl text-primary-container mb-4 group-hover:scale-110 transition-transform">web</span>
+<span class="font-label text-xs tracking-tighter text-white">REACT</span>
+</div>
+<div class="bg-surface-dim aspect-square flex flex-col items-center justify-center border border-white/5 hover:border-primary-container/30 transition-all group">
+<span class="material-symbols-outlined text-4xl text-primary-container mb-4 group-hover:scale-110 transition-transform">javascript</span>
+<span class="font-label text-xs tracking-tighter text-white">NODE.JS</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Real-Time Analytics (The Data Pillar) -->
+<section class="bg-surface py-20 px-8">
+<div class="max-w-7xl mx-auto">
+<div class="mb-16">
+<h2 class="font-headline text-4xl font-bold text-white mb-2">LIVE METRICS</h2>
+<p class="text-secondary-container font-label text-sm tracking-[0.2em] uppercase">Real-time data synchronization at scale</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-0">
+<div class="bg-surface-container-low p-12 border-l border-white/5 relative overflow-hidden group">
+<div class="absolute inset-0 mesh-gradient opacity-0 group-hover:opacity-20 transition-opacity"></div>
+<div class="relative z-10">
+<span class="text-on-surface-variant font-label text-xs tracking-widest uppercase">Latency</span>
+<div class="text-7xl font-headline font-bold text-white my-4">0.4ms</div>
+<div class="h-1 w-20 bg-primary-container"></div>
+</div>
+</div>
+<div class="bg-surface-container-high p-12 border-l border-white/5 relative overflow-hidden group">
+<div class="absolute inset-0 mesh-gradient opacity-0 group-hover:opacity-20 transition-opacity"></div>
+<div class="relative z-10">
+<span class="text-on-surface-variant font-label text-xs tracking-widest uppercase">Throughput</span>
+<div class="text-7xl font-headline font-bold text-white my-4">98k</div>
+<div class="h-1 w-20 bg-secondary-container"></div>
+</div>
+</div>
+<div class="bg-surface-container-highest p-12 border-l border-white/5 relative overflow-hidden group">
+<div class="absolute inset-0 mesh-gradient opacity-0 group-hover:opacity-20 transition-opacity"></div>
+<div class="relative z-10">
+<span class="text-on-surface-variant font-label text-xs tracking-widest uppercase">Uptime</span>
+<div class="text-7xl font-headline font-bold text-white my-4">99.9</div>
+<div class="h-1 w-20 bg-primary-container"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- RBAC Security: The Fortress -->
+<section class="relative bg-black py-40 px-8 overflow-hidden">
+<div class="absolute top-0 right-0 w-1/2 h-full opacity-20 pointer-events-none">
+<img class="w-full h-full object-cover" data-alt="Abstract digital security visualization with binary code patterns and green matrix-like glowing particles on dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1z31JAQwqIiRmlHeWxTWABhrhXSiLD4zZePQzRMuvk70G_Yhp2uvoc_bblXk4mVIiz0NgQONcNOMHfUfFXQtbg7x24SYFiG4pHZOLfmgvuabTH8aQD2WsX8sxhNYG5Frthm_mlUrpmlGfgsjVSUZnN82NSXFjE3oaG3boEW6C4bN3xKXY2308o1z0i7U6YxG8iabnjMDzerZXueRZz0YDxIaUuzia-dKmyEWEK-EHh4XhnMKNK1lSQkhmARg7RmmucWoQT4fmMto"/>
+</div>
+<div class="max-w-7xl mx-auto relative z-10">
+<div class="max-w-2xl">
+<h2 class="font-headline text-5xl font-bold text-white tracking-tighter mb-8 leading-none">RBAC SECURITY<br/>ENGINEERED.</h2>
+<p class="text-on-surface-variant text-xl mb-12">Granular Role-Based Access Control integrated at the core. Your data is restricted by architectural mandate, not just software layers.</p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+<div class="p-8 bg-surface-container-low border-l-4 border-secondary-container">
+<span class="material-symbols-outlined text-secondary-container mb-4">admin_panel_settings</span>
+<h4 class="font-headline font-bold text-white mb-2">ENCRYPTED AT REST</h4>
+<p class="text-sm text-on-surface-variant">AES-256 standard encryption for all persistence layers.</p>
+</div>
+<div class="p-8 bg-surface-container-low border-l-4 border-primary-container">
+<span class="material-symbols-outlined text-primary-container mb-4">fingerprint</span>
+<h4 class="font-headline font-bold text-white mb-2">AUTH0 NATIVE</h4>
+<p class="text-sm text-on-surface-variant">Identity management built into every service endpoint.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA: The Terminal Block -->
+<section class="bg-primary-container py-32 px-8 text-center relative overflow-hidden">
+<div class="relative z-10 max-w-4xl mx-auto">
+<h2 class="font-headline text-6xl md:text-8xl font-black text-on-primary tracking-tighter mb-12 uppercase leading-none">INITIATE<br/>DEPLOYMENT</h2>
+<div class="flex flex-col md:flex-row gap-6 justify-center">
+<button class="bg-[#000000] text-primary-container px-12 py-5 font-bold tracking-widest uppercase hover:bg-surface-container-high transition-colors text-lg">Create Instance</button>
+<button class="border-4 border-[#000000] text-[#000000] px-12 py-5 font-bold tracking-widest uppercase hover:bg-[#000000] hover:text-primary-container transition-all text-lg">Read Docs</button>
+</div>
+</div>
+<!-- Decorative Text Background -->
+<div class="absolute inset-0 flex items-center justify-center opacity-10 select-none pointer-events-none">
+<div class="font-headline text-[25vw] font-black tracking-tighter text-[#003919]">BACHSTAGE</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-[#1C1B1D] py-12 flex flex-col items-center gap-8 px-10 bg-[#000000] font-['Inter'] text-xs font-medium uppercase tracking-widest">
+<div class="text-[#FE6B00] font-bold text-xl tracking-tighter">BACHSTAGE</div>
+<div class="flex flex-wrap justify-center gap-10">
+<a class="text-gray-600 hover:text-[#00FF85] transition-all" href="#">Documentation</a>
+<a class="text-gray-600 hover:text-[#00FF85] transition-all" href="#">Privacy</a>
+<a class="text-gray-600 hover:text-[#00FF85] transition-all" href="#">Terms</a>
+<a class="text-gray-600 hover:text-[#00FF85] transition-all" href="#">Status</a>
+</div>
+<div class="text-gray-600 text-center">
+            © 2024 BACHSTAGE MONOLITH. ALL RIGHTS RESERVED.
+        </div>
+</footer>
+</body></html>

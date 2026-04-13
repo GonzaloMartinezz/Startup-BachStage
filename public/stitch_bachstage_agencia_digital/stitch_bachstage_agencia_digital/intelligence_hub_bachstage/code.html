@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>BachStage | Intelligence Hub</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-container": "#007137",
+                        "surface-container-highest": "#353437",
+                        "on-background": "#e5e1e4",
+                        "primary-container": "#00ff85",
+                        "inverse-on-surface": "#313032",
+                        "tertiary-fixed-dim": "#c8c6c8",
+                        "surface-container": "#201f22",
+                        "surface-container-lowest": "#0e0e10",
+                        "surface": "#131315",
+                        "on-surface": "#e5e1e4",
+                        "on-tertiary-fixed": "#1c1b1d",
+                        "on-surface-variant": "#b9cbb9",
+                        "tertiary-fixed": "#e5e1e4",
+                        "primary-fixed-dim": "#00e476",
+                        "surface-container-low": "#1c1b1d",
+                        "on-secondary-fixed": "#351000",
+                        "on-primary-fixed": "#00210c",
+                        "secondary-container": "#fe6b00",
+                        "primary": "#f0ffee",
+                        "error": "#ffb4ab",
+                        "inverse-surface": "#e5e1e4",
+                        "secondary-fixed-dim": "#ffb693",
+                        "tertiary-container": "#e0dde0",
+                        "secondary": "#ffb693",
+                        "on-tertiary-container": "#626164",
+                        "surface-container-high": "#2a2a2c",
+                        "on-secondary": "#561f00",
+                        "on-error": "#690005",
+                        "background": "#131315",
+                        "surface-tint": "#00e476",
+                        "inverse-primary": "#006d35",
+                        "on-secondary-fixed-variant": "#7a3000",
+                        "surface-dim": "#131315",
+                        "on-primary-fixed-variant": "#005227",
+                        "error-container": "#93000a",
+                        "tertiary": "#fdfafd",
+                        "on-tertiary": "#313032",
+                        "on-primary": "#003919",
+                        "outline-variant": "#3b4b3d",
+                        "on-secondary-container": "#572000",
+                        "secondary-fixed": "#ffdbcc",
+                        "on-tertiary-fixed-variant": "#474649",
+                        "on-error-container": "#ffdad6",
+                        "surface-bright": "#39393b",
+                        "surface-variant": "#353437",
+                        "primary-fixed": "#61ff97",
+                        "outline": "#849584"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Inter"],
+                        "label": ["Space Grotesk"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .mesh-gradient-bg {
+            background: radial-gradient(at 0% 0%, rgba(0, 82, 39, 0.15) 0px, transparent 50%),
+                        radial-gradient(at 100% 100%, rgba(254, 107, 0, 0.05) 0px, transparent 50%),
+                        #000000;
+        }
+        .glass-blur {
+            backdrop-filter: blur(20px);
+        }
+        ::selection {
+            background-color: #00FF85;
+            color: #003919;
+        }
+    </style>
+</head>
+<body class="bg-surface-lowest text-on-surface font-body selection:bg-primary-container selection:text-on-primary">
+<!-- Top Navigation Shell -->
+<nav class="fixed top-0 w-full z-50 rounded-none bg-black/40 backdrop-blur-xl dark:bg-black/60 flex justify-between items-center px-8 py-6 max-w-full shadow-[0_20px_50px_rgba(254,107,0,0.15)]">
+<div class="text-2xl font-black tracking-tighter text-white font-headline">BachStage</div>
+<div class="hidden md:flex gap-10">
+<a class="text-white/70 hover:text-white transition-colors text-[0.75rem] uppercase tracking-[0.05em] font-bold font-label" href="#">Portfolio</a>
+<a class="text-white/70 hover:text-white transition-colors text-[0.75rem] uppercase tracking-[0.05em] font-bold font-label" href="#">Solutions</a>
+<a class="text-white/70 hover:text-white transition-colors text-[0.75rem] uppercase tracking-[0.05em] font-bold font-label" href="#">Pricing</a>
+<a class="text-[#FE6B00] border-b-2 border-[#FE6B00] transition-all duration-300 text-[0.75rem] uppercase tracking-[0.05em] font-bold font-label" href="#">Insights</a>
+<a class="text-white/70 hover:text-white transition-colors text-[0.75rem] uppercase tracking-[0.05em] font-bold font-label" href="#">Company</a>
+</div>
+<button class="bg-primary-container text-on-primary font-bold px-6 py-2 transition-all duration-300 hover:shadow-[0_0_20px_rgba(0,255,133,0.4)] active:scale-95 text-[0.75rem] uppercase tracking-[0.05em]">Get Started</button>
+</nav>
+<!-- Hero Section -->
+<section class="relative min-h-[716px] flex flex-col justify-end px-12 pb-24 mesh-gradient-bg pt-32 overflow-hidden">
+<div class="absolute top-0 right-0 w-full h-full opacity-20 pointer-events-none">
+<img class="w-full h-full object-cover grayscale" data-alt="Abstract futuristic digital infrastructure with geometric glowing lines and complex data nodes in obsidian black and emerald neon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9tLdFsscsJ_ZlLCs_C_LGyZxTBw3h70pka2y9Qdg2ho4SdEYso2ma3qksXe1M_PSM6sZxy647Y72KLHc9OvX-ofNmUATS-kFaLLK0WYR8TOCJmjQMXx1Rp-TCpkjCG_xAYaQ8oB_1Je0uY9icU9TEooEXgH-BITZGnXu4EEdtrKaPpuGBlwUohC6JR-6FRYf-ddP5LccRVKpXGuFQ698W39OnG-0Xe4XVFl0uCfQB1uWhGg_nFr7ihQiSYeJs2kO0_OSwYndtcCw"/>
+</div>
+<div class="relative z-10 max-w-5xl">
+<span class="inline-block bg-primary-container text-on-primary text-[0.75rem] font-bold tracking-[0.2em] px-3 py-1 mb-8 uppercase font-label">Intelligence Hub v4.0</span>
+<h1 class="text-7xl md:text-9xl font-black font-headline tracking-tighter leading-none text-white mb-8">PRECISION<br/>INFRASTRUCTURE.</h1>
+<p class="text-xl text-on-surface-variant max-w-2xl font-light leading-relaxed">
+                The BachStage technical command center. Explore the architectural blueprints, API specifications, and operational protocols driving our global monolithic network.
+            </p>
+</div>
+</section>
+<!-- Global Network Status: Data Pillar -->
+<section class="bg-surface-container-low border-y border-white/5">
+<div class="grid grid-cols-1 md:grid-cols-3">
+<div class="p-12 border-r border-white/5 bg-gradient-to-br from-primary-container/10 to-transparent">
+<span class="block text-[0.75rem] font-bold tracking-widest text-primary-container mb-4 uppercase font-label">Global Network Status</span>
+<div class="flex items-end gap-4 mb-2">
+<span class="text-7xl font-black font-headline text-white leading-none">99.99</span>
+<span class="text-2xl font-bold text-primary-container pb-1">%</span>
+</div>
+<p class="text-sm text-on-surface-variant uppercase tracking-widest font-label">Operational Uptime</p>
+</div>
+<div class="p-12 border-r border-white/5">
+<span class="block text-[0.75rem] font-bold tracking-widest text-on-surface-variant mb-4 uppercase font-label">Latency (Avg)</span>
+<div class="flex items-end gap-4 mb-2">
+<span class="text-7xl font-black font-headline text-white leading-none">12.4</span>
+<span class="text-2xl font-bold text-on-surface-variant pb-1">ms</span>
+</div>
+<p class="text-sm text-on-surface-variant uppercase tracking-widest font-label">Global Edge Response</p>
+</div>
+<div class="p-12">
+<span class="block text-[0.75rem] font-bold tracking-widest text-on-surface-variant mb-4 uppercase font-label">Active Nodes</span>
+<div class="flex items-end gap-4 mb-2">
+<span class="text-7xl font-black font-headline text-white leading-none">2,142</span>
+</div>
+<p class="text-sm text-on-surface-variant uppercase tracking-widest font-label">Distributed Consensus</p>
+</div>
+</div>
+</section>
+<!-- Core Systems & Dev Tooling: Bento Grid -->
+<main class="px-8 md:px-12 py-24 bg-surface-lowest">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Core Systems Heading -->
+<div class="md:col-span-12 mb-12">
+<h2 class="text-5xl font-black font-headline text-white tracking-tight uppercase">Core Systems</h2>
+</div>
+<!-- Card 1: Large Feature -->
+<div class="md:col-span-8 bg-surface-container-high group relative overflow-hidden h-[500px]">
+<img class="absolute inset-0 w-full h-full object-cover opacity-30 group-hover:scale-105 transition-transform duration-700" data-alt="Microchip circuit board close-up with neon green light trails and complex futuristic hardware architecture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjdlxDMxiwaB1RUWoy_OynYxPfg2Uvrj66FC9b5huA7j4swpw4tlMyw6O3JLYg9b9khqIKXB5cvvUo3wRlMLhTLy5OnyzwUAf6TdIKOKccUfsJ4x-7GJuSglRXtRQ_zOJiipwnvqOdSy0A6ilvbLb4vr3FhioLP9YspzsK4m7HiA1TtRqxOX4yy-v5hJdqEvhj0YqKxQNgM4z_2x2E6V7N-wVMCukdy3KzFGS8hy53y3mDq80mRZphlPD34_D2C_MmScXdOekiEdQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-lowest to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-12">
+<span class="text-primary-container font-bold text-[0.75rem] tracking-widest uppercase mb-4 block font-label">Architecture</span>
+<h3 class="text-4xl font-bold text-white mb-4 font-headline">The Obsidian Engine</h3>
+<p class="text-on-surface-variant max-w-md mb-8">A deep dive into our proprietary distributed database architecture and its multi-region replication protocols.</p>
+<button class="flex items-center gap-2 group/btn font-bold uppercase text-[0.75rem] tracking-widest text-white">
+                        Read Whitepaper <span class="material-symbols-outlined group-hover/btn:translate-x-2 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Card 2: Small Feature -->
+<div class="md:col-span-4 bg-[#1C1B1D] p-12 flex flex-col justify-between border-l-4 border-primary-container">
+<div>
+<span class="material-symbols-outlined text-primary-container text-4xl mb-8" data-icon="terminal">terminal</span>
+<h3 class="text-2xl font-bold text-white mb-4 font-headline uppercase">Dev Tooling</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">BachStage CLI 2.1 is now available. Optimized for heavy workload deployments and automated canary tests.</p>
+</div>
+<div class="space-y-4">
+<a class="block py-3 border-b border-white/5 text-white hover:text-primary-container transition-colors font-label text-sm uppercase tracking-widest" href="#">Documentation Hub</a>
+<a class="block py-3 border-b border-white/5 text-white hover:text-primary-container transition-colors font-label text-sm uppercase tracking-widest" href="#">SDK Downloads</a>
+<a class="block py-3 text-white hover:text-primary-container transition-colors font-label text-sm uppercase tracking-widest" href="#">API Playground</a>
+</div>
+</div>
+<!-- Card 3: Metrics Block -->
+<div class="md:col-span-4 bg-surface-container-highest p-12 border-t-4 border-secondary-container">
+<span class="material-symbols-outlined text-secondary-container text-4xl mb-8" data-icon="security">security</span>
+<h3 class="text-2xl font-bold text-white mb-4 font-headline uppercase">Security Ops</h3>
+<p class="text-on-surface-variant text-sm mb-12">Review our zero-trust security architecture and automated penetration testing results.</p>
+<div class="p-6 bg-surface-lowest flex items-center justify-between">
+<span class="text-xs font-bold uppercase tracking-widest text-on-surface-variant font-label">Auth Protocols</span>
+<span class="text-primary-container font-bold">mTLS 2.0</span>
+</div>
+</div>
+<!-- Card 4: Status Feed -->
+<div class="md:col-span-8 bg-surface-container-low p-12">
+<div class="flex justify-between items-center mb-12">
+<h3 class="text-2xl font-bold text-white font-headline uppercase">System Logs</h3>
+<span class="flex items-center gap-2 text-primary-container text-xs font-bold uppercase tracking-widest font-label">
+<span class="w-2 h-2 bg-primary-container animate-pulse"></span> Live Stream
+                    </span>
+</div>
+<div class="space-y-6 font-mono text-[0.8rem]">
+<div class="flex gap-4 items-start text-on-surface-variant/40">
+<span class="text-primary-container">14:22:01</span>
+<span class="text-white">[INFO]</span>
+<span>Node EU-WEST-1 synchronized successfully. Delta: 0.002ms</span>
+</div>
+<div class="flex gap-4 items-start text-on-surface-variant/40">
+<span class="text-primary-container">14:21:58</span>
+<span class="text-white">[INFO]</span>
+<span>Load balancing transition: Shift 2% traffic to US-EAST-B</span>
+</div>
+<div class="flex gap-4 items-start text-on-surface-variant/40">
+<span class="text-primary-container">14:21:45</span>
+<span class="text-secondary-container">[WARN]</span>
+<span>Resource threshold reached at Edge-Cluster-Alpha. Scaling initialized.</span>
+</div>
+<div class="flex gap-4 items-start text-on-surface-variant/40">
+<span class="text-primary-container">14:21:30</span>
+<span class="text-white">[INFO]</span>
+<span>Global consensus confirmed. Block height: 18,922,401</span>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Documentation Section -->
+<section class="bg-surface py-24 px-12">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-20">
+<div class="md:w-1/3">
+<h2 class="text-5xl font-black font-headline text-white tracking-tighter mb-8 leading-tight">TECHNICAL<br/>DOCS.</h2>
+<p class="text-on-surface-variant mb-12">Access the full library of BachStage documentation, from getting started guides to advanced deployment strategies.</p>
+<div class="relative group">
+<input class="w-full bg-surface-lowest border-0 border-l-2 border-outline focus:border-primary-container focus:ring-0 text-white font-label py-4 px-6 tracking-widest uppercase text-sm transition-all" placeholder="SEARCH INTELLIGENCE..." type="text"/>
+</div>
+</div>
+<div class="md:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-8">
+<div class="p-8 bg-surface-container-low hover:bg-surface-container-high transition-colors cursor-pointer group">
+<span class="text-primary-container font-bold text-xs uppercase tracking-widest mb-4 block">Protocols</span>
+<h4 class="text-xl font-bold text-white mb-2 font-headline">BachLink-v3</h4>
+<p class="text-sm text-on-surface-variant">Low-latency communication protocol for cross-cluster orchestration.</p>
+</div>
+<div class="p-8 bg-surface-container-low hover:bg-surface-container-high transition-colors cursor-pointer group">
+<span class="text-primary-container font-bold text-xs uppercase tracking-widest mb-4 block">Encryption</span>
+<h4 class="text-xl font-bold text-white mb-2 font-headline">VoidVault-X</h4>
+<p class="text-sm text-on-surface-variant">Post-quantum encryption standard for all data-at-rest.</p>
+</div>
+<div class="p-8 bg-surface-container-low hover:bg-surface-container-high transition-colors cursor-pointer group">
+<span class="text-primary-container font-bold text-xs uppercase tracking-widest mb-4 block">Hardware</span>
+<h4 class="text-xl font-bold text-white mb-2 font-headline">Monolith S1</h4>
+<p class="text-sm text-on-surface-variant">Specifications for our custom-designed bare-metal hardware racks.</p>
+</div>
+<div class="p-8 bg-surface-container-low hover:bg-surface-container-high transition-colors cursor-pointer group">
+<span class="text-primary-container font-bold text-xs uppercase tracking-widest mb-4 block">Networking</span>
+<h4 class="text-xl font-bold text-white mb-2 font-headline">EdgeMesh</h4>
+<p class="text-sm text-on-surface-variant">Global routing logic and intelligent traffic steering documentation.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full rounded-none border-t border-white/5 bg-[#09090B] dark:bg-[#000000] py-20 px-12 grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="md:col-span-1">
+<div class="text-3xl font-black text-white mb-8 font-headline">BachStage</div>
+<p class="text-white/40 text-[10px] tracking-widest uppercase font-label">© 2024 BACHSTAGE. ALL SYSTEMS OPERATIONAL.</p>
+</div>
+<div>
+<h5 class="text-white font-bold text-xs uppercase tracking-widest mb-6 font-label">Navigation</h5>
+<ul class="space-y-4">
+<li><a class="text-white/40 hover:text-[#00FF85] transition-colors font-label text-[10px] tracking-widest uppercase" href="#">Portfolio</a></li>
+<li><a class="text-white/40 hover:text-[#00FF85] transition-colors font-label text-[10px] tracking-widest uppercase" href="#">Solutions</a></li>
+<li><a class="text-white/40 hover:text-[#00FF85] transition-colors font-label text-[10px] tracking-widest uppercase" href="#">Pricing</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-white font-bold text-xs uppercase tracking-widest mb-6 font-label">Resources</h5>
+<ul class="space-y-4">
+<li><a class="text-[#00FF85] font-bold font-label text-[10px] tracking-widest uppercase" href="#">Insights</a></li>
+<li><a class="text-white/40 hover:text-[#00FF85] transition-colors font-label text-[10px] tracking-widest uppercase" href="#">Company</a></li>
+<li><a class="text-white/40 hover:text-[#00FF85] transition-colors font-label text-[10px] tracking-widest uppercase" href="#">Status: 99.9% Uptime</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-white font-bold text-xs uppercase tracking-widest mb-6 font-label">Legal</h5>
+<ul class="space-y-4">
+<li><a class="text-white/40 hover:text-[#00FF85] transition-colors font-label text-[10px] tracking-widest uppercase" href="#">Privacy Policy</a></li>
+<li><a class="text-white/40 hover:text-[#00FF85] transition-colors font-label text-[10px] tracking-widest uppercase" href="#">Terms of Service</a></li>
+</ul>
+</div>
+</footer>
+</body></html>

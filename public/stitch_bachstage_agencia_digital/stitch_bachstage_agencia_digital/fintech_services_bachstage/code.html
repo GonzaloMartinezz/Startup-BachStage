@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary": "#ffb693",
+                        "error-container": "#93000a",
+                        "on-primary-fixed-variant": "#005227",
+                        "on-primary-fixed": "#00210c",
+                        "tertiary-container": "#e0dde0",
+                        "on-surface": "#e5e1e4",
+                        "on-secondary-fixed": "#351000",
+                        "surface-tint": "#00e476",
+                        "on-tertiary-container": "#626164",
+                        "on-error-container": "#ffdad6",
+                        "on-tertiary-fixed": "#1c1b1d",
+                        "on-secondary-fixed-variant": "#7a3000",
+                        "tertiary-fixed-dim": "#c8c6c8",
+                        "secondary-fixed-dim": "#ffb693",
+                        "primary-fixed": "#61ff97",
+                        "tertiary-fixed": "#e5e1e4",
+                        "surface": "#131315",
+                        "on-surface-variant": "#b9cbb9",
+                        "surface-container-highest": "#353437",
+                        "secondary-fixed": "#ffdbcc",
+                        "primary-fixed-dim": "#00e476",
+                        "inverse-primary": "#006d35",
+                        "on-tertiary": "#313032",
+                        "surface-container-low": "#1c1b1d",
+                        "tertiary": "#fdfafd",
+                        "surface-variant": "#353437",
+                        "primary-container": "#00ff85",
+                        "on-secondary-container": "#572000",
+                        "error": "#ffb4ab",
+                        "outline": "#849584",
+                        "on-primary-container": "#007137",
+                        "surface-dim": "#131315",
+                        "inverse-surface": "#e5e1e4",
+                        "surface-container-lowest": "#0e0e10",
+                        "surface-container-high": "#2a2a2c",
+                        "background": "#000000",
+                        "on-tertiary-fixed-variant": "#474649",
+                        "on-primary": "#003919",
+                        "surface-bright": "#39393b",
+                        "on-secondary": "#561f00",
+                        "on-error": "#690005",
+                        "outline-variant": "#3b4b3d",
+                        "primary": "#f0ffee",
+                        "surface-container": "#201f22",
+                        "secondary-container": "#fe6b00",
+                        "on-background": "#e5e1e4",
+                        "inverse-on-surface": "#313032"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Inter"],
+                        "label": ["Space Grotesk"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #000000;
+            color: #e5e1e4;
+            font-family: 'Inter', sans-serif;
+        }
+        .space-grotesk { font-family: 'Space Grotesk', sans-serif; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+</head>
+<body class="bg-black text-on-background selection:bg-primary-container selection:text-on-primary">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 border-0 bg-black/80 backdrop-blur-xl flex justify-between items-center px-8 py-6 w-full shadow-[0_20px_50px_rgba(254,107,0,0.04)]">
+<div class="text-2xl font-black tracking-tighter text-white uppercase">BachStage</div>
+<div class="hidden md:flex gap-10 items-center">
+<a class="font-['Space_Grotesk'] font-bold uppercase tracking-tighter text-white/70 hover:text-white transition-colors" href="#">Solutions</a>
+<a class="font-['Space_Grotesk'] font-bold uppercase tracking-tighter text-[#FE6B00] border-b-2 border-[#FE6B00] pb-1" href="#">Platform</a>
+<a class="font-['Space_Grotesk'] font-bold uppercase tracking-tighter text-white/70 hover:text-white transition-colors" href="#">Case Studies</a>
+<a class="font-['Space_Grotesk'] font-bold uppercase tracking-tighter text-white/70 hover:text-white transition-colors" href="#">Network</a>
+</div>
+<button class="bg-primary-container text-on-primary font-bold px-8 py-3 uppercase tracking-widest text-xs hover:bg-[#00FF85] hover:text-black transition-all duration-300 active:scale-95">
+            Get Started
+        </button>
+</nav>
+<main class="pt-24 min-h-screen">
+<!-- Hero Section: Service Deep Dive -->
+<section class="relative w-full h-[614px] flex items-end px-12 pb-16 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-40 grayscale hover:grayscale-0 transition-all duration-700" data-alt="Abstract architectural rendering of neon green data streams flowing through dark obsidian glass corridors with sharp geometric angles." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDek1Z419_FSLL3V2gEV_9TTv-ISw_5jn-e2dJ0_-Rec6fOG6MN6XXR_iod-itoKwSRTXQjK48cCOD99q5krbPl2WxMVxfTLY2o_E4Wk3svcGJJLvSswaLrb2bH3gKj2MuV2t6anAQp3EMdq3v4-pVMNZSZN-CoWNrGzgLNaDTnMgXyteyVgvN2Lh2Omd_XYogOscieCGohpoeLFyyPYUO7ZaVd_inRw-pacSWovMmGXQkxXxU8oUgP9MvCYcEaoI6wzJH9qd5bzko"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-5xl">
+<span class="font-['Space_Grotesk'] text-[0.75rem] font-bold uppercase tracking-[0.2em] text-[#00FF85] mb-4 block">Unified Infrastructure</span>
+<h1 class="font-['Space_Grotesk'] text-7xl md:text-8xl font-black text-white uppercase tracking-tighter leading-[0.85] mb-6">
+                    USDC + ACH <br/>INTEGRATION
+                </h1>
+<p class="text-white/60 max-w-xl text-lg leading-relaxed border-l-4 border-[#00FF85] pl-6">
+                    High-performance bridge between legacy banking and programmable liquidity. Automate global treasury with sub-second settlements and zero-latency account mapping.
+                </p>
+</div>
+</section>
+<!-- Feature Modules: Large Card Grid -->
+<section class="px-12 py-24 space-y-24">
+<!-- Virtual Accounts Pillar -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-stretch">
+<div class="md:col-span-7 bg-surface-container-low p-12 flex flex-col justify-between group hover:bg-surface-container-high transition-colors duration-500">
+<div>
+<div class="flex items-center gap-4 mb-12">
+<span class="material-symbols-outlined text-primary-container text-4xl" data-icon="account_balance_wallet">account_balance_wallet</span>
+<h2 class="font-['Space_Grotesk'] text-4xl font-bold uppercase tracking-tighter text-white">Virtual Accounts</h2>
+</div>
+<ul class="space-y-8">
+<li class="flex items-start gap-4">
+<span class="w-1.5 h-1.5 bg-primary-container mt-2.5"></span>
+<div>
+<h4 class="font-['Space_Grotesk'] font-bold uppercase text-white tracking-widest text-sm mb-1">Instant Provisioning</h4>
+<p class="text-white/50 text-sm">Spin up white-labeled ACH accounts for every user in real-time.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="w-1.5 h-1.5 bg-primary-container mt-2.5"></span>
+<div>
+<h4 class="font-['Space_Grotesk'] font-bold uppercase text-white tracking-widest text-sm mb-1">Web3 Native Off-ramps</h4>
+<p class="text-white/50 text-sm">Automated conversion from USDC to USD with zero slippage across major networks.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="w-1.5 h-1.5 bg-primary-container mt-2.5"></span>
+<div>
+<h4 class="font-['Space_Grotesk'] font-bold uppercase text-white tracking-widest text-sm mb-1">Multi-Chain Routing</h4>
+<p class="text-white/50 text-sm">Deploy liquidity across Ethereum, Solana, and Polygon via a single endpoint.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="mt-16">
+<button class="border border-white/20 px-8 py-4 uppercase font-['Space_Grotesk'] font-bold text-xs tracking-widest text-white hover:bg-white hover:text-black transition-all">
+                            View API Documentation
+                        </button>
+</div>
+</div>
+<div class="md:col-span-5 relative bg-surface-container-lowest overflow-hidden group">
+<img class="w-full h-full object-cover opacity-60 grayscale group-hover:scale-105 transition-transform duration-700" data-alt="Extreme close-up of a circuit board with glowing green light paths and metallic surfaces in a dark tech environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_T-NNy_uosl44PITGtM-DKPEwoManOfnSQMmrOhic4XU5lgJh42bvv1p9JMVG150fgPlpESX8yvjhaSAfajtF4TztH9LH2ZSeUhnlWHFvrWles_Dg8R_h0QeoTeHCrFVaD3VWRiHnps13wbaMdvYbbpLoD_DFgnCKnkr66YeDlwunP7I-JDuAq2I8W04eOCPvCSqHfAaoxKZGWsr14IJSHiTEiYZbweG9aAWo9DZofrxfsdJ3N5SH3HSw6Z457pSK897jC8EgBk0"/>
+<div class="absolute inset-0 bg-[#00FF85]/10 mix-blend-overlay"></div>
+<div class="absolute bottom-8 left-8 right-8 bg-black/90 p-8 backdrop-blur-md border-l-4 border-primary-container">
+<h3 class="text-white font-['Space_Grotesk'] font-black text-2xl uppercase tracking-tighter mb-2">99.99% Uptime</h3>
+<p class="text-white/60 text-xs uppercase tracking-widest">Enterprise SLAs for institutional volume.</p>
+</div>
+</div>
+</div>
+<!-- Transaction Engine Bento Style -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-surface-container-low p-8 border-l-2 border-primary-container">
+<div class="mb-12">
+<span class="material-symbols-outlined text-white text-3xl" data-icon="swap_horiz">swap_horiz</span>
+</div>
+<h3 class="font-['Space_Grotesk'] text-2xl font-bold uppercase text-white mb-4">Atomic Settles</h3>
+<p class="text-white/40 text-sm leading-relaxed">Transactions are validated and recorded on-chain and off-chain simultaneously, ensuring ledger parity at all times.</p>
+</div>
+<div class="bg-surface-container-low p-8 border-l-2 border-secondary-container">
+<div class="mb-12">
+<span class="material-symbols-outlined text-white text-3xl" data-icon="shield">shield</span>
+</div>
+<h3 class="font-['Space_Grotesk'] text-2xl font-bold uppercase text-white mb-4">KYC Logic</h3>
+<p class="text-white/40 text-sm leading-relaxed">Built-in compliance engine with automatic suspicious activity monitoring and automated SAR filing hooks.</p>
+</div>
+<div class="bg-surface-container-low p-8 border-l-2 border-primary-container">
+<div class="mb-12">
+<span class="material-symbols-outlined text-white text-3xl" data-icon="terminal">terminal</span>
+</div>
+<h3 class="font-['Space_Grotesk'] text-2xl font-bold uppercase text-white mb-4">Custom Webhooks</h3>
+<p class="text-white/40 text-sm leading-relaxed">Real-time event streaming for credits, debits, and status changes via secure signature-validated payloads.</p>
+</div>
+</div>
+<!-- Data Pillar: Performance Metrics -->
+<div class="w-full bg-[#00150A] p-16 relative overflow-hidden">
+<div class="absolute inset-0 opacity-20" style="background: radial-gradient(circle at 50% 50%, #00FF85 0%, transparent 70%);"></div>
+<div class="relative z-10 grid grid-cols-1 md:grid-cols-4 gap-12 text-center md:text-left">
+<div>
+<span class="font-['Space_Grotesk'] text-[10px] font-bold uppercase tracking-[0.3em] text-[#00FF85] mb-2 block">Volume Processed</span>
+<div class="font-['Space_Grotesk'] text-6xl font-black text-white tracking-tighter">$14B+</div>
+</div>
+<div>
+<span class="font-['Space_Grotesk'] text-[10px] font-bold uppercase tracking-[0.3em] text-[#00FF85] mb-2 block">Avg Settlement</span>
+<div class="font-['Space_Grotesk'] text-6xl font-black text-white tracking-tighter">0.8s</div>
+</div>
+<div>
+<span class="font-['Space_Grotesk'] text-[10px] font-bold uppercase tracking-[0.3em] text-[#00FF85] mb-2 block">Active Nodes</span>
+<div class="font-['Space_Grotesk'] text-6xl font-black text-white tracking-tighter">2.4k</div>
+</div>
+<div>
+<span class="font-['Space_Grotesk'] text-[10px] font-bold uppercase tracking-[0.3em] text-[#00FF85] mb-2 block">Success Rate</span>
+<div class="font-['Space_Grotesk'] text-6xl font-black text-white tracking-tighter">99.9%</div>
+</div>
+</div>
+</div>
+<!-- Fee Structures Table -->
+<div class="bg-surface-container-lowest p-12 border-0">
+<h2 class="font-['Space_Grotesk'] text-4xl font-bold uppercase tracking-tighter text-white mb-12">Transparent Architecture Fees</h2>
+<div class="overflow-x-auto no-scrollbar">
+<table class="w-full text-left font-['Inter']">
+<thead>
+<tr class="border-b border-white/5">
+<th class="py-6 font-['Space_Grotesk'] font-bold uppercase tracking-widest text-xs text-white/40">Tier</th>
+<th class="py-6 font-['Space_Grotesk'] font-bold uppercase tracking-widest text-xs text-white/40">USDC Mint/Burn</th>
+<th class="py-6 font-['Space_Grotesk'] font-bold uppercase tracking-widest text-xs text-white/40">ACH Transfer</th>
+<th class="py-6 font-['Space_Grotesk'] font-bold uppercase tracking-widest text-xs text-white/40">Monthly Platform</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-white/5">
+<tr class="group hover:bg-surface-container-low transition-colors">
+<td class="py-8 font-['Space_Grotesk'] font-bold text-white uppercase text-lg">Starter</td>
+<td class="py-8 text-white/70">0.25%</td>
+<td class="py-8 text-white/70">$0.50 / Flat</td>
+<td class="py-8 text-[#00FF85] font-bold font-['Space_Grotesk']">$499</td>
+</tr>
+<tr class="group hover:bg-surface-container-low transition-colors bg-surface-container-low/30">
+<td class="py-8 font-['Space_Grotesk'] font-bold text-white uppercase text-lg">Enterprise</td>
+<td class="py-8 text-white/70">0.10%</td>
+<td class="py-8 text-white/70">$0.15 / Flat</td>
+<td class="py-8 text-[#00FF85] font-bold font-['Space_Grotesk']">$2,499</td>
+</tr>
+<tr class="group hover:bg-surface-container-low transition-colors">
+<td class="py-8 font-['Space_Grotesk'] font-bold text-white uppercase text-lg">Custom</td>
+<td class="py-8 text-white/70">Custom</td>
+<td class="py-8 text-white/70">Custom</td>
+<td class="py-8 text-[#00FF85] font-bold font-['Space_Grotesk']">Inquire</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="bg-[#00FF85] p-24 text-center">
+<h2 class="font-['Space_Grotesk'] text-6xl md:text-8xl font-black text-black uppercase tracking-tighter mb-12">Scale your liquidity.</h2>
+<div class="flex flex-col md:flex-row gap-6 justify-center">
+<button class="bg-black text-white font-bold px-12 py-6 uppercase tracking-widest text-sm hover:scale-105 transition-all">
+                    Start Integration
+                </button>
+<button class="border-2 border-black text-black font-bold px-12 py-6 uppercase tracking-widest text-sm hover:bg-black hover:text-white transition-all">
+                    Talk to Sales
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-black flex flex-col md:flex-row justify-between items-center px-12 py-12 w-full mt-24 border-t border-white/5">
+<div class="flex flex-col gap-2 mb-8 md:mb-0">
+<span class="font-['Space_Grotesk'] font-black text-white uppercase text-xl">BachStage Monolith</span>
+<p class="font-['Inter'] text-[10px] font-medium uppercase tracking-[0.2em] text-white/40">© 2024 BachStage Monolith. Built for High Performance.</p>
+</div>
+<div class="flex gap-12">
+<a class="font-['Inter'] text-[10px] font-medium uppercase tracking-[0.2em] text-white/40 hover:text-[#FE6B00] transition-colors" href="#">Privacy Policy</a>
+<a class="font-['Inter'] text-[10px] font-medium uppercase tracking-[0.2em] text-white/40 hover:text-[#FE6B00] transition-colors" href="#">Terms of Service</a>
+<a class="font-['Inter'] text-[10px] font-medium uppercase tracking-[0.2em] text-white/40 hover:text-[#FE6B00] transition-colors" href="#">Security</a>
+<a class="font-['Inter'] text-[10px] font-medium uppercase tracking-[0.2em] text-[#00FF85] hover:text-[#FE6B00] transition-colors" href="#">Contact</a>
+</div>
+</footer>
+</body></html>

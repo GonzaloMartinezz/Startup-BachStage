@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-container": "#626164",
+                    "surface-dim": "#131315",
+                    "primary": "#f0ffee",
+                    "on-tertiary": "#313032",
+                    "surface-container-high": "#2a2a2c",
+                    "on-primary-fixed": "#00210c",
+                    "surface-variant": "#353437",
+                    "outline": "#849584",
+                    "secondary": "#ffb693",
+                    "tertiary": "#fdfafd",
+                    "primary-fixed-dim": "#00e476",
+                    "outline-variant": "#3b4b3d",
+                    "secondary-container": "#fe6b00",
+                    "tertiary-container": "#e0dde0",
+                    "on-tertiary-fixed": "#1c1b1d",
+                    "primary-container": "#00ff85",
+                    "inverse-surface": "#e5e1e4",
+                    "on-surface": "#e5e1e4",
+                    "surface-container-low": "#1c1b1d",
+                    "on-secondary-fixed": "#351000",
+                    "primary-fixed": "#61ff97",
+                    "on-tertiary-fixed-variant": "#474649",
+                    "surface-container": "#201f22",
+                    "on-primary-fixed-variant": "#005227",
+                    "surface-bright": "#39393b",
+                    "secondary-fixed": "#ffdbcc",
+                    "surface-tint": "#00e476",
+                    "on-secondary-container": "#572000",
+                    "tertiary-fixed-dim": "#c8c6c8",
+                    "surface-container-lowest": "#0e0e10",
+                    "on-secondary-fixed-variant": "#7a3000",
+                    "on-primary-container": "#007137",
+                    "on-error-container": "#ffdad6",
+                    "on-surface-variant": "#b9cbb9",
+                    "inverse-on-surface": "#313032",
+                    "inverse-primary": "#006d35",
+                    "error": "#ffb4ab",
+                    "tertiary-fixed": "#e5e1e4",
+                    "surface-container-highest": "#353437",
+                    "background": "#131315",
+                    "surface": "#131315",
+                    "secondary-fixed-dim": "#ffb693",
+                    "on-primary": "#003919",
+                    "on-error": "#690005",
+                    "on-background": "#e5e1e4",
+                    "error-container": "#93000a",
+                    "on-secondary": "#561f00"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Space Grotesk"],
+                    "body": ["Inter"],
+                    "label": ["Space Grotesk"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #000000;
+            color: #e5e1e4;
+            font-family: 'Inter', sans-serif;
+        }
+        .text-neon {
+            color: #00FF85;
+            text-shadow: 0 0 10px rgba(0, 255, 133, 0.3);
+        }
+        .border-neon-top {
+            border-top: 4px solid #00FF85;
+        }
+        .mesh-gradient {
+            background: radial-gradient(at 0% 0%, rgba(0, 82, 39, 0.15) 0%, transparent 50%),
+                        radial-gradient(at 100% 100%, rgba(254, 107, 0, 0.05) 0%, transparent 50%);
+        }
+    </style>
+</head>
+<body class="bg-black overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-zinc-950/80 backdrop-blur-xl border-b border-white/5 shadow-[0_4px_30px_rgba(0,255,133,0.05)] flex justify-between items-center px-8 h-20 w-full">
+<div class="text-2xl font-bold tracking-tighter text-white font-['Space_Grotesk']">
+            BACHSTAGE
+        </div>
+<div class="hidden md:flex items-center gap-x-8 font-['Space_Grotesk'] font-bold tracking-tight">
+<a class="text-white/70 hover:text-white transition-colors" href="#">Artists</a>
+<a class="text-white/70 hover:text-white transition-colors" href="#">Events</a>
+<a class="text-white/70 hover:text-white transition-colors" href="#">Analytics</a>
+<a class="text-[#FE6B00] border-b-2 border-[#FE6B00] pb-1" href="#">Partners</a>
+</div>
+<div class="flex items-center gap-x-6">
+<div class="flex gap-x-4">
+<span class="material-symbols-outlined text-white/70 cursor-pointer hover:bg-white/5 p-2 transition-all duration-200 active:scale-95" data-icon="notifications">notifications</span>
+<span class="material-symbols-outlined text-white/70 cursor-pointer hover:bg-white/5 p-2 transition-all duration-200 active:scale-95" data-icon="settings">settings</span>
+</div>
+<img alt="User profile" class="w-10 h-10 object-cover grayscale border border-white/10" data-alt="Close-up portrait of a professional man with sharp features in dramatic low-key lighting, black and white aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGu-a-OiD9Cvr8yn7Fffm3uHRoOaFiH-lks3TFM8i_sode8muU_pJVKpWd2I1ygHAP-mSQzjjw52hA1p7UXWIzqNH2mZrA_RDheVVrHnPENdt7VSuVdq59rs4bg-bB-NrkHLpGH-ajHrKNtO-xVdXfPPBA5UXhDlRL5VMUqKDg6h8U11vcGZkLk11qV9Q_pWwVjeDHuh_j09e0fGe0wq82JohvlMQxDRxfrPbs-wF3tWbXr_nZz6bZgYvVDb5UBpbdbUQ-exyDLkw"/>
+</div>
+</nav>
+<!-- SideNavBar -->
+<aside class="fixed left-0 top-20 h-[calc(100vh-5rem)] w-64 bg-[#09090B] border-r border-zinc-900 hidden lg:flex flex-col py-8 gap-y-6">
+<div class="px-6 mb-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 bg-[#00FF85] flex items-center justify-center">
+<span class="material-symbols-outlined text-black text-sm" data-icon="token">token</span>
+</div>
+<div>
+<p class="text-white font-black text-xs tracking-tighter">MONOLITH HQ</p>
+<p class="text-zinc-500 text-[10px] uppercase tracking-widest">Internal Access</p>
+</div>
+</div>
+</div>
+<nav class="flex flex-col font-['Inter'] uppercase tracking-[0.05em] text-[0.75rem]">
+<a class="text-zinc-500 hover:text-white pl-4 py-4 transition-all hover:bg-[#1C1B1D] flex items-center gap-4" href="#">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span> Dashboard
+            </a>
+<a class="text-zinc-500 hover:text-white pl-4 py-4 transition-all hover:bg-[#1C1B1D] flex items-center gap-4" href="#">
+<span class="material-symbols-outlined" data-icon="group">group</span> Roster
+            </a>
+<a class="text-zinc-500 hover:text-white pl-4 py-4 transition-all hover:bg-[#1C1B1D] flex items-center gap-4" href="#">
+<span class="material-symbols-outlined" data-icon="payments">payments</span> Revenue
+            </a>
+<a class="text-[#00FF85] border-l-2 border-[#00FF85] pl-4 py-4 bg-gradient-to-r from-[#00FF85]/10 to-transparent flex items-center gap-4" href="#">
+<span class="material-symbols-outlined" data-icon="handshake">handshake</span> Partners
+            </a>
+<a class="text-zinc-500 hover:text-white pl-4 py-4 transition-all hover:bg-[#1C1B1D] flex items-center gap-4" href="#">
+<span class="material-symbols-outlined" data-icon="calendar_today">calendar_today</span> Schedule
+            </a>
+</nav>
+<div class="mt-auto px-4">
+<button class="w-full py-4 bg-transparent border border-[#00FF85] text-[#00FF85] font-bold text-[10px] tracking-widest hover:bg-[#00FF85] hover:text-black transition-all">
+                UPGRADE PLAN
+            </button>
+</div>
+<div class="px-6 py-4 border-t border-zinc-900 flex flex-col gap-4 font-['Inter'] uppercase tracking-[0.05em] text-[0.75rem]">
+<a class="text-zinc-500 hover:text-white flex items-center gap-4" href="#">
+<span class="material-symbols-outlined" data-icon="help">help</span> Help
+            </a>
+<a class="text-zinc-500 hover:text-white flex items-center gap-4" href="#">
+<span class="material-symbols-outlined" data-icon="logout">logout</span> Logout
+            </a>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="lg:ml-64 pt-20 min-h-screen mesh-gradient">
+<!-- Hero Section -->
+<header class="relative h-[716px] flex items-center px-8 lg:px-16 overflow-hidden border-b border-white/5">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover grayscale opacity-40 mix-blend-overlay" data-alt="Architectural detail of a brutalist concrete building with sharp shadows and geometric precision in black and white" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjsHk28E2NSs9ppE0MaBmkZouPC4Vrjj0aEuMOBJkxCFxYi2GcZBEfJ6xFAeCmbQzDOu3_zAiItaM82hGb95roSkTyDnAJzxX_CUlXuVEYYKXoM5DUwGP-fnSCqjk4xMlrUhjyc82ObRWl1l-NCKmIh_2Nh11M9f7URuQbBImpX_wCaNTMMskC6EJBzhvPDqQjQqpjm5ojt5mOCW_-CKZ6cGsheIVbuO1mb2nUxReZXQEU3vEIAY8goKt0nw6nmlLg12JPZMYRuwQ"/>
+<div class="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-4xl">
+<h2 class="text-xs font-bold tracking-[0.4em] uppercase text-[#00FF85] mb-4">The BachStage Ecosystem</h2>
+<h1 class="text-6xl md:text-8xl font-black font-headline tracking-tighter text-white leading-[0.9] mb-8">
+                    MONOLITH<br/>PARTNERS
+                </h1>
+<p class="text-zinc-400 text-xl max-w-xl font-light leading-relaxed border-l-2 border-[#FE6B00] pl-6">
+                    Forging high-performance alliances with the architects of modern entertainment. Select your tier of influence.
+                </p>
+</div>
+<!-- Absolute Data Pillar Overlay -->
+<div class="absolute bottom-0 right-0 w-1/3 h-64 bg-primary-container p-8 hidden xl:flex flex-col justify-end">
+<span class="text-[0.6rem] font-black uppercase tracking-[0.2em] text-on-primary-container mb-2">Network Reach</span>
+<span class="text-6xl font-black font-headline text-on-primary-container tracking-tighter">4.2M+</span>
+<div class="h-1 w-full bg-on-primary-container mt-4"></div>
+</div>
+</header>
+<!-- Partner Tiers Section -->
+<section class="py-24 px-8 lg:px-16 bg-[#000000]">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-0">
+<!-- Tier: Architect -->
+<div class="bg-surface-container-low border-neon-top p-12 flex flex-col min-h-[600px] border-r border-white/5 group hover:bg-[#131315] transition-all duration-500">
+<span class="text-xs font-bold tracking-[0.3em] uppercase text-zinc-500 mb-2">Tier 01</span>
+<h3 class="text-4xl font-black font-headline text-white mb-8">Architect</h3>
+<div class="mb-12">
+<span class="text-5xl font-black font-headline text-[#00FF85] tracking-tighter">15%</span>
+<p class="text-[10px] uppercase tracking-widest text-zinc-500 mt-2">Revenue Share Base</p>
+</div>
+<ul class="space-y-6 mb-12 flex-grow">
+<li class="flex items-start gap-4 text-sm text-zinc-300">
+<span class="material-symbols-outlined text-[#00FF85] text-lg" data-icon="check_circle">check_circle</span>
+                            Standard API Access
+                        </li>
+<li class="flex items-start gap-4 text-sm text-zinc-300">
+<span class="material-symbols-outlined text-[#00FF85] text-lg" data-icon="check_circle">check_circle</span>
+                            Global Ticketing Sync
+                        </li>
+<li class="flex items-start gap-4 text-sm text-zinc-300">
+<span class="material-symbols-outlined text-[#00FF85] text-lg" data-icon="check_circle">check_circle</span>
+                            24/7 Digital Support
+                        </li>
+</ul>
+<button class="w-full py-5 bg-white/5 text-white font-black text-xs tracking-widest border border-white/10 group-hover:bg-[#00FF85] group-hover:text-black group-hover:border-transparent transition-all duration-300">
+                        INQUIRE ACCESS
+                    </button>
+</div>
+<!-- Tier: Elite -->
+<div class="bg-[#09090B] border-neon-top p-12 flex flex-col min-h-[600px] border-r border-white/5 relative overflow-hidden group hover:bg-[#131315] transition-all duration-500 shadow-2xl">
+<div class="absolute top-0 right-0 p-4">
+<span class="bg-[#FE6B00] text-black text-[10px] font-black px-3 py-1 tracking-widest">MOST POPULAR</span>
+</div>
+<span class="text-xs font-bold tracking-[0.3em] uppercase text-zinc-500 mb-2">Tier 02</span>
+<h3 class="text-4xl font-black font-headline text-white mb-8">Elite</h3>
+<div class="mb-12">
+<span class="text-5xl font-black font-headline text-[#00FF85] tracking-tighter">22%</span>
+<p class="text-[10px] uppercase tracking-widest text-zinc-500 mt-2">Revenue Share Peak</p>
+</div>
+<ul class="space-y-6 mb-12 flex-grow">
+<li class="flex items-start gap-4 text-sm text-white">
+<span class="material-symbols-outlined text-[#00FF85] text-lg" data-icon="check_circle">check_circle</span>
+                            Dedicated Priority Nodes
+                        </li>
+<li class="flex items-start gap-4 text-sm text-white">
+<span class="material-symbols-outlined text-[#00FF85] text-lg" data-icon="check_circle">check_circle</span>
+                            Predictive Artist Analytics
+                        </li>
+<li class="flex items-start gap-4 text-sm text-white">
+<span class="material-symbols-outlined text-[#00FF85] text-lg" data-icon="check_circle">check_circle</span>
+                            Early Adopters Program
+                        </li>
+<li class="flex items-start gap-4 text-sm text-white">
+<span class="material-symbols-outlined text-[#00FF85] text-lg" data-icon="check_circle">check_circle</span>
+                            Custom Branding Portal
+                        </li>
+</ul>
+<button class="w-full py-5 bg-[#00FF85] text-black font-black text-xs tracking-widest transition-all duration-300 hover:shadow-[0_0_20px_rgba(0,255,133,0.4)]">
+                        APPLY FOR ELITE
+                    </button>
+</div>
+<!-- Tier: Titan -->
+<div class="bg-surface-container-low border-neon-top p-12 flex flex-col min-h-[600px] group hover:bg-[#131315] transition-all duration-500">
+<span class="text-xs font-bold tracking-[0.3em] uppercase text-zinc-500 mb-2">Tier 03</span>
+<h3 class="text-4xl font-black font-headline text-white mb-8">Titan</h3>
+<div class="mb-12">
+<span class="text-5xl font-black font-headline text-[#00FF85] tracking-tighter">CUSTOM</span>
+<p class="text-[10px] uppercase tracking-widest text-zinc-500 mt-2">Enterprise Solutions</p>
+</div>
+<ul class="space-y-6 mb-12 flex-grow">
+<li class="flex items-start gap-4 text-sm text-zinc-300">
+<span class="material-symbols-outlined text-[#00FF85] text-lg" data-icon="check_circle">check_circle</span>
+                            Direct Board Access
+                        </li>
+<li class="flex items-start gap-4 text-sm text-zinc-300">
+<span class="material-symbols-outlined text-[#00FF85] text-lg" data-icon="check_circle">check_circle</span>
+                            Infrastructure Ownership
+                        </li>
+<li class="flex items-start gap-4 text-sm text-zinc-300">
+<span class="material-symbols-outlined text-[#00FF85] text-lg" data-icon="check_circle">check_circle</span>
+                            White-Label Ecosystem
+                        </li>
+<li class="flex items-start gap-4 text-sm text-zinc-300">
+<span class="material-symbols-outlined text-[#00FF85] text-lg" data-icon="check_circle">check_circle</span>
+                            Full Data Sovereignty
+                        </li>
+</ul>
+<button class="w-full py-5 bg-white text-black font-black text-xs tracking-widest hover:bg-[#00FF85] transition-all duration-300">
+                        TALK TO LEADERSHIP
+                    </button>
+</div>
+</div>
+</section>
+<!-- Edge-to-Edge Visual Break -->
+<section class="w-full h-96 relative">
+<img class="w-full h-full object-cover grayscale brightness-50" data-alt="Abstract network nodes and blue-green laser lighting in a dark high-tech laboratory setting, conveying digital connectivity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6HtplUc-qLwgWeEt-ybiH38nA29RPgP5vmEH1mfuOXVcWUBLMJelmN-yzUT5nGP-zs_it2nMIZ4V5AroHco_ZYq0YFwbRTWW1QvirgK9urbh1rxmZhHPrGd_dqstRoUMHe_TMHM_kreasmB2VFE3KEHpwct7ndyk4U04Z2bDVYxLjWgj_i4dqUeBfWRiaBd4VqmOqmBaRAR8gIQtgn0gaodXblosydIte1FXuTF6lmSy9EPwFv568H5jR-hjofJP9r7t2zpgbhy4"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="text-center px-8">
+<h2 class="text-4xl md:text-6xl font-black font-headline text-white tracking-tighter mb-4">GLOBAL CONNECTIVITY</h2>
+<p class="text-[#00FF85] uppercase tracking-[0.5em] text-xs font-bold">140 Nodes • 12 Million Users • 0 Latency</p>
+</div>
+</div>
+</section>
+<!-- Collaborative Spaces / Detail Section -->
+<section class="py-24 px-8 lg:px-16 grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+<div>
+<h2 class="text-5xl font-black font-headline text-white tracking-tighter leading-none mb-8">COLLABORATIVE<br/>INFRASTRUCTURE</h2>
+<div class="space-y-12">
+<div class="border-l-4 border-[#00FF85] pl-8">
+<h4 class="text-white font-bold mb-2 uppercase tracking-widest text-sm">Real-time Synchronization</h4>
+<p class="text-zinc-400 text-sm leading-relaxed">Our proprietary Monolith sync engine ensures that every partner node is updated within 14ms across the globe.</p>
+</div>
+<div class="border-l-4 border-white/20 pl-8">
+<h4 class="text-white font-bold mb-2 uppercase tracking-widest text-sm">Uncompromising Security</h4>
+<p class="text-zinc-400 text-sm leading-relaxed">End-to-end encrypted revenue pipelines with multi-sig verification for all Titan-class transactions.</p>
+</div>
+<div class="border-l-4 border-white/20 pl-8">
+<h4 class="text-white font-bold mb-2 uppercase tracking-widest text-sm">Modular Expansion</h4>
+<p class="text-zinc-400 text-sm leading-relaxed">Scale your operation instantly by activating new geographical clusters through the Monolith HQ interface.</p>
+</div>
+</div>
+</div>
+<div class="relative group">
+<div class="absolute -inset-4 bg-[#00FF85]/5 opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
+<img class="w-full aspect-[4/5] object-cover grayscale border-l border-b border-white/10" data-alt="Modern collaborative workspace with minimalist glass desks and industrial concrete textures, captured from a high angle with cool lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAD-hVgLXLhJekj91huZal3R5RzwUPkYIIwbPZd8rAZl2G0Vrq388_P6iLr4ZemRRka0entnq3oHgCw_g9P_fmXy_fQQjnE9zwbX5kQj1oUQx6rfyIWYUjefl0H2hMTdn2bhIAmlU5Agvk-RhpBI5jrUX33wU0aax27JgPKYDZSxepX_5n_RyOyadGriBJ4cwggZ2Zcn0zo6B6-P49rFHP0fWuI_VMlpgEs0qruRH_M8cXBfgM9c49VYzO1HZtu3o1m9avakt2kiak"/>
+<div class="absolute bottom-12 -left-12 bg-black p-8 border-l-4 border-[#FE6B00] hidden md:block">
+<span class="text-4xl font-black text-white font-headline">0%</span>
+<p class="text-[10px] uppercase tracking-widest text-zinc-500">Downtime in 2023</p>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full py-12 px-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center opacity-60 hover:opacity-100 transition-opacity duration-300">
+<p class="font-['Inter'] text-[10px] tracking-widest uppercase text-zinc-600 mb-6 md:mb-0">
+                © 2024 BACHSTAGE MONOLITH. ALL RIGHTS RESERVED.
+            </p>
+<div class="flex gap-x-8 font-['Inter'] text-[10px] tracking-widest uppercase">
+<a class="text-zinc-600 hover:text-[#00FF85] transition-colors" href="#">Privacy</a>
+<a class="text-zinc-600 hover:text-[#00FF85] transition-colors" href="#">Terms</a>
+<a class="text-zinc-600 hover:text-[#00FF85] transition-colors" href="#">API</a>
+</div>
+</footer>
+</main>
+</body></html>

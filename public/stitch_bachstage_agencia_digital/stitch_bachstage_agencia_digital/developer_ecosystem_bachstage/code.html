@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-container": "#626164",
+                        "surface-dim": "#131315",
+                        "primary": "#f0ffee",
+                        "on-tertiary": "#313032",
+                        "surface-container-high": "#2a2a2c",
+                        "on-primary-fixed": "#00210c",
+                        "surface-variant": "#353437",
+                        "outline": "#849584",
+                        "secondary": "#ffb693",
+                        "tertiary": "#fdfafd",
+                        "primary-fixed-dim": "#00e476",
+                        "outline-variant": "#3b4b3d",
+                        "secondary-container": "#fe6b00",
+                        "tertiary-container": "#e0dde0",
+                        "on-tertiary-fixed": "#1c1b1d",
+                        "primary-container": "#00ff85",
+                        "inverse-surface": "#e5e1e4",
+                        "on-surface": "#e5e1e4",
+                        "surface-container-low": "#1c1b1d",
+                        "on-secondary-fixed": "#351000",
+                        "primary-fixed": "#61ff97",
+                        "on-tertiary-fixed-variant": "#474649",
+                        "surface-container": "#201f22",
+                        "on-primary-fixed-variant": "#005227",
+                        "surface-bright": "#39393b",
+                        "secondary-fixed": "#ffdbcc",
+                        "surface-tint": "#00e476",
+                        "on-secondary-container": "#572000",
+                        "tertiary-fixed-dim": "#c8c6c8",
+                        "surface-container-lowest": "#0e0e10",
+                        "on-secondary-fixed-variant": "#7a3000",
+                        "on-primary-container": "#007137",
+                        "on-error-container": "#ffdad6",
+                        "on-surface-variant": "#b9cbb9",
+                        "inverse-on-surface": "#313032",
+                        "inverse-primary": "#006d35",
+                        "error": "#ffb4ab",
+                        "tertiary-fixed": "#e5e1e4",
+                        "surface-container-highest": "#353437",
+                        "background": "#131315",
+                        "surface": "#131315",
+                        "secondary-fixed-dim": "#ffb693",
+                        "on-primary": "#003919",
+                        "on-error": "#690005",
+                        "on-background": "#e5e1e4",
+                        "error-container": "#93000a",
+                        "on-secondary": "#561f00"
+                    },
+                    "borderRadius": {
+                        "none": "0px",
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Inter"],
+                        "label": ["Space Grotesk"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        .monolith-glow {
+            box-shadow: 0 0 40px -10px rgba(0, 255, 133, 0.15);
+        }
+        
+        .terminal-scroll {
+            mask-image: linear-gradient(to bottom, transparent, black 20%, black 80%, transparent);
+        }
+    </style>
+</head>
+<body class="bg-[#000000] text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-zinc-950/80 backdrop-blur-xl border-b border-white/5 shadow-[0_4px_30px_rgba(0,255,133,0.05)] flex justify-between items-center px-8 h-20 w-full">
+<div class="flex items-center gap-8">
+<span class="text-2xl font-bold tracking-tighter text-white font-['Space_Grotesk']">BACHSTAGE</span>
+<div class="hidden md:flex gap-6">
+<a class="font-['Space_Grotesk'] font-bold tracking-tight text-white/70 hover:text-white transition-colors" href="#">Artists</a>
+<a class="font-['Space_Grotesk'] font-bold tracking-tight text-white/70 hover:text-white transition-colors" href="#">Events</a>
+<a class="font-['Space_Grotesk'] font-bold tracking-tight text-white/70 hover:text-white transition-colors" href="#">Analytics</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 text-white/70 hover:bg-white/5 transition-all duration-200 active:scale-95">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+<button class="p-2 text-white/70 hover:bg-white/5 transition-all duration-200 active:scale-95">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+</button>
+<div class="w-10 h-10 bg-surface-container-high border border-white/10 flex items-center justify-center">
+<img alt="User profile" class="w-8 h-8 opacity-80" data-alt="minimalist abstract geometric avatar for developer profile with neon green accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATUjcv2fS0EGcRxv5_AtImQDg1vkWMh5jH5PpNYHolTRK5sC8LI-EnqGGN7LncLdrBzvwSyv8fEsYBAcIdx7nS-mcjxHpM44zjLKJK8r-PT3_UgpkumQ96KUs_zQ-T0H-p69nYUMwzmnu4cDEONZ64cpQsgSxZZMVvP_BDXbWa6sxAfYED0_TeGM7OObxPa0i2Bo-KzYFEsayFyfFw_Z6ndUNIFdliAnzZ4ggHmMWTyLlxD5BUl1Sv7pS_iVQqgRVq1YtiqkSIgGw"/>
+</div>
+</div>
+</nav>
+<!-- Side Navigation Bar -->
+<aside class="fixed left-0 top-20 h-[calc(100vh-5rem)] w-64 bg-[#09090B] border-r border-white/5 hidden md:flex flex-col py-8 gap-y-6">
+<div class="px-8 mb-4">
+<p class="font-['Inter'] uppercase tracking-[0.05em] text-[0.75rem] text-zinc-500">Infrastructure</p>
+</div>
+<nav class="flex flex-col gap-y-1">
+<a class="flex items-center gap-4 py-3 px-4 font-['Inter'] uppercase tracking-[0.05em] text-[0.75rem] text-zinc-500 hover:text-white hover:bg-[#1C1B1D] hover:translate-x-1 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+                Dashboard
+            </a>
+<a class="flex items-center gap-4 py-3 font-['Inter'] uppercase tracking-[0.05em] text-[0.75rem] text-[#00FF85] border-l-2 border-[#00FF85] pl-4 bg-gradient-to-r from-[#00FF85]/10 to-transparent" href="#">
+<span class="material-symbols-outlined" data-icon="developer_board">developer_board</span>
+                Developers
+            </a>
+<a class="flex items-center gap-4 py-3 px-4 font-['Inter'] uppercase tracking-[0.05em] text-[0.75rem] text-zinc-500 hover:text-white hover:bg-[#1C1B1D] hover:translate-x-1 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="group">group</span>
+                Roster
+            </a>
+<a class="flex items-center gap-4 py-3 px-4 font-['Inter'] uppercase tracking-[0.05em] text-[0.75rem] text-zinc-500 hover:text-white hover:bg-[#1C1B1D] hover:translate-x-1 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="payments">payments</span>
+                Revenue
+            </a>
+<a class="flex items-center gap-4 py-3 px-4 font-['Inter'] uppercase tracking-[0.05em] text-[0.75rem] text-zinc-500 hover:text-white hover:bg-[#1C1B1D] hover:translate-x-1 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="calendar_today">calendar_today</span>
+                Schedule
+            </a>
+</nav>
+<div class="mt-auto px-6">
+<button class="w-full bg-primary-container text-on-primary px-4 py-3 text-[0.75rem] font-bold tracking-widest uppercase hover:shadow-[0_0_20px_rgba(0,255,133,0.3)] transition-all">
+                UPGRADE PLAN
+            </button>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="md:ml-64 pt-20 min-h-screen relative overflow-hidden">
+<!-- Terminal Log Background Decoration -->
+<div class="absolute inset-0 z-0 pointer-events-none opacity-20 terminal-scroll overflow-hidden">
+<div class="grid grid-cols-4 gap-4 p-8 font-mono text-[10px] text-primary-container/40">
+<div class="flex flex-col gap-2">
+<p>&gt; initializing_subsystem.sh --secure</p>
+<p>&gt; BACHSTAGE_CORE: [OK] v4.2.0</p>
+<p>&gt; mount /dev/api_gateway /mnt/ingress</p>
+<p>&gt; connection established 127.0.0.1</p>
+<p>&gt; fetching_encrypted_keys...</p>
+<p>&gt; AUTH_TOKEN: [REDACTED]</p>
+<p>&gt; sync_cluster_01: status 200</p>
+<p>&gt; monitoring_hooks_active: true</p>
+<p>&gt; thread_pool_optimized</p>
+<p>&gt; memory_alloc: 4096MB</p>
+</div>
+<div class="flex flex-col gap-2 hidden lg:block">
+<p>&gt; GET /v1/artists/3492/analytics</p>
+<p>&gt; latency: 24ms | size: 1.2kb</p>
+<p>&gt; worker_process_spawned: PID 9032</p>
+<p>&gt; stream_buffer_flushed</p>
+<p>&gt; websocket_handshake_complete</p>
+<p>&gt; DB_QUERY: SELECT * FROM events WHERE id=1</p>
+<p>&gt; cache_hit: cluster_alpha_west</p>
+<p>&gt; telemetry_sent: true</p>
+</div>
+<div class="flex flex-col gap-2 hidden xl:block">
+<p>&gt; CLI_INIT: stage_cli --version</p>
+<p>&gt; environment: production_stable</p>
+<p>&gt; deploy_hash: 8f2c3e1a90</p>
+<p>&gt; ssl_cert_valid: true</p>
+<p>&gt; firewall_ingress: [WHITELIST_ONLY]</p>
+<p>&gt; loading_modules: [api, sdk, cli, webhooks]</p>
+<p>&gt; heart_beat_interval: 5000ms</p>
+</div>
+<div class="flex flex-col gap-2 opacity-50">
+<p>&gt; 0x34F90: [PUSH] to main branch</p>
+<p>&gt; CI_PIPELINE: building_assets</p>
+<p>&gt; compression_ratio: 0.72</p>
+<p>&gt; CDN_PURGE: global_edge</p>
+<p>&gt; traffic_spike_detected: 4k/req/s</p>
+<p>&gt; autoscaling_group: incrementing +2</p>
+<p>&gt; billing_cycle_check: compliant</p>
+</div>
+</div>
+</div>
+<!-- Hero Section -->
+<section class="relative z-10 px-8 py-24 md:py-32 flex flex-col items-start max-w-7xl mx-auto">
+<div class="w-full h-[1px] bg-primary-container/20 mb-8"></div>
+<p class="font-['Inter'] uppercase tracking-[0.4em] text-[0.75rem] text-primary-container mb-4">Architecture &amp; Integration</p>
+<h1 class="font-['Space_Grotesk'] font-bold text-6xl md:text-8xl tracking-tighter leading-[0.9] text-white mb-8">
+                DEVELOPER <br/> <span class="text-primary-container">CORE</span>
+</h1>
+<p class="max-w-2xl font-['Inter'] text-lg text-zinc-400 leading-relaxed mb-12">
+                The high-performance API ecosystem powering the next generation of music management. Integrate real-time analytics, booking automation, and asset distribution directly into your internal tooling.
+            </p>
+<div class="flex gap-4">
+<button class="bg-primary-container text-on-primary px-10 py-5 text-sm font-bold tracking-widest uppercase hover:brightness-110 transition-all border border-primary-container">
+                    CREATE API KEY
+                </button>
+<button class="bg-transparent text-white px-10 py-5 text-sm font-bold tracking-widest uppercase border border-white/20 hover:bg-white/5 transition-all">
+                    SYSTEM STATUS
+                </button>
+</div>
+</section>
+<!-- Developer Resources Grid -->
+<section class="relative z-10 px-8 pb-32 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0 border border-white/10 bg-zinc-950">
+<!-- API Documentation -->
+<div class="p-10 border border-white/5 group hover:bg-white/5 transition-all duration-300 relative overflow-hidden">
+<div class="absolute top-0 right-0 p-2 text-[10px] font-mono text-white/10 select-none">MODULE_01</div>
+<span class="material-symbols-outlined text-4xl text-primary-container mb-6 group-hover:scale-110 transition-transform" data-icon="description">description</span>
+<h3 class="font-['Space_Grotesk'] font-bold text-xl text-white mb-4 tracking-tight uppercase">API Documentation</h3>
+<p class="font-['Inter'] text-sm text-zinc-500 mb-8 leading-relaxed">RESTful endpoints for managing artists, tracks, and revenue streams with high-precision data.</p>
+<a class="inline-flex items-center gap-2 text-primary-container font-bold text-[0.7rem] uppercase tracking-widest group/link" href="#">
+                        Read Docs 
+                        <span class="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+<!-- SDK Downloads -->
+<div class="p-10 border border-white/5 group hover:bg-white/5 transition-all duration-300 relative overflow-hidden">
+<div class="absolute top-0 right-0 p-2 text-[10px] font-mono text-white/10 select-none">MODULE_02</div>
+<span class="material-symbols-outlined text-4xl text-primary-container mb-6 group-hover:scale-110 transition-transform" data-icon="terminal">terminal</span>
+<h3 class="font-['Space_Grotesk'] font-bold text-xl text-white mb-4 tracking-tight uppercase">SDK Downloads</h3>
+<p class="font-['Inter'] text-sm text-zinc-500 mb-8 leading-relaxed">Official libraries for Node.js, Python, and Rust. Type-safe wrappers for every core system.</p>
+<a class="inline-flex items-center gap-2 text-primary-container font-bold text-[0.7rem] uppercase tracking-widest group/link" href="#">
+                        Read Docs 
+                        <span class="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+<!-- CLI Tooling -->
+<div class="p-10 border border-white/5 group hover:bg-white/5 transition-all duration-300 relative overflow-hidden">
+<div class="absolute top-0 right-0 p-2 text-[10px] font-mono text-white/10 select-none">MODULE_03</div>
+<span class="material-symbols-outlined text-4xl text-primary-container mb-6 group-hover:scale-110 transition-transform" data-icon="settings_input_component">settings_input_component</span>
+<h3 class="font-['Space_Grotesk'] font-bold text-xl text-white mb-4 tracking-tight uppercase">CLI Tooling</h3>
+<p class="font-['Inter'] text-sm text-zinc-500 mb-8 leading-relaxed">Manage your BachStage deployments and sandbox environments directly from your command line.</p>
+<a class="inline-flex items-center gap-2 text-primary-container font-bold text-[0.7rem] uppercase tracking-widest group/link" href="#">
+                        Read Docs 
+                        <span class="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+<!-- Webhooks -->
+<div class="p-10 border border-white/5 group hover:bg-white/5 transition-all duration-300 relative overflow-hidden">
+<div class="absolute top-0 right-0 p-2 text-[10px] font-mono text-white/10 select-none">MODULE_04</div>
+<span class="material-symbols-outlined text-4xl text-primary-container mb-6 group-hover:scale-110 transition-transform" data-icon="sync_alt">sync_alt</span>
+<h3 class="font-['Space_Grotesk'] font-bold text-xl text-white mb-4 tracking-tight uppercase">Webhooks</h3>
+<p class="font-['Inter'] text-sm text-zinc-500 mb-8 leading-relaxed">Real-time event notification system. Trigger workflows on booking changes or revenue alerts.</p>
+<a class="inline-flex items-center gap-2 text-primary-container font-bold text-[0.7rem] uppercase tracking-widest group/link" href="#">
+                        Read Docs 
+                        <span class="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Feature Spotlight (Bento Inspired) -->
+<section class="relative z-10 px-8 pb-32 max-w-7xl mx-auto">
+<h2 class="font-['Space_Grotesk'] font-bold text-4xl text-white mb-16 tracking-tight uppercase">Infrastructure <span class="text-primary-container">Capabilities</span></h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="md:col-span-2 bg-surface-container-low p-12 border border-white/5 flex flex-col justify-end min-h-[400px] relative overflow-hidden group">
+<div class="absolute inset-0 z-0 bg-gradient-to-br from-primary-container/10 to-transparent opacity-30"></div>
+<img class="absolute inset-0 w-full h-full object-cover opacity-20 grayscale group-hover:scale-105 transition-transform duration-700" data-alt="high-tech server room with glowing blue and green led lights in dark moody environment futuristic infrastructure" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBit5RAaYAYPUkqiEk90oBnMzSI5YmEmLllz3ITzihk2DA5rgumExebHbvp9Oszfvz1Boj6QNaPjifiNaWz1cTg-xoYiDfXp0oqXdaF6TIYYhraAyHG-aK8noE4EUdw6gywnR80wMTT7dBBLUoxNGN4yrdSR_PR6eGbLZ8Wsm4OMFNYSWla1C1F3h5aU2gaPxRf5YNXj2rm1ndkxxI4q-kPHOMrtVE2Ncn5-EKTmk1mXaGGmSVyHmSLefd2EfVun3Sj6OaNBVTS6Ec"/>
+<div class="relative z-10">
+<h4 class="font-['Space_Grotesk'] font-bold text-3xl text-white mb-4 uppercase">Edge-First Architecture</h4>
+<p class="text-zinc-400 max-w-lg">Our global edge network ensures sub-50ms latency for all API requests, regardless of your artist's tour location.</p>
+</div>
+</div>
+<div class="bg-zinc-950 p-12 border border-white/5 flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute -bottom-10 -right-10 w-40 h-40 bg-primary-container/20 blur-3xl rounded-full"></div>
+<span class="material-symbols-outlined text-5xl text-primary-container" data-icon="verified_user">verified_user</span>
+<div>
+<h4 class="font-['Space_Grotesk'] font-bold text-2xl text-white mb-4 uppercase">SOC2 Compliance</h4>
+<p class="text-zinc-500 text-sm">Enterprise-grade security protocols for every byte of artist and financial data we transmit.</p>
+</div>
+</div>
+<div class="bg-zinc-950 p-12 border border-white/5 flex flex-col justify-between relative overflow-hidden group">
+<span class="material-symbols-outlined text-5xl text-primary-container" data-icon="monitoring">monitoring</span>
+<div>
+<h4 class="font-['Space_Grotesk'] font-bold text-2xl text-white mb-4 uppercase">99.99% Uptime</h4>
+<p class="text-zinc-500 text-sm">Mission-critical reliability for live event management and high-volume ticket distribution systems.</p>
+</div>
+</div>
+<div class="md:col-span-2 bg-[#09090B] p-12 border border-white/5 relative overflow-hidden">
+<div class="flex flex-col md:flex-row gap-8 items-center h-full">
+<div class="flex-1">
+<h4 class="font-['Space_Grotesk'] font-bold text-3xl text-white mb-4 uppercase">Sandbox Testing</h4>
+<p class="text-zinc-400 mb-6">Develop and test your integrations in a mirror environment with mock data before hitting production.</p>
+<button class="text-primary-container font-bold text-[0.7rem] uppercase tracking-widest border-b-2 border-primary-container pb-1">Enter Sandbox</button>
+</div>
+<div class="w-full md:w-64 h-48 bg-black border border-primary-container/30 p-4 font-mono text-[10px] text-primary-container/80 overflow-hidden">
+<p class="mb-1 text-zinc-500">// Initialize Sandbox</p>
+<p class="mb-1">const stage = new BachStage('test_key');</p>
+<p class="mb-1">await stage.connect({</p>
+<p class="ml-4 mb-1">environment: 'sandbox',</p>
+<p class="ml-4 mb-1">trace: true</p>
+<p class="mb-1">});</p>
+<p class="text-white mt-2">&gt; Connection: SUCCESS</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Data Pillar -->
+<section class="relative w-full overflow-hidden bg-zinc-950 border-t border-white/5">
+<div class="absolute inset-0 bg-gradient-to-r from-primary-container/10 via-transparent to-primary-container/10 opacity-30"></div>
+<div class="max-w-7xl mx-auto px-8 py-24 flex flex-col md:flex-row justify-between items-center relative z-10 gap-12">
+<div class="text-center md:text-left">
+<p class="font-['Inter'] uppercase tracking-[0.2em] text-[0.7rem] text-primary-container mb-2">Network Capacity</p>
+<div class="font-['Space_Grotesk'] font-bold text-8xl text-white tracking-tighter leading-none">1.2B</div>
+<p class="font-['Inter'] text-zinc-500 uppercase tracking-widest text-[0.75rem] mt-4">Daily API Operations</p>
+</div>
+<div class="hidden md:block h-32 w-[1px] bg-white/10"></div>
+<div class="text-center md:text-left">
+<p class="font-['Inter'] uppercase tracking-[0.2em] text-[0.7rem] text-primary-container mb-2">Global Latency</p>
+<div class="font-['Space_Grotesk'] font-bold text-8xl text-white tracking-tighter leading-none">12<span class="text-2xl ml-2 font-light">MS</span></div>
+<p class="font-['Inter'] text-zinc-500 uppercase tracking-widest text-[0.75rem] mt-4">P99 Average</p>
+</div>
+<div class="hidden md:block h-32 w-[1px] bg-white/10"></div>
+<div class="text-center md:text-left">
+<p class="font-['Inter'] uppercase tracking-[0.2em] text-[0.7rem] text-primary-container mb-2">Ecosystem</p>
+<div class="font-['Space_Grotesk'] font-bold text-8xl text-white tracking-tighter leading-none">500+</div>
+<p class="font-['Inter'] text-zinc-500 uppercase tracking-widest text-[0.75rem] mt-4">Verified SDK Apps</p>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full py-12 px-8 bg-black border-t border-white/5 flex flex-col md:flex-row justify-between items-center opacity-60 hover:opacity-100 transition-opacity duration-300">
+<div class="font-['Inter'] text-[10px] tracking-widest uppercase text-zinc-600 mb-6 md:mb-0">
+                © 2024 BACHSTAGE MONOLITH. ALL RIGHTS RESERVED.
+            </div>
+<div class="flex gap-8">
+<a class="font-['Inter'] text-[10px] tracking-widest uppercase text-zinc-600 hover:text-[#00FF85] transition-colors duration-300" href="#">Privacy</a>
+<a class="font-['Inter'] text-[10px] tracking-widest uppercase text-zinc-600 hover:text-[#00FF85] transition-colors duration-300" href="#">Terms</a>
+<a class="font-['Inter'] text-[10px] tracking-widest uppercase text-white hover:text-[#00FF85] transition-colors duration-300" href="#">API</a>
+</div>
+</footer>
+</main>
+</body></html>

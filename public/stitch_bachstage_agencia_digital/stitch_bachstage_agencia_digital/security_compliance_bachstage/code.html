@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TITAN PROTOCOLS | BACHSTAGE SECURITY</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-container": "#626164",
+                        "surface-dim": "#131315",
+                        "primary": "#f0ffee",
+                        "on-tertiary": "#313032",
+                        "surface-container-high": "#2a2a2c",
+                        "on-primary-fixed": "#00210c",
+                        "surface-variant": "#353437",
+                        "outline": "#849584",
+                        "secondary": "#ffb693",
+                        "tertiary": "#fdfafd",
+                        "primary-fixed-dim": "#00e476",
+                        "outline-variant": "#3b4b3d",
+                        "secondary-container": "#fe6b00",
+                        "tertiary-container": "#e0dde0",
+                        "on-tertiary-fixed": "#1c1b1d",
+                        "primary-container": "#00ff85",
+                        "inverse-surface": "#e5e1e4",
+                        "on-surface": "#e5e1e4",
+                        "surface-container-low": "#1c1b1d",
+                        "on-secondary-fixed": "#351000",
+                        "primary-fixed": "#61ff97",
+                        "on-tertiary-fixed-variant": "#474649",
+                        "surface-container": "#201f22",
+                        "on-primary-fixed-variant": "#005227",
+                        "surface-bright": "#39393b",
+                        "secondary-fixed": "#ffdbcc",
+                        "surface-tint": "#00e476",
+                        "on-secondary-container": "#572000",
+                        "tertiary-fixed-dim": "#c8c6c8",
+                        "surface-container-lowest": "#0e0e10",
+                        "on-secondary-fixed-variant": "#7a3000",
+                        "on-primary-container": "#007137",
+                        "on-error-container": "#ffdad6",
+                        "on-surface-variant": "#b9cbb9",
+                        "inverse-on-surface": "#313032",
+                        "inverse-primary": "#006d35",
+                        "error": "#ffb4ab",
+                        "tertiary-fixed": "#e5e1e4",
+                        "surface-container-highest": "#353437",
+                        "background": "#131315",
+                        "surface": "#131315",
+                        "secondary-fixed-dim": "#ffb693",
+                        "on-primary": "#003919",
+                        "on-error": "#690005",
+                        "on-background": "#e5e1e4",
+                        "error-container": "#93000a",
+                        "on-secondary": "#561f00"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Inter"],
+                        "label": ["Space Grotesk"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .mesh-gradient-bg {
+            background: radial-gradient(at 0% 0%, #005227 0px, transparent 50%),
+                        radial-gradient(at 100% 100%, #09090b 0px, transparent 50%);
+        }
+    </style>
+</head>
+<body class="bg-black text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-zinc-950/80 backdrop-blur-xl border-b border-white/5 shadow-[0_4px_30px_rgba(0,255,133,0.05)] flex justify-between items-center px-8 h-20 w-full">
+<div class="text-2xl font-bold tracking-tighter text-white font-headline">BACHSTAGE</div>
+<div class="hidden md:flex items-center gap-8 font-headline font-bold tracking-tight">
+<a class="text-white/70 hover:text-white transition-colors" href="#">Artists</a>
+<a class="text-white/70 hover:text-white transition-colors" href="#">Events</a>
+<a class="text-white/70 hover:text-white transition-colors" href="#">Analytics</a>
+<a class="text-[#FE6B00] border-b-2 border-[#FE6B00] pb-1" href="#">Security</a>
+</div>
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined text-white/70 hover:text-white transition-all cursor-pointer" data-icon="notifications">notifications</span>
+<span class="material-symbols-outlined text-white/70 hover:text-white transition-all cursor-pointer" data-icon="settings">settings</span>
+<div class="w-8 h-8 bg-surface-container-high border border-white/10 overflow-hidden">
+<img alt="User profile" class="w-full h-full object-cover" data-alt="Close up portrait of a professional technology executive in a dark minimalist studio setting with sharp lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcH4TVf9YnkMtAXZBdB47-1YeVV16CJejmPvYZ-OE0Db5BI4JfNnQfK1DUOk8y2sdLURDIBnYMq0cBr7L8IZ7G-2M-LrpjHsRlDLasF-SFWPIgeYRpJa0G1lobQ-KIARATun2jsyu5WRVIVkXF6N2bxmg-NtmzHEIegUNee7T5uznT-phe_JAvtn5rxhiDk4qKfTXKO_5dyWoV33zN1ZJ7kcRchUccoLAujZGtBWdYVti7RO3OiRjPfBjh9rtinb_dLr9RZpR1hjg"/>
+</div>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative h-[614px] flex items-center px-8 md:px-20 overflow-hidden bg-surface-container-lowest">
+<div class="absolute inset-0 z-0 opacity-40">
+<div class="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent z-10"></div>
+<img class="w-full h-full object-cover" data-alt="Macro photography of a futuristic encrypted server node with glowing green circuits and obsidian metallic surfaces in a dark environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKpoARvqIzWD37GghZ-VRoBv_D3XfUPeBnTvc7KdU9hVTYuXrhB_1IuNxdVSAZ9p95qooyrWbh3GlJc_ZTPbsYDrU2H5L9eDJ_ekH-LuDTUnXhBIjFidIq8UugUlwVDnbfLToTkAC2PZLczm25z09nkI1rsd0grLQw8HNip1cbR-aRXoSO_LY4nzil-Y24dmgIrAeE8yFkyLyJMMqZ0MlLKe8hPTNi9orTp1_KO2Ua1-Q5tIt985PmBSF71LCXLk13yDQqQQIMS1Y"/>
+</div>
+<div class="relative z-20 max-w-4xl">
+<div class="inline-block px-3 py-1 bg-primary-container text-on-primary font-label text-[10px] tracking-[0.2em] font-bold mb-6">INTERNAL CLEARANCE REQUIRED</div>
+<h1 class="text-7xl md:text-9xl font-headline font-bold tracking-tighter text-white leading-[0.85] mb-8">
+                    TITAN<br/>PROTOCOLS
+                </h1>
+<p class="text-zinc-400 text-lg md:text-xl max-w-xl font-light leading-relaxed">
+                    Uncompromising architecture for the global entertainment industry. We secure the infrastructure that powers the world's most elite performers.
+                </p>
+</div>
+</section>
+<!-- Bento Grid: Security Layers -->
+<section class="py-24 px-8 md:px-20 bg-black">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-0 border border-white/5">
+<!-- Card 1: AES-256 -->
+<div class="p-10 border-b md:border-b-0 md:border-r border-white/5 hover:bg-surface-container-low transition-all group">
+<div class="mb-12">
+<span class="material-symbols-outlined text-primary-container text-4xl mb-4 block" data-icon="lock">lock</span>
+<h3 class="text-2xl font-headline font-bold text-white mb-4">AES-256 Encryption</h3>
+<p class="text-zinc-500 text-sm leading-relaxed mb-8">Military-grade cryptographic standards applied at rest and in transit across all monolith clusters.</p>
+</div>
+<div class="font-label text-[10px] tracking-widest text-primary-container font-bold uppercase space-y-1">
+<div class="flex justify-between"><span>BIT-DEPTH</span><span>256-BIT</span></div>
+<div class="flex justify-between"><span>CIPHER</span><span>FIPS 140-2</span></div>
+<div class="flex justify-between"><span>LATENCY</span><span>&lt;0.2MS</span></div>
+</div>
+</div>
+<!-- Card 2: mTLS Auth -->
+<div class="p-10 border-b md:border-b-0 md:border-r border-white/5 hover:bg-surface-container-low transition-all group">
+<div class="mb-12">
+<span class="material-symbols-outlined text-primary-container text-4xl mb-4 block" data-icon="shield_with_heart">shield_with_heart</span>
+<h3 class="text-2xl font-headline font-bold text-white mb-4">mTLS Auth</h3>
+<p class="text-zinc-500 text-sm leading-relaxed mb-8">Mutual Transport Layer Security ensures that every micro-service connection is verified and encrypted.</p>
+</div>
+<div class="font-label text-[10px] tracking-widest text-primary-container font-bold uppercase space-y-1">
+<div class="flex justify-between"><span>PROTOCOL</span><span>TLS 1.3</span></div>
+<div class="flex justify-between"><span>HANDSHAKE</span><span>ASYMMETRIC</span></div>
+<div class="flex justify-between"><span>REVOCATION</span><span>OCSP STAPLING</span></div>
+</div>
+</div>
+<!-- Card 3: SOC2 Compliance -->
+<div class="p-10 border-b md:border-b-0 md:border-r border-white/5 hover:bg-surface-container-low transition-all group">
+<div class="mb-12">
+<span class="material-symbols-outlined text-primary-container text-4xl mb-4 block" data-icon="verified_user">verified_user</span>
+<h3 class="text-2xl font-headline font-bold text-white mb-4">SOC2 Compliance</h3>
+<p class="text-zinc-500 text-sm leading-relaxed mb-8">Continuous auditing of our trust service criteria for security, availability, and processing integrity.</p>
+</div>
+<div class="font-label text-[10px] tracking-widest text-primary-container font-bold uppercase space-y-1">
+<div class="flex justify-between"><span>TYPE</span><span>SOC2 TYPE II</span></div>
+<div class="flex justify-between"><span>AUDIT</span><span>REAL-TIME</span></div>
+<div class="flex justify-between"><span>REDUNDANCY</span><span>99.999%</span></div>
+</div>
+</div>
+<!-- Card 4: RBAC Redefined -->
+<div class="p-10 hover:bg-surface-container-low transition-all group">
+<div class="mb-12">
+<span class="material-symbols-outlined text-primary-container text-4xl mb-4 block" data-icon="admin_panel_settings">admin_panel_settings</span>
+<h3 class="text-2xl font-headline font-bold text-white mb-4">RBAC Redefined</h3>
+<p class="text-zinc-500 text-sm leading-relaxed mb-8">Granular Role-Based Access Control mapped to your organizational structure with zero-trust defaults.</p>
+</div>
+<div class="font-label text-[10px] tracking-widest text-primary-container font-bold uppercase space-y-1">
+<div class="flex justify-between"><span>ACCESS</span><span>ZERO-TRUST</span></div>
+<div class="flex justify-between"><span>IDENTITY</span><span>SAML 2.0</span></div>
+<div class="flex justify-between"><span>LOGGING</span><span>IMMUTABLE</span></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Full Width Server Chip Section -->
+<section class="relative w-full h-[819px] flex flex-col justify-center items-center text-center overflow-hidden">
+<div class="absolute inset-0 bg-black/60 z-10"></div>
+<img class="absolute inset-0 w-full h-full object-cover z-0" data-alt="Extreme close up of a high performance CPU server chip with emerald green neon light traces through silicon paths on black substrate" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeQavuvu71UY1LtXVUFbX9CPo-L9ZAOMAGOyoQqbALhCF5mxZhLmX0tQ1pnUEMpznkq5QWlzoR12AxKDxZaJ368ec4gC2zyX9L0DqNC0L911Qi9BzHPbXZ2VGvpG7_uVETrNO9nXlrLl3gkhCXLLMLdRrKFKYcDueIU93Wrp41syZdiBGFpR6mQm4LlyXBGDX5qbGmsWbQRAFB6oUZ1ejOLCcKID-VHOjBOauS0CmmCb4R3YLEb43iGULhCSppFWFC360qlp61o6Q"/>
+<div class="relative z-20 px-8">
+<div class="mb-12 h-px w-24 bg-primary-container mx-auto"></div>
+<h2 class="text-5xl md:text-7xl font-headline font-bold text-white tracking-tighter mb-6">CORE RESILIENCE</h2>
+<p class="text-primary-container font-label text-xs tracking-[0.4em] uppercase mb-12">Monolithic architectural integrity</p>
+<button class="bg-primary-container text-on-primary px-12 py-5 font-headline font-bold tracking-tighter uppercase hover:shadow-[0_0_40px_rgba(0,255,133,0.3)] transition-all active:scale-95 duration-150">
+                    Review Whitepaper
+                </button>
+</div>
+</section>
+<!-- Technical Specs / Data Pillars -->
+<section class="bg-surface-dim py-24 px-8 md:px-20">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="w-full">
+<div class="mesh-gradient-bg p-12 border-l-4 border-primary-container">
+<div class="text-xs font-label tracking-widest text-primary-container mb-2 uppercase">Uptime Performance</div>
+<div class="text-7xl font-headline font-bold text-white tracking-tighter">99.999%</div>
+<div class="mt-4 text-zinc-500 text-[10px] font-label tracking-widest uppercase">Global Availability Index</div>
+</div>
+</div>
+<div class="w-full">
+<div class="mesh-gradient-bg p-12 border-l-4 border-primary-container">
+<div class="text-xs font-label tracking-widest text-primary-container mb-2 uppercase">Threat Detection</div>
+<div class="text-7xl font-headline font-bold text-white tracking-tighter">&lt;14MS</div>
+<div class="mt-4 text-zinc-500 text-[10px] font-label tracking-widest uppercase">Heuristic Analysis Window</div>
+</div>
+</div>
+<div class="w-full">
+<div class="mesh-gradient-bg p-12 border-l-4 border-primary-container">
+<div class="text-xs font-label tracking-widest text-primary-container mb-2 uppercase">Encrypted Nodes</div>
+<div class="text-7xl font-headline font-bold text-white tracking-tighter">14,280</div>
+<div class="mt-4 text-zinc-500 text-[10px] font-label tracking-widest uppercase">Active Secure Instances</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-8 bg-black border-t border-white/5 flex flex-col md:flex-row justify-between items-center opacity-60 hover:opacity-100 transition-colors duration-300">
+<div class="font-['Inter'] text-[10px] tracking-widest uppercase text-zinc-600">
+            © 2024 BACHSTAGE MONOLITH. ALL RIGHTS RESERVED.
+        </div>
+<div class="flex gap-8 mt-6 md:mt-0">
+<a class="font-['Inter'] text-[10px] tracking-widest uppercase text-zinc-600 hover:text-[#00FF85] transition-colors" href="#">Privacy</a>
+<a class="font-['Inter'] text-[10px] tracking-widest uppercase text-zinc-600 hover:text-[#00FF85] transition-colors" href="#">Terms</a>
+<a class="font-['Inter'] text-[10px] tracking-widest uppercase text-zinc-600 hover:text-[#00FF85] transition-colors" href="#">API</a>
+</div>
+</footer>
+</body></html>
