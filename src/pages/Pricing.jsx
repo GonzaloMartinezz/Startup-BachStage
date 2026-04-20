@@ -11,7 +11,7 @@ const Pricing = () => {
             <span className="text-[0.75rem] font-label uppercase tracking-[0.2em] text-primary-container font-bold">SYSTEM_PRICING_V4.0</span>
           </div>
           <h1 className="text-6xl md:text-8xl font-headline font-bold tracking-tighter text-white mb-8 leading-none">
-            ENGINEERED FOR <br /><span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-container to-secondary-container">PERFORMANCE</span>
+            ENGINEERED FOR <br /><span className="text-transparent bg-clip-text bg-linear-to-r from-primary-container to-secondary-container">PERFORMANCE</span>
           </h1>
           <p className="max-w-2xl mx-auto text-on-surface-variant text-lg md:text-xl font-light leading-relaxed">
             Select your architecture. High-contrast precision deployments for modern digital infrastructure.
@@ -83,7 +83,7 @@ const Pricing = () => {
                 ].map((feature, i) => (
                   <li key={i} className="flex items-center gap-4 group/item">
                     <span className="material-symbols-outlined text-primary-container text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>verified</span>
-                    <span className="text-on-surface font-body font-semibold tracking-tight text-white transition-colors">{feature}</span>
+                    <span className="text-on-surface font-body font-semibold tracking-tight transition-colors">{feature}</span>
                   </li>
                 ))}
               </ul>
@@ -96,7 +96,7 @@ const Pricing = () => {
       </section>
 
       {/* Technical Comparison Table */}
-      <section className="px-8 py-24 bg-surface-dim relative overflow-hidden bg-[radial-gradient(#1c1b1d_1px,transparent_1px)] bg-[size:24px_24px]">
+      <section className="px-8 py-24 bg-surface-dim relative overflow-hidden bg-[radial-gradient(#1c1b1d_1px,transparent_1px)] bg-size-[24px_24px]">
         <div className="max-w-5xl mx-auto">
           <h3 className="text-4xl font-headline font-bold text-white mb-16 text-center tracking-tighter">TECHNICAL SPECIFICATIONS</h3>
           <div className="w-full overflow-x-auto">
@@ -130,7 +130,7 @@ const Pricing = () => {
       {/* Metric Pillar Section */}
       <section className="py-32 border-t border-outline-variant/10">
         <div className="max-w-7xl mx-auto px-8">
-          <div className="bg-gradient-to-r from-[#005227] to-background p-16 flex flex-col md:flex-row justify-between items-center gap-12 border-l-8 border-primary-container">
+          <div className="bg-linear-to-r from-[#005227] to-background p-16 flex flex-col md:flex-row justify-between items-center gap-12 border-l-8 border-primary-container">
             <div className="flex-1">
               <span className="font-label text-xs text-primary-container tracking-[0.3em] font-bold block mb-4 uppercase">System Efficiency</span>
               <h4 className="text-4xl md:text-5xl font-headline font-bold text-white tracking-tighter leading-tight">

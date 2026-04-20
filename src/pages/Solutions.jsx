@@ -11,7 +11,7 @@ const Solutions = () => {
           <div className="md:col-span-8">
             <motion.p initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="text-primary-container font-label uppercase tracking-[0.3em] text-xs mb-6">Vertical Integration Mastery</motion.p>
             <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} className="font-headline text-6xl md:text-8xl font-black tracking-tighter text-white mb-8 leading-[0.9]">
-              ARCHITECTING <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-container to-white">OBSIDIAN</span> CORE.
+              ARCHITECTING <br /> <span className="text-transparent bg-clip-text bg-linear-to-r from-primary-container to-white">OBSIDIAN</span> CORE.
             </motion.h1>
             <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2 }} className="max-w-xl text-lg text-on-surface-variant leading-relaxed mb-10 font-light">
               We don't build generic software. We engineer domain-specific monoliths for industries that demand zero-latency, absolute security, and architectural precision.
@@ -44,7 +44,7 @@ const Solutions = () => {
       <section className="w-full py-32 bg-surface">
         <div className="px-8 md:px-20 grid grid-cols-1 md:grid-cols-2 gap-20 items-center max-w-7xl mx-auto">
           <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="relative">
-            <img className="w-full aspect-[4/5] object-cover filter grayscale hover:grayscale-0 transition-all duration-700" alt="Surgical tech interface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJNLSdyZx4Y07EkySYbP_Q-e1riouyVWB5XxuNNaxzTnc867b-za-deJZsZHCvCDI9wfjoiBedbFItrDgOr4hVKIN7eiTO18a3HNJLTPssiG-qKC4XDjEBB2H3E9a1FslKYBmsmNcDABDiqDEdEDZlGvbVGznKi9JGFkVJyIn73StWK37IkcdCWkUkJQtwyS9dnaynIZ8_6G8boT_9PUstDB7vUrSN4avXMeYWDc3D1iM2U6yuP9Xc4fPXg9sL_Grs5J_NpxWsGTs" />
+            <img className="w-full aspect-4/5 object-cover filter grayscale hover:grayscale-0 transition-all duration-700" alt="Surgical tech interface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJNLSdyZx4Y07EkySYbP_Q-e1riouyVWB5XxuNNaxzTnc867b-za-deJZsZHCvCDI9wfjoiBedbFItrDgOr4hVKIN7eiTO18a3HNJLTPssiG-qKC4XDjEBB2H3E9a1FslKYBmsmNcDABDiqDEdEDZlGvbVGznKi9JGFkVJyIn73StWK37IkcdCWkUkJQtwyS9dnaynIZ8_6G8boT_9PUstDB7vUrSN4avXMeYWDc3D1iM2U6yuP9Xc4fPXg9sL_Grs5J_NpxWsGTs" />
             <div className="absolute -bottom-10 -right-4 md:-right-10 w-64 h-64 bg-surface-container-high p-8 shadow-2xl border-l-4 border-primary-container hidden sm:block">
               <span className="material-symbols-outlined text-primary-container text-5xl mb-4">dentistry</span>
               <h4 className="font-headline font-black text-xl mb-2 text-white">MolarFlow OS</h4>
@@ -56,7 +56,7 @@ const Solutions = () => {
             <h2 className="font-headline text-5xl md:text-6xl font-black text-white mb-8 tracking-tighter">PRECISION DIAGNOSTICS AT SCALE.</h2>
             <div className="space-y-8">
               <div className="flex gap-6 items-start">
-                <div className="w-12 h-12 flex-shrink-0 bg-surface-container-high border border-white/5 flex items-center justify-center">
+                <div className="w-12 h-12 shrink-0 bg-surface-container-high border border-white/5 flex items-center justify-center">
                   <span className="material-symbols-outlined text-primary-container">biotech</span>
                 </div>
                 <div>
@@ -65,7 +65,7 @@ const Solutions = () => {
                 </div>
               </div>
               <div className="flex gap-6 items-start">
-                <div className="w-12 h-12 flex-shrink-0 bg-surface-container-high border border-white/5 flex items-center justify-center">
+                <div className="w-12 h-12 shrink-0 bg-surface-container-high border border-white/5 flex items-center justify-center">
                   <span className="material-symbols-outlined text-primary-container">verified_user</span>
                 </div>
                 <div>
@@ -126,7 +126,7 @@ const Solutions = () => {
         <div className="absolute inset-0 opacity-20">
           <img className="w-full h-full object-cover" alt="Financial networks" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSThb8q_E1zTBCaI-KTJ2AYC0E8wNBiLPjJ4qHCJ_cbBcebCXmIT-XJUAFEPzOjR2FviRifP24ClDlWs-hPVsKBvKsjFmWXb-s1dRERc6FC0zKoPsRiZXPtKw_UjMIZq87WlUdv53Cc-q4bfBJcZkSEC_byhcwMOTkx0myWVKd0CNJ8SaIpwZi1Ul6qcdZYqJOLGvLXxyLfHqqRfCnvFGn11bySm0lrVWKBKy3pVmjqDZHtjP3LZ2RArLdcjs3s3Ap1CElP3G7MNM" />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent"></div>
+        <div className="absolute inset-0 bg-linear-to-r from-black via-black/80 to-transparent"></div>
         <div className="relative z-10 px-8 md:px-20 w-full max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
             <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
@@ -181,7 +181,7 @@ const Solutions = () => {
 
       {/* Data Pillar Metric */}
       <section className="w-full bg-[#131315]">
-        <div className="bg-gradient-to-r from-black via-[#005227]/20 to-black w-full py-24 px-8 md:px-20 text-center">
+        <div className="bg-linear-to-r from-black via-[#005227]/20 to-black w-full py-24 px-8 md:px-20 text-center">
           <span className="font-label text-[10px] tracking-[0.4em] uppercase text-on-surface-variant mb-6 block">Total Value Architected</span>
           <motion.div initial={{ scale: 0.9 }} whileInView={{ scale: 1 }} viewport={{ once: true }} transition={{ type: "spring" }} className="font-headline text-[10vw] font-black text-primary-container leading-none tracking-tighter mb-4">
             $42.8B+

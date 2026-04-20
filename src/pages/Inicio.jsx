@@ -9,7 +9,7 @@ const Inicio = () => {
       <section className="relative min-h-screen flex flex-col justify-end">
         <div className="absolute inset-0 z-0">
           <img className="w-full h-full object-cover grayscale brightness-[0.3]" alt="Monolithic dark futuristic architectural structure" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLiJQcrJL2WmjuWX2TiPR9bzZs7ygUmjWOEY0AYo-kzrcO0p4O-7pxbnDRXre-znBbV5s5eUUe239FX9cuZVaWCS5mzCbTHxZ1LZB92uPCveXgLOp3epAwGhZpHRShsBecbng_fu1pvoY-JCwXvt7O9LZPSYngeSFd8-f858A30B6L6TVpicEMNSuVSR3G1CFU2p5EmpjQYoXu3-wBi44-etdGlPJqUJEnMqBEg4M4IY0GjG21SNN2ZBJn27mMliz8FFlhcTldiws" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+          <div className="absolute inset-0 bg-linear-to-t from-black via-black/40 to-transparent"></div>
         </div>
         <div className="relative z-10 px-8 pb-24 md:pb-32 w-full max-w-7xl mx-auto">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="max-w-4xl">
@@ -75,7 +75,7 @@ const Inicio = () => {
               </div>
             </div>
             {/* Mobile Mockup */}
-            <div className="absolute -bottom-16 -right-8 z-20 w-48 aspect-[9/19] bg-zinc-900 border-4 border-white/10 shadow-2xl overflow-hidden hidden md:block">
+            <div className="absolute -bottom-16 -right-8 z-20 w-48 aspect-9/19 bg-zinc-900 border-4 border-white/10 shadow-2xl overflow-hidden hidden md:block">
               <img className="w-full h-full object-cover" alt="Mobile interface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxb-2gZl13Lh-w_y55k9eK9hzfAm9mye0yKeceBgxO0qyi_D7BsIemTSz1Q4a5qTewZyCVrPL3AKtXgxjzZQiUnXLFnqH7A2-gTY0dcpmm20IBR8uSsOZxAVkBiW8TwuOWc8Eeo189jousVrCxE7d5ua5lA5--Et5IaQLZ4uDUv5sCAV8Pl6EB5Bt2H78UmozlROxDZP7hUJEI-KKXTIvsFHDTLk1fcGL2Td9lOUgEuyiKSpoce4tFTWhN3lBuMACEJ1n67gdgy1s" />
             </div>
             {/* Ambient Glow */}
@@ -146,7 +146,7 @@ const Inicio = () => {
       {/* Cierre / CTA */}
       <section className="py-48 px-8 bg-black relative">
         <div className="absolute inset-0 opacity-20 pointer-events-none">
-          <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_50%_50%,_#00FF85_0%,_transparent_50%)] blur-[120px]"></div>
+          <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_50%_50%,#00FF85_0%,transparent_50%)] blur-[120px]"></div>
         </div>
         <div className="max-w-5xl mx-auto text-center relative z-10">
           <h2 className="font-headline font-bold text-5xl md:text-9xl text-white tracking-tighter leading-[0.8] mb-16 uppercase">¿LISTO PARA EL SIGUIENTE NIVEL?</h2>

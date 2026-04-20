@@ -41,7 +41,7 @@ const Showcase = () => {
               </div>
               <div className="space-y-6 relative z-10">
                 <div className="h-40 w-full bg-surface-container overflow-hidden border border-white/5">
-                  <div className="w-full h-full opacity-40 bg-gradient-to-t from-primary-container/20 to-transparent flex items-end p-4">
+                  <div className="w-full h-full opacity-40 bg-linear-to-t from-primary-container/20 to-transparent flex items-end p-4">
                     <div className="flex items-end gap-1 w-full h-24">
                       {['40%', '70%', '55%', '90%', '65%', '80%', '100%'].map((h, i) => (
                         <motion.div key={i} className="flex-1 bg-primary-container" initial={{ height: 0 }} animate={{ height: h }} transition={{ duration: 1, delay: i * 0.1 }} />
@@ -50,11 +50,11 @@ const Showcase = () => {
                   </div>
                 </div>
                 <div className="grid grid-cols-2 gap-4">
-                  <div className="bg-[#1c1b1d] p-4 border border-white/5">
+                  <div className="bg-surface-container-low p-4 border border-white/5">
                     <div className="text-[10px] text-zinc-500 font-headline uppercase mb-1">Response</div>
                     <div className="text-2xl font-bold font-headline text-white">12ms</div>
                   </div>
-                  <div className="bg-[#1c1b1d] p-4 border border-white/5">
+                  <div className="bg-surface-container-low p-4 border border-white/5">
                     <div className="text-[10px] text-zinc-500 font-headline uppercase mb-1">Load</div>
                     <div className="text-2xl font-bold font-headline text-primary-container">0.04%</div>
                   </div>
@@ -126,7 +126,7 @@ const Showcase = () => {
               <h3 className="text-3xl font-black text-black font-headline tracking-tight uppercase mb-4">Alpha SDK</h3>
               <p className="text-black/80 font-medium leading-relaxed">Developer-first toolchain for React, Vue, and Rust. Type-safe by default.</p>
             </div>
-            <div className="md:col-span-8 bg-[#1c1b1d] p-10 flex flex-col md:flex-row gap-8 items-center group cursor-pointer border border-white/5 hover:border-white/20">
+            <div className="md:col-span-8 bg-surface-container-low p-10 flex flex-col md:flex-row gap-8 items-center group cursor-pointer border border-white/5 hover:border-white/20">
               <div className="flex-1">
                 <span className="material-symbols-outlined text-4xl text-white mb-6">query_stats</span>
                 <h3 className="text-3xl font-black text-white font-headline tracking-tight uppercase mb-4">Predictive Analytics</h3>

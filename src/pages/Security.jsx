@@ -7,7 +7,7 @@ const Security = () => {
       {/* Hero Section */}
       <section className="relative h-[614px] flex items-center px-8 md:px-20 overflow-hidden bg-surface-container-lowest">
         <div className="absolute inset-0 z-0 opacity-40">
-          <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent z-10"></div>
+          <div className="absolute inset-0 bg-linear-to-r from-black via-black/80 to-transparent z-10"></div>
           <img className="w-full h-full object-cover" alt="Encrypted server node" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKpoARvqIzWD37GghZ-VRoBv_D3XfUPeBnTvc7KdU9hVTYuXrhB_1IuNxdVSAZ9p95qooyrWbh3GlJc_ZTPbsYDrU2H5L9eDJ_ekH-LuDTUnXhBIjFidIq8UugUlwVDnbfLToTkAC2PZLczm25z09nkI1rsd0grLQw8HNip1cbR-aRXoSO_LY4nzil-Y24dmgIrAeE8yFkyLyJMMqZ0MlLKe8hPTNi9orTp1_KO2Ua1-Q5tIt985PmBSF71LCXLk13yDQqQQIMS1Y" />
         </div>
         <div className="relative z-20 max-w-4xl mx-auto w-full">
@@ -27,7 +27,7 @@ const Security = () => {
       <section className="py-24 px-8 md:px-20 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-0 border border-white/5">
           {/* Card 1 */}
-          <div className="p-10 border-b md:border-b-0 md:border-r border-white/5 hover:bg-surface-container-low transition-all group cursor-pointer bg-[#0e0e10]">
+          <div className="p-10 border-b md:border-b-0 md:border-r border-white/5 hover:bg-surface-container-low transition-all group cursor-pointer bg-surface-container-lowest">
             <div className="mb-12">
               <span className="material-symbols-outlined text-primary-container text-4xl mb-4 block">lock</span>
               <h3 className="text-2xl font-headline font-bold text-white mb-4">AES-256 Encryption</h3>
@@ -41,7 +41,7 @@ const Security = () => {
           </div>
 
           {/* Card 2 */}
-          <div className="p-10 border-b md:border-b-0 md:border-r border-white/5 hover:bg-surface-container-low transition-all group cursor-pointer bg-[#0e0e10]">
+          <div className="p-10 border-b md:border-b-0 md:border-r border-white/5 hover:bg-surface-container-low transition-all group cursor-pointer bg-surface-container-lowest">
             <div className="mb-12">
               <span className="material-symbols-outlined text-primary-container text-4xl mb-4 block">shield_with_heart</span>
               <h3 className="text-2xl font-headline font-bold text-white mb-4">mTLS Auth</h3>
@@ -55,7 +55,7 @@ const Security = () => {
           </div>
 
           {/* Card 3 */}
-          <div className="p-10 border-b md:border-b-0 md:border-r border-white/5 hover:bg-surface-container-low transition-all group cursor-pointer bg-[#0e0e10]">
+          <div className="p-10 border-b md:border-b-0 md:border-r border-white/5 hover:bg-surface-container-low transition-all group cursor-pointer bg-surface-container-lowest">
             <div className="mb-12">
               <span className="material-symbols-outlined text-primary-container text-4xl mb-4 block">verified_user</span>
               <h3 className="text-2xl font-headline font-bold text-white mb-4">SOC2 Compliance</h3>
@@ -69,7 +69,7 @@ const Security = () => {
           </div>
 
           {/* Card 4 */}
-          <div className="p-10 hover:bg-surface-container-low transition-all group cursor-pointer bg-[#0e0e10]">
+          <div className="p-10 hover:bg-surface-container-low transition-all group cursor-pointer bg-surface-container-lowest">
             <div className="mb-12">
               <span className="material-symbols-outlined text-primary-container text-4xl mb-4 block">admin_panel_settings</span>
               <h3 className="text-2xl font-headline font-bold text-white mb-4">RBAC Redefined</h3>
